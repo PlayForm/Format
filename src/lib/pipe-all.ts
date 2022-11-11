@@ -19,6 +19,8 @@ export default async (settings: Options, debug: number = 2) => {
 
 			switch (files) {
 				case "rome": {
+					await rome.applyConfiguration(setting);
+
 					await parse(
 						`${settings.path}**/*.{js,mjs,cjs,ts}`,
 						debug,

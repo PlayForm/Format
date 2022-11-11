@@ -37,9 +37,6 @@ export default (): Options => ({
 				"trailingComma": "all",
 			},
 		},
-		"files": {
-			"maxSize": null,
-		},
 		"linter": {
 			"enabled": true,
 			"rules": {

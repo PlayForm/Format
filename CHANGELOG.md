@@ -1,6 +1,6 @@
 ## 0.0.3
 
--   Cleanup
+-   Fixes configuration option
 
 ## 0.0.2
 
