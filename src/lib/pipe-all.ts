@@ -1,8 +1,8 @@
-import { Rome, BackendKind } from "@rometools/js-api";
+import { BackendKind, Rome } from "@rometools/js-api";
 
+import { resolve } from "path";
 import type { Options } from "../options/index";
 import parse from "./parse.js";
-import { resolve } from "path";
 
 const rome = await Rome.create({
 	backendKind: BackendKind.NODE,
@@ -20,7 +20,7 @@ export default async (settings: Options, debug: number = 2) => {
 			switch (files) {
 				case "rome": {
 					await parse(
-						`${settings.path}**/*.{js,mjs,cjs,ts,json}`,
+						`${settings.path}**/*.{js,mjs,cjs,ts}`,
 						debug,
 						settings?.exclude,
 						async (data, file) =>
