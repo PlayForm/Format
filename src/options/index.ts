@@ -1,20 +1,23 @@
 import type ROME from "./rome";
 
-export type filterFunction = (file: string) => boolean;
+export type filterFn = (file: string) => boolean;
 
 export interface Options {
 	// rome-ignore lint:
 	[key: string]: any;
 
-	path?: string | [string];
+	path?: string | string[] | Set<string>;
 
 	exclude?:
 		| string
 		| RegExp
-		| filterFunction
-		| [string]
-		| [RegExp]
-		| [filterFunction];
+		| filterFn
+		| string[]
+		| RegExp[]
+		| filterFn[]
+		| Set<string>
+		| Set<RegExp>
+		| Set<filterFn>;
 
 	rome?: boolean | ROME;
 

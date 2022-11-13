@@ -1,9 +1,9 @@
 import type ROME from "./rome";
-export declare type filterFunction = (file: string) => boolean;
+export declare type filterFn = (file: string) => boolean;
 export interface Options {
     [key: string]: any;
-    path?: string | [string];
-    exclude?: string | RegExp | filterFunction | [string] | [RegExp] | [filterFunction];
+    path?: string | string[] | Set<string>;
+    exclude?: string | RegExp | filterFn | string[] | RegExp[] | filterFn[] | Set<string> | Set<RegExp> | Set<filterFn>;
     rome?: boolean | ROME;
     logger?: number;
 }
