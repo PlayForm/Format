@@ -1,3 +1,7 @@
+## 0.0.4
+
+-   Adds multiple paths
+
 ## 0.0.3
 
 -   Fixes configuration option

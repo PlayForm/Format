@@ -91,6 +91,23 @@ export default {
 };
 ```
 
+You can add multiple paths to validate by specifying an array as the path
+variable.
+
+**`astro.config.ts`**
+
+```ts
+import rome from "astro-rome";
+
+export default {
+	integrations: [
+		rome({
+			path: ["./src", "./dist"],
+		}),
+	],
+};
+```
+
 Set logger to 0 if you do not want to see debug messages. Default is 2.
 
 **`astro.config.ts`**

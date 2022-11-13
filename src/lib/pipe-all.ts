@@ -8,7 +8,7 @@ const rome = await Rome.create({
 	backendKind: BackendKind.NODE,
 });
 
-export default async (settings: Options, debug: number = 2) => {
+export default async (path: string, settings: Options, debug: number = 2) => {
 	for (const files in settings) {
 		if (Object.prototype.hasOwnProperty.call(settings, files)) {
 			const setting = settings[files];
@@ -22,7 +22,7 @@ export default async (settings: Options, debug: number = 2) => {
 					await rome.applyConfiguration(setting);
 
 					await parse(
-						`${settings.path}**/*.{js,mjs,cjs,ts}`,
+						`${path}**/*.{js,mjs,cjs,ts}`,
 						debug,
 						settings?.exclude,
 						async (data, file) =>

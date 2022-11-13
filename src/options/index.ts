@@ -3,9 +3,10 @@ import type ROME from "./rome";
 export type filterFunction = (file: string) => boolean;
 
 export interface Options {
+	// rome-ignore lint:
 	[key: string]: any;
 
-	path?: string;
+	path?: string | [string];
 
 	exclude?:
 		| string

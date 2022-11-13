@@ -7,7 +7,9 @@ export default async (
 	glob: string,
 	debug: number = 2,
 	exclude: Options["exclude"],
+	// rome-ignore lint:
 	write: (data: string, file: string) => any = async (data) => data,
+	// rome-ignore lint:
 	read: (file: string) => any = async (file) =>
 		await fs.promises.readFile(file, "utf-8")
 ) => {
@@ -68,7 +70,7 @@ export default async (
 					)}.\u001b[39m`
 				);
 			}
-		} catch (error) {
+		} catch (_error) {
 			console.log(`Error: Cannot format file ${file}!`);
 		}
 	}
