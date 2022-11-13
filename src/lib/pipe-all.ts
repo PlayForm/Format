@@ -32,6 +32,7 @@ export default async (settings: Options, debug: number = 2) => {
 								})
 							).content
 					);
+
 					break;
 				}
 
