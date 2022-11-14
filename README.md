@@ -97,7 +97,7 @@ export default {
 };
 ```
 
-You can add multiple paths to validate by specifying an array as the path
+You can add multiple paths to validate by specifying an array as the `path`
 variable.
 
 **`astro.config.ts`**
