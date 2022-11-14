@@ -74,6 +74,12 @@ export default {
 };
 ```
 
+> **Note**
+>
+> If you provide a `rome.json` config file the utility should pick it up
+> automatically. The configuration options from the `astro.config.ts` file
+> override the `rome.json` config.
+
 If your path is different than `dist` be sure to update it accordingly:
 
 **`astro.config.ts`**

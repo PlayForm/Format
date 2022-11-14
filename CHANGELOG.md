@@ -1,3 +1,7 @@
+## 0.0.5
+
+-   Auto resolve rome.json
+
 ## 0.0.4
 
 -   Adds multiple paths
