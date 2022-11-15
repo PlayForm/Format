@@ -1,10 +1,13 @@
 {
+	"files": {
+		"maxSize": null
+	},
 	"formatter": {
 		"enabled": true,
 		"formatWithErrors": true,
 		"indentSize": 4,
-		"lineWidth": 80,
-		"indentStyle": "tab"
+		"indentStyle": "tab",
+		"lineWidth": 80
 	},
 	"javascript": {
 		"formatter": {
@@ -13,13 +16,9 @@
 			"trailingComma": "all"
 		}
 	},
-	"files": {
-		"maxSize": null
-	},
 	"linter": {
 		"enabled": true,
 		"rules": {
-			"recommended": true,
 			"a11y": {
 				"noAutofocus": "error",
 				"noPositiveTabindex": "error",
@@ -82,6 +81,7 @@
 				"useFlatMap": "error",
 				"useValidForDirection": "error"
 			},
+			"recommended": true,
 			"security": {
 				"noDangerouslySetInnerHtml": "error",
 				"noDangerouslySetInnerHtmlWithChildren": "error",
