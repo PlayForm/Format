@@ -1,5 +1,5 @@
 import type ROME from "./rome";
-export declare type filterFn = (file: string) => boolean;
+export type filterFn = (file: string) => boolean;
 export interface Options {
     [key: string]: any;
     path?: string | string[] | Set<string>;
