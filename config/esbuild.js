@@ -23,13 +23,14 @@ export default {
             },
         },
         copy({
-            once: true,
-            resolveFrom: "cwd",
-            assets: {
-                from: ["./src/config/rome.json"],
-                to: ["./dist/config/rome.json"],
-                keepStructure: false,
-            },
+            resolveFrom: "out",
+            assets: [
+                {
+                    from: "./src/config/rome.json",
+                    to: "./config/rome.json",
+                    keepStructure: false,
+                },
+            ],
         }),
     ],
 };

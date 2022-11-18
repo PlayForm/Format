@@ -1,0 +1,6 @@
+{
+	"upgrade": true,
+	"reject": [
+		"esbuild-plugin-copy"
+	]
+}
