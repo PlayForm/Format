@@ -5,11 +5,11 @@
 	"description": "🏛️ AstroJS Rome tools. Format, lint and check your Astro website with Rome.",
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/nikolaxhristov/astro-rome.git"
+		"url": "git+https://github.com/astro-community/astro-rome.git"
 	},
-	"homepage": "https://github.com/nikolaxhristov/astro-rome#readme",
+	"homepage": "https://github.com/astro-community/astro-rome#readme",
 	"bugs": {
-		"url": "https://github.com/nikolaxhristov/astro-rome/issues"
+		"url": "https://github.com/astro-community/astro-rome/issues"
 	},
 	"license": "MIT",
 	"private": false,
