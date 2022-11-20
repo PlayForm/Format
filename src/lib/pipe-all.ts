@@ -1,7 +1,7 @@
 import { BackendKind, Rome } from "@rometools/js-api";
 
 import { resolve } from "path";
-import type { Options } from "../options/index";
+import type { Options } from "./../options/index";
 import parse from "./parse.js";
 
 const rome = await Rome.create({
