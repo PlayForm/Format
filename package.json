@@ -1,6 +1,6 @@
 {
 	"name": "astro-rome",
-	"version": "0.0.6",
+	"version": "0.0.7",
 	"type": "module",
 	"description": "🏛️ AstroJS Rome tools. Format, lint and check your Astro website with Rome.",
 	"repository": {
@@ -40,7 +40,7 @@
 		"@lightrix/config": "0.0.6",
 		"@lightrix/scripts": "0.0.17",
 		"astro": "1.6.10",
-		"esbuild-plugin-copy": "2.0.0"
+		"esbuild-plugin-copy": "2.0.1"
 	},
 	"publishConfig": {
 		"access": "public"

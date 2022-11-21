@@ -4,11 +4,11 @@ import { resolve } from "path";
 import type { Options } from "./../options/index";
 import parse from "./parse.js";
 
-const rome = await Rome.create({
-	backendKind: BackendKind.NODE,
-});
-
 export default async (path: string, settings: Options, debug: number = 2) => {
+	const rome = await Rome.create({
+		backendKind: BackendKind.NODE,
+	});
+
 	for (const files in settings) {
 		if (Object.prototype.hasOwnProperty.call(settings, files)) {
 			const setting = settings[files];

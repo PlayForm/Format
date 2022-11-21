@@ -6,7 +6,7 @@ import defaultOptions, { Options } from "./options/index.js";
 import forwardSlashIt from "./lib/forward-slash-it.js";
 import getConfig from "./lib/get-config.js";
 
-const romeConfig = JSON.parse(await getConfig("rome.json"));
+const romeConfig = JSON.parse(getConfig("rome.json"));
 
 export default (options: Options = {}): AstroIntegration => {
 	for (const option in options) {

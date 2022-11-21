@@ -31,8 +31,7 @@ export default {
 			assets: [
 				{
 					from: "./src/config/rome.json",
-					to: "./config/rome.json",
-					keepStructure: false,
+					to: "./config/",
 				},
 			],
 		}),
