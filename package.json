@@ -39,7 +39,7 @@
 	"devDependencies": {
 		"@lightrix/config": "0.0.6",
 		"@lightrix/scripts": "0.0.17",
-		"astro": "1.6.10",
+		"astro": "1.6.11",
 		"esbuild-plugin-copy": "2.0.1"
 	},
 	"publishConfig": {
