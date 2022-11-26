@@ -51,7 +51,7 @@ export default { integrations: [rome()] };
 
 ## Getting started
 
-The utility should now format and lint with [Rome][rome] all JavaScript and
+The utility will now format and lint with [Rome][rome] all JavaScript and
 TypeScript files, including CommonJS modules in the `dist` folder.
 
 You can override any of the default options from the configurations of:
