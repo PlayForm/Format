@@ -118,22 +118,6 @@ export default {
 };
 ```
 
-Set `logger` to `0` if you do not want to see debug messages. Default is `2`.
-
-**`astro.config.ts`**
-
-```ts
-import rome from "astro-rome";
-
-export default {
-	integrations: [
-		rome({
-			logger: 0,
-		}),
-	],
-};
-```
-
 You can provide a filter to exclude files from formatting. A filter can be an
 array of regexes or a single match. You can use functions, as well to match on
 file names.
@@ -150,6 +134,22 @@ export default {
 				"firebase.ts",
 				(file: string) => file === "./src/lib/test.ts",
 			],
+		}),
+	],
+};
+```
+
+Set `logger` to `0` if you do not want to see debug messages. Default is `2`.
+
+**`astro.config.ts`**
+
+```ts
+import rome from "astro-rome";
+
+export default {
+	integrations: [
+		rome({
+			logger: 0,
 		}),
 	],
 };
