@@ -30,7 +30,7 @@ export default (options: Options = {}): AstroIntegration => {
 			"astro:config:done": async (options) => {
 				_options.path = _options.path
 					? _options.path
-					: options.config.outDir.toString();
+					: options.config.outDir;
 			},
 			"astro:build:done": async () => {
 				let paths = new Set<string>();
