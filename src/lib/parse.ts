@@ -64,10 +64,10 @@ export default async (
 
 			if (debug > 1) {
 				console.info(
-					`\u001b[32mFormatted ${file.replace(
+					`Formatted ${file.replace(
 						/^.*[\\\/]/,
 						""
-					)}.\u001b[39m`
+					)}.`
 				);
 			}
 		} catch (_error) {
@@ -77,9 +77,9 @@ export default async (
 
 	if (debug > 0 && formats.files > 0) {
 		console.info(
-			`\u001b[32mSuccessfully formatted a total of ${formats.files} ${
+			`Successfully formatted a total of ${formats.files} ${
 				formats.files === 1 ? "file" : "files"
-			}.\u001b[39m`
+			}.`
 		);
 	}
 };
