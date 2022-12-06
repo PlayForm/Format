@@ -8,9 +8,7 @@ export interface Options extends OptionsBase {
     rome?: boolean | ROME;
 }
 export declare const options: {
-    path: string;
     files: string;
-    logger: number;
     pipeline: {
         wrote: (_file: string, data: string) => Promise<string>;
         read: (file: import("fs").PathLike | import("fs/promises").FileHandle) => Promise<string>;

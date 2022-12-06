@@ -20,9 +20,7 @@ export interface Options extends OptionsBase {
 }
 
 export const options = {
-	path: "./dist/",
 	files: "**/*.{js,mjs,cjs,ts}",
-	logger: 2,
 	pipeline: deepmerge(defaultOptions.pipeline, {
 		failed: async (inputPath: optionCallbacksFile["inputPath"]) =>
 			`Error: Cannot format file ${inputPath} !`,
