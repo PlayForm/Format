@@ -1,3 +1,7 @@
+## 0.1.0
+
+-   Updates pipeline
+
 ## 0.0.7
 
 -   Bug fix
