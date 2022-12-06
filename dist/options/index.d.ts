@@ -1,11 +1,24 @@
+/// <reference types="node" resolution-mode="require"/>
+/// <reference types="node" resolution-mode="require"/>
+import type { Options as OptionsBase, optionCallbacksFile, optionCallbacksPipe } from "@nikolarhristov/pipeline/dist/options/index.js";
 import type ROME from "./rome";
 export type filterFn = (file: string) => boolean;
-export interface Options {
+export interface Options extends OptionsBase {
     [key: string]: any;
-    path?: string | string[] | Set<string>;
-    exclude?: string | RegExp | filterFn | string[] | RegExp[] | filterFn[] | Set<string> | Set<RegExp> | Set<filterFn>;
     rome?: boolean | ROME;
-    logger?: number;
 }
-declare const _default: () => Options;
-export default _default;
+export declare const options: {
+    path: string;
+    files: string;
+    logger: number;
+    pipeline: {
+        wrote: (_file: string, data: string) => Promise<string>;
+        read: (file: import("fs").PathLike | import("fs/promises").FileHandle) => Promise<string>;
+        passed: () => Promise<true>;
+        failed: (inputPath: optionCallbacksFile["inputPath"]) => Promise<string>;
+        accomplished: (inputPath: optionCallbacksFile["inputPath"], outputPath: optionCallbacksFile["outputPath"], _fileSizeBefore: optionCallbacksFile["fileSizeBefore"], _fileSizeAfter: optionCallbacksFile["fileSizeAfter"]) => Promise<string>;
+        fulfilled: (pipe: optionCallbacksPipe) => Promise<string>;
+        changed: (pipe: optionCallbacksPipe) => Promise<optionCallbacksPipe>;
+    };
+};
+export default options;

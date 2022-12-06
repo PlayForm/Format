@@ -1,4 +1,5 @@
 import type { AstroIntegration } from "astro";
-import { Options } from "./options/index.js";
-declare const _default: (options?: Options) => AstroIntegration;
+import type { Options as PipelineOptions } from "@nikolarhristov/pipeline/dist/options/index.js";
+import type { Options as RomeOptions } from "./options/index.js";
+declare const _default: (_options?: PipelineOptions & RomeOptions) => AstroIntegration;
 export default _default;

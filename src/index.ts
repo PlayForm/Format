@@ -1,28 +1,33 @@
-import type { AstroIntegration } from "astro";
 import { deepmerge } from "deepmerge-ts";
+import { resolve } from "path";
 
-import pipeAll from "./lib/pipe-all.js";
-import defaultOptions, { Options } from "./options/index.js";
-import forwardSlashIt from "./lib/forward-slash-it.js";
+import type { AstroIntegration } from "astro";
+
+import { BackendKind, Rome } from "@rometools/js-api";
+
+import pipeline from "@nikolarhristov/pipeline";
+import type {
+	functionCallbacks,
+	Options as PipelineOptions,
+} from "@nikolarhristov/pipeline/dist/options/index.js";
+import type { Options as RomeOptions } from "./options/index.js";
+
 import getConfig from "./lib/get-config.js";
+import defaultOptions from "./options/index.js";
 
-const romeConfig = JSON.parse(await getConfig("rome.json"));
-
-export default (options: Options = {}): AstroIntegration => {
-	for (const option in options) {
+export default (
+	_options: PipelineOptions & RomeOptions = {}
+): AstroIntegration => {
+	for (const option in _options) {
 		if (
-			Object.prototype.hasOwnProperty.call(options, option) &&
-			options[option] === true
+			Object.prototype.hasOwnProperty.call(_options, option) &&
+			_options[option] === true
 		) {
-			options[option] = defaultOptions()[option];
+			_options[option] = defaultOptions[option];
 		}
 	}
 
-	const _options = deepmerge(defaultOptions(), options);
-
-	if (typeof _options.rome === "undefined" || _options.rome === null) {
-		_options.rome = romeConfig;
-	}
+	const __options = deepmerge(defaultOptions, _options);
 
 	return {
 		name: "astro-rome",
@@ -33,24 +38,31 @@ export default (options: Options = {}): AstroIntegration => {
 					: options.config.outDir;
 			},
 			"astro:build:done": async () => {
-				let paths = new Set<string>();
+				const rome = await Rome.create({
+					backendKind: BackendKind.NODE,
+				});
 
-				if (typeof _options.path !== "undefined") {
-					if (
-						_options.path instanceof Array ||
-						_options.path instanceof Set
-					) {
-						for (const path of _options.path) {
-							paths.add(forwardSlashIt(path));
-						}
-					} else {
-						paths.add(forwardSlashIt(_options.path));
-					}
+				if (
+					typeof __options.rome === "undefined" ||
+					__options.rome === null
+				) {
+					__options.rome = JSON.parse(await getConfig("rome.json"));
 				}
 
-				for (const path of paths) {
-					await pipeAll(path, _options, _options.logger);
-				}
+				await rome.applyConfiguration(__options.rome);
+
+				await new pipeline(
+					deepmerge(__options, {
+						pipeline: {
+							wrote: async (file: string, data: string) =>
+								(
+									await rome.formatContent(data, {
+										filePath: resolve(file),
+									})
+								).content,
+						},
+					} satisfies PipelineOptions)
+				).process();
 			},
 		},
 	};
