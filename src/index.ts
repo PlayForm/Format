@@ -3,7 +3,7 @@ import { resolve } from "path";
 
 import type { AstroIntegration } from "astro";
 
-import { BackendKind, Rome } from "@rometools/js-api";
+import { Rome, BackendKind } from "@rometools/js-api";
 
 import pipeline from "@nikolarhristov/pipeline";
 import type { Options as PipelineOptions } from "@nikolarhristov/pipeline/dist/options/index.js";
@@ -20,6 +20,7 @@ export default (
 			Object.prototype.hasOwnProperty.call(_options, option) &&
 			_options[option] === true
 		) {
+			// @ts-ignore
 			_options[option] = defaultOptions[option];
 		}
 	}
@@ -36,6 +37,7 @@ export default (
 			},
 			"astro:build:done": async () => {
 				const rome = await Rome.create({
+					// rome-ignore lint:
 					backendKind: BackendKind.NODE,
 				});
 
