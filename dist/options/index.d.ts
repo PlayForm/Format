@@ -1,7 +1,7 @@
 /// <reference types="node" resolution-mode="require"/>
 /// <reference types="node" resolution-mode="require"/>
 import type { Options as OptionsBase, optionCallbacksFile, optionCallbacksPipe } from "@nikolarhristov/pipeline/dist/options/index.js";
-import type ROME from "./rome";
+import type ROME from "./rome.js";
 export type filterFn = (file: string) => boolean;
 export interface Options extends OptionsBase {
     [key: string]: any;

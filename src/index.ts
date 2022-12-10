@@ -3,7 +3,7 @@ import { resolve } from "path";
 
 import type { AstroIntegration } from "astro";
 
-import { Rome, BackendKind } from "@rometools/js-api";
+import { Rome, Distribution } from "@rometools/js-api";
 
 import pipeline from "@nikolarhristov/pipeline";
 import type { Options as PipelineOptions } from "@nikolarhristov/pipeline/dist/options/index.js";
@@ -11,6 +11,7 @@ import type { Options as RomeOptions } from "./options/index.js";
 
 import getConfig from "./lib/get-config.js";
 import defaultOptions from "./options/index.js";
+import type ROME from "./options/rome.js";
 
 export default (
 	_options: PipelineOptions & RomeOptions = {}
@@ -30,35 +31,31 @@ export default (
 	return {
 		name: "astro-rome",
 		hooks: {
-			"astro:config:done": async (options) => {
-				_options.path = _options.path
-					? _options.path
-					: options.config.outDir;
-			},
 			"astro:build:done": async () => {
 				const rome = await Rome.create({
-					// rome-ignore lint:
-					backendKind: BackendKind.NODE,
+					distribution: Distribution.NODE,
 				});
 
 				if (
 					typeof __options.rome === "undefined" ||
 					__options.rome === null
 				) {
-					__options.rome = JSON.parse(await getConfig("rome.json"));
+					__options.rome = JSON.parse(
+						await getConfig("rome.json")
+					) as ROME;
 				}
 
-				await rome.applyConfiguration(__options.rome);
+				if (__options.rome && __options.rome !== true) {
+					rome.applyConfiguration(__options.rome);
+				}
 
 				await new pipeline(
 					deepmerge(__options, {
 						pipeline: {
 							wrote: async (file: string, data: string) =>
-								(
-									await rome.formatContent(data, {
-										filePath: resolve(file),
-									})
-								).content,
+								rome.formatContent(data, {
+									filePath: resolve(file),
+								}).content,
 						},
 					} satisfies PipelineOptions)
 				).process();

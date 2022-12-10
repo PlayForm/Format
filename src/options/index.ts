@@ -8,7 +8,7 @@ import type {
 } from "@nikolarhristov/pipeline/dist/options/index.js";
 import defaultOptions from "@nikolarhristov/pipeline/dist/options/index.js";
 
-import type ROME from "./rome";
+import type ROME from "./rome.js";
 
 export type filterFn = (file: string) => boolean;
 
