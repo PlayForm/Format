@@ -24,12 +24,8 @@ export const options = {
 	pipeline: deepmerge(defaultOptions.pipeline, {
 		failed: async (inputPath: optionCallbacksFile["inputPath"]) =>
 			`Error: Cannot format file ${inputPath}!`,
-		accomplished: async (
-			inputPath: optionCallbacksFile["inputPath"],
-			outputPath: optionCallbacksFile["outputPath"],
-			_fileSizeBefore: optionCallbacksFile["fileSizeBefore"],
-			_fileSizeAfter: optionCallbacksFile["fileSizeAfter"]
-		) => `Formatted ${inputPath} in ${outputPath}.`,
+		accomplished: async (current: optionCallbacksFile) =>
+			`Formatted ${current.inputPath} in ${current.outputPath}.`,
 		fulfilled: async (pipe: optionCallbacksPipe) =>
 			`Successfully formatted a total of ${pipe.files} JS and TS ${
 				pipe.files === 1 ? "file" : "files"

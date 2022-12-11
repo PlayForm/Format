@@ -8,11 +8,11 @@ export interface Options extends OptionsBase {
 export declare const options: {
     files: string;
     pipeline: {
-        wrote: (_file: string, data: string) => Promise<string>;
-        read: (file: string) => Promise<string>;
+        wrote: (current: optionCallbacksFile) => Promise<import("@nikolarhristov/pipeline/dist/options/index.js").optionBuffer>;
+        read: (current: optionCallbacksFile) => Promise<string>;
         passed: () => Promise<true>;
         failed: (inputPath: optionCallbacksFile["inputPath"]) => Promise<string>;
-        accomplished: (inputPath: optionCallbacksFile["inputPath"], outputPath: optionCallbacksFile["outputPath"], _fileSizeBefore: optionCallbacksFile["fileSizeBefore"], _fileSizeAfter: optionCallbacksFile["fileSizeAfter"]) => Promise<string>;
+        accomplished: (current: optionCallbacksFile) => Promise<string>;
         fulfilled: (pipe: optionCallbacksPipe) => Promise<string>;
         changed: (pipe: optionCallbacksPipe) => Promise<optionCallbacksPipe>;
     };

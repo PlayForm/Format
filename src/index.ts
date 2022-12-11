@@ -6,7 +6,10 @@ import type { AstroIntegration } from "astro";
 import { Rome, Distribution } from "@rometools/js-api";
 
 import { pipeline } from "@nikolarhristov/pipeline";
-import type { Options as PipelineOptions } from "@nikolarhristov/pipeline/dist/options/index.js";
+import type {
+	optionCallbacksFile,
+	Options as PipelineOptions,
+} from "@nikolarhristov/pipeline/dist/options/index.js";
 import type { Options as RomeOptions } from "./options/index.js";
 
 import getConfig from "./lib/get-config.js";
@@ -52,9 +55,9 @@ export default (
 				await new pipeline(
 					deepmerge(__options, {
 						pipeline: {
-							wrote: async (file: string, data: string) =>
-								rome.formatContent(data, {
-									filePath: resolve(file),
+							wrote: async (current: optionCallbacksFile) =>
+								rome.formatContent(current.buffer.toString(), {
+									filePath: resolve(current.inputPath),
 								}).content,
 						},
 					} satisfies PipelineOptions)
