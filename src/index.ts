@@ -55,7 +55,7 @@ export default (
 				await new pipeline(
 					deepmerge(__options, {
 						pipeline: {
-							wrote: async (current: optionCallbacksFile) =>
+							wrote: async (current) =>
 								rome.formatContent(current.buffer.toString(), {
 									filePath: resolve(current.inputPath),
 								}).content,

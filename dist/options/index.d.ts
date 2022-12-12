@@ -1,4 +1,4 @@
-import type { Options as OptionsBase, optionCallbacksFile, optionCallbacksPipe } from "@nikolarhristov/pipeline/dist/options/index.js";
+import type { Options as OptionsBase } from "@nikolarhristov/pipeline/dist/options/index.js";
 import type ROME from "./rome.js";
 export type filterFn = (file: string) => boolean;
 export interface Options extends OptionsBase {
@@ -8,13 +8,13 @@ export interface Options extends OptionsBase {
 export declare const options: {
     files: string;
     pipeline: {
-        wrote: (current: optionCallbacksFile) => Promise<import("@nikolarhristov/pipeline/dist/options/index.js").optionBuffer>;
-        read: (current: optionCallbacksFile) => Promise<string>;
+        wrote: (current: import("@nikolarhristov/pipeline/dist/options/index.js").optionCallbacksFile) => Promise<import("@nikolarhristov/pipeline/dist/options/index.js").optionBuffer>;
+        read: (current: import("@nikolarhristov/pipeline/dist/options/index.js").optionCallbacksFile) => Promise<string>;
         passed: () => Promise<true>;
-        failed: (inputPath: optionCallbacksFile["inputPath"]) => Promise<string>;
-        accomplished: (current: optionCallbacksFile) => Promise<string>;
-        fulfilled: (pipe: optionCallbacksPipe) => Promise<string | false>;
-        changed: (pipe: optionCallbacksPipe) => Promise<optionCallbacksPipe>;
+        failed: (current: import("@nikolarhristov/pipeline/dist/options/index.js").optionCallbacksFile) => Promise<string>;
+        accomplished: (current: import("@nikolarhristov/pipeline/dist/options/index.js").optionCallbacksFile) => Promise<string>;
+        fulfilled: (pipe: import("@nikolarhristov/pipeline/dist/options/index.js").optionCallbacksPipe) => Promise<string | false>;
+        changed: (pipe: import("@nikolarhristov/pipeline/dist/options/index.js").optionCallbacksPipe) => Promise<import("@nikolarhristov/pipeline/dist/options/index.js").optionCallbacksPipe>;
     };
 };
 export default options;

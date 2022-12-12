@@ -2,8 +2,6 @@ import { deepmerge } from "deepmerge-ts";
 
 import type {
 	Options as OptionsBase,
-	optionCallbacksFile,
-	optionCallbacksPipe,
 	functionCallbacks,
 } from "@nikolarhristov/pipeline/dist/options/index.js";
 import defaultOptions from "@nikolarhristov/pipeline/dist/options/index.js";
@@ -22,11 +20,11 @@ export interface Options extends OptionsBase {
 export const options = {
 	files: "**/*.{js,mjs,cjs,ts}",
 	pipeline: deepmerge(defaultOptions.pipeline, {
-		failed: async (inputPath: optionCallbacksFile["inputPath"]) =>
-			`Error: Cannot format file ${inputPath}!`,
-		accomplished: async (current: optionCallbacksFile) =>
+		failed: async (current) =>
+			`Error: Cannot format file ${current.inputPath}!`,
+		accomplished: async (current) =>
 			`Formatted ${current.inputPath} in ${current.outputPath}.`,
-		fulfilled: async (pipe: optionCallbacksPipe) =>
+		fulfilled: async (pipe) =>
 			pipe.files > 0
 				? `Successfully formatted a total of ${pipe.files} JS and TS ${
 						pipe.files === 1 ? "file" : "files"
