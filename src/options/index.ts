@@ -13,7 +13,7 @@ import type ROME from "./rome.js";
 export type filterFn = (file: string) => boolean;
 
 export interface Options extends OptionsBase {
-	// rome-ignore lint:
+	// rome-ignore lint/suspicious/noExplicitAny:
 	[key: string]: any;
 
 	rome?: boolean | ROME;
