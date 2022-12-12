@@ -13,7 +13,7 @@ export declare const options: {
         passed: () => Promise<true>;
         failed: (inputPath: optionCallbacksFile["inputPath"]) => Promise<string>;
         accomplished: (current: optionCallbacksFile) => Promise<string>;
-        fulfilled: (pipe: optionCallbacksPipe) => Promise<string>;
+        fulfilled: (pipe: optionCallbacksPipe) => Promise<string | false>;
         changed: (pipe: optionCallbacksPipe) => Promise<optionCallbacksPipe>;
     };
 };
