@@ -1,10 +1,4 @@
-import { deepmerge } from "deepmerge-ts";
-
-import type {
-	Options as OptionsBase,
-	functionCallbacks,
-} from "@nikolarhristov/pipeline/dist/options/index.js";
-import defaultOptions from "@nikolarhristov/pipeline/dist/options/index.js";
+import type { Options as OptionsBase } from "@nikolarhristov/pipeline/dist/options/index.js";
 
 import type ROME from "./rome.js";
 
@@ -17,9 +11,9 @@ export interface Options extends OptionsBase {
 	rome?: boolean | ROME;
 }
 
-export const options = {
+export default {
 	files: "**/*.{js,mjs,cjs,ts}",
-	pipeline: deepmerge(defaultOptions.pipeline, {
+	pipeline: {
 		failed: async (current) =>
 			`Error: Cannot format file ${current.inputPath}!`,
 		accomplished: async (current) =>
@@ -30,7 +24,5 @@ export const options = {
 						pipe.files === 1 ? "file" : "files"
 				  }.`
 				: false,
-	} satisfies functionCallbacks),
-};
-
-export default options;
+	},
+} satisfies Options;

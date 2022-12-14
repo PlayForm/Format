@@ -10,23 +10,23 @@ import type { Options as PipelineOptions } from "@nikolarhristov/pipeline/dist/o
 import type { Options as RomeOptions } from "./options/index.js";
 
 import getConfig from "./lib/get-config.js";
-import defaultOptions from "./options/index.js";
+import defaults from "./options/index.js";
 import type ROME from "./options/rome.js";
 
 export default (
-	_options: PipelineOptions & RomeOptions = {}
+	options: PipelineOptions & RomeOptions = {}
 ): AstroIntegration => {
-	for (const option in _options) {
+	for (const option in options) {
 		if (
-			Object.prototype.hasOwnProperty.call(_options, option) &&
-			_options[option] === true
+			Object.prototype.hasOwnProperty.call(options, option) &&
+			options[option] === true
 		) {
 			// @ts-ignore
-			_options[option] = defaultOptions[option];
+			options[option] = defaults[option];
 		}
 	}
 
-	const __options = deepmerge(defaultOptions, _options);
+	options = deepmerge(defaults, options);
 
 	return {
 		name: "astro-rome",
@@ -37,20 +37,20 @@ export default (
 				});
 
 				if (
-					typeof __options.rome === "undefined" ||
-					__options.rome === null
+					typeof options.rome === "undefined" ||
+					options.rome === null
 				) {
-					__options.rome = JSON.parse(
+					options.rome = JSON.parse(
 						await getConfig("rome.json")
 					) as ROME;
 				}
 
-				if (__options.rome && __options.rome !== true) {
-					rome.applyConfiguration(__options.rome);
+				if (options.rome && options.rome !== true) {
+					rome.applyConfiguration(options.rome);
 				}
 
 				await new pipeline(
-					deepmerge(__options, {
+					deepmerge(options, {
 						pipeline: {
 							wrote: async (current) =>
 								rome.formatContent(current.buffer.toString(), {
