@@ -5,8 +5,8 @@ import type { AstroIntegration } from "astro";
 
 import { Rome, Distribution } from "@rometools/js-api";
 
-import { pipeline } from "@nikolarhristov/pipeline";
-import type { Options as PipelineOptions } from "@nikolarhristov/pipeline/dist/options/index.js";
+import { pipeline } from "files-pipeline";
+import type { Options as PipelineOptions } from "files-pipeline/dist/options/index.js";
 import type { Options as RomeOptions } from "./options/index.js";
 
 import getConfig from "./lib/get-config.js";

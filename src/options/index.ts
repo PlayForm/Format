@@ -1,4 +1,4 @@
-import type { Options as OptionsBase } from "@nikolarhristov/pipeline/dist/options/index.js";
+import type { Options as OptionsBase } from "files-pipeline/dist/options/index.js";
 
 import type ROME from "./rome.js";
 
