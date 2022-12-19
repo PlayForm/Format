@@ -1,11 +1,11 @@
 {
 	"name": "astro-rome",
-	"version": "0.1.4",
+	"version": "0.1.5",
 	"type": "module",
 	"description": "🏛️ AstroJS Rome tools. Format, lint and check your Astro website with Rome.",
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/astro-community/astro-rome.git"
+		"url": "https://github.com/astro-community/astro-rome.git"
 	},
 	"homepage": "https://github.com/astro-community/astro-rome#readme",
 	"bugs": {
@@ -29,17 +29,17 @@
 		"build": "lightrix build src/index.ts src/lib/*.ts src/options/index.ts -c config/esbuild.ts"
 	},
 	"dependencies": {
-		"files-pipeline": "0.0.1",
 		"@rometools/backend-jsonrpc": "11.0.0",
 		"@rometools/js-api": "0.2.0",
 		"@rometools/wasm-nodejs": "11.0.0",
 		"deepmerge-ts": "4.2.2",
+		"files-pipeline": "0.0.2",
 		"rome": "11.0.0"
 	},
 	"devDependencies": {
 		"@lightrix/config": "0.0.7",
 		"@lightrix/scripts": "0.1.2",
-		"astro": "1.7.1",
+		"astro": "1.7.2",
 		"esbuild-plugin-copy": "2.0.1"
 	},
 	"publishConfig": {

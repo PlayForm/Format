@@ -1,8 +1,9 @@
-import type { Options as OptionsBase } from "files-pipeline/dist/options/index.js";
+import defaults from "files-pipeline/dist/options/index.js";
+import deepmerge from "files-pipeline/dist/lib/deepmerge.js";
 
 import type ROME from "./rome.js";
 
-export type filterFn = (file: string) => boolean;
+import type { Options as OptionsBase } from "files-pipeline/dist/options/index.js";
 
 export interface Options extends OptionsBase {
 	// rome-ignore lint/suspicious/noExplicitAny:
@@ -11,8 +12,7 @@ export interface Options extends OptionsBase {
 	rome?: boolean | ROME;
 }
 
-export default {
-	files: "**/*.{js,mjs,cjs,ts}",
+export default deepmerge(defaults, {
 	pipeline: {
 		failed: async (current) =>
 			`Error: Cannot format file ${current.inputPath}!`,
@@ -25,4 +25,4 @@ export default {
 				  }.`
 				: false,
 	},
-} satisfies Options;
+} satisfies Options) as Options;
