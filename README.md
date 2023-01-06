@@ -81,7 +81,7 @@ export default {
 
 > **Warning**
 >
-> The configuration options from the `astro.config.ts` file override the
+> The configuration options from the `astro.config.ts` file will override the
 > `rome.json` config.
 
 If your path is different than `dist` be sure to update it accordingly:

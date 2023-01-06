@@ -1,10 +1,10 @@
 declare const _default: {
-    format: string;
-    minify: boolean;
+    format: "esm";
+    minify: true;
     outdir: string;
-    platform: string;
+    platform: "node";
     target: string;
-    write: boolean;
+    write: true;
     plugins: import("esbuild").Plugin[];
 };
 export default _default;

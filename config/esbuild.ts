@@ -1,4 +1,4 @@
-import type { PluginBuild } from "esbuild";
+import type { BuildOptions, PluginBuild } from "esbuild";
 import * as fs from "fs";
 
 import { copy } from "esbuild-plugin-copy";
@@ -36,4 +36,4 @@ export default {
 			],
 		}),
 	],
-};
+} satisfies BuildOptions;
