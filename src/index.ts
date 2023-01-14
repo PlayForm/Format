@@ -49,6 +49,10 @@ export default (options: Options = {}): AstroIntegration => {
 		name: "astro-rome",
 		hooks: {
 			"astro:build:done": async () => {
+				if (!options["rome"]) {
+					return;
+				}
+
 				const rome = await Rome.create({
 					distribution: Distribution.NODE,
 				});
