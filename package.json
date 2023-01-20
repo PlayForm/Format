@@ -40,7 +40,7 @@
 		"@lightrix/config": "0.0.7",
 		"@lightrix/scripts": "0.1.2",
 		"astro": "1.9.2",
-		"esbuild-plugin-copy": "2.0.1"
+		"esbuild-plugin-copy": "2.0.2"
 	},
 	"publishConfig": {
 		"access": "public"
