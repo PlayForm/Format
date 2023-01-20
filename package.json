@@ -21,7 +21,6 @@
 		"astro",
 		"linter",
 		"rome",
-		"html",
 		"javascript",
 		"performance"
 	],
