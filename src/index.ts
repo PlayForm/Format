@@ -3,7 +3,7 @@ import type {
 	optionPath,
 } from "files-pipeline/dist/options/index.js";
 
-import { Rome, Distribution } from "@rometools/js-api";
+import { Distribution, Rome } from "@rometools/js-api";
 
 import type { AstroIntegration } from "astro";
 
