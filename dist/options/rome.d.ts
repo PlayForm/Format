@@ -1,4 +1,6 @@
 import type { Configuration } from "@rometools/wasm-nodejs";
-export default interface ROME extends Configuration {
+export interface ROME extends Configuration {
     [key: string]: any;
 }
+declare const _default: {};
+export default _default;

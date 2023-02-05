@@ -1,7 +1,7 @@
 import deepmerge from "files-pipeline/dist/lib/deepmerge.js";
 import defaults from "files-pipeline/dist/options/index.js";
 
-import type ROME from "./rome.js";
+import type { ROME } from "./rome.js";
 
 import type { Options as OptionsBase } from "files-pipeline/dist/options/index.js";
 
