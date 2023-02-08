@@ -1,3 +1,7 @@
+## 0.1.7
+
+-   Enhancement
+
 ## 0.1.6
 
 -   Bug fix

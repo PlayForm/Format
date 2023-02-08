@@ -1,6 +1,6 @@
 {
 	"name": "astro-rome",
-	"version": "0.1.6",
+	"version": "0.1.7",
 	"type": "module",
 	"description": "🏛️ AstroJS Rome tools. Format, lint and check your Astro website with Rome.",
 	"repository": {
