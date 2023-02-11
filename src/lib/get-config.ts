@@ -1,6 +1,6 @@
-import { cwd } from "process";
-import { resolve, dirname } from "path";
 import * as fs from "fs";
+import { dirname, resolve } from "path";
+import { cwd } from "process";
 import { fileURLToPath } from "url";
 
 export default async (file: string) => {
