@@ -1,0 +1,143 @@
+{
+	"$schema": "./../../node_modules/rome/configuration_schema.json",
+	"files": {
+		"ignore": ["**/node_modules/**"],
+		"maxSize": null
+	},
+	"formatter": {
+		"enabled": true,
+		"formatWithErrors": false,
+		"ignore": ["**/node_modules/**"],
+		"indentSize": 4,
+		"indentStyle": "tab",
+		"lineWidth": 80
+	},
+	"javascript": {
+		"formatter": {
+			"quoteProperties": "asNeeded",
+			"quoteStyle": "double",
+			"semicolons": "always",
+			"trailingComma": "all"
+		},
+		"globals": []
+	},
+	"linter": {
+		"enabled": true,
+		"ignore": ["**/node_modules/**"],
+		"rules": {
+			"a11y": {
+				"noAutofocus": "error",
+				"noBlankTarget": "error",
+				"noPositiveTabindex": "error",
+				"recommended": true,
+				"useAltText": "error",
+				"useAnchorContent": "error",
+				"useButtonType": "error",
+				"useKeyWithClickEvents": "error",
+				"useKeyWithMouseEvents": "error",
+				"useValidAnchor": "error"
+			},
+			"complexity": {
+				"noExtraBooleanCast": "error",
+				"noMultipleSpacesInRegularExpressionLiterals": "error",
+				"noUselessFragments": "error",
+				"recommended": true,
+				"useFlatMap": "error",
+				"useOptionalChain": "error",
+				"useSimplifiedLogicExpression": "error"
+			},
+			"correctness": {
+				"noChildrenProp": "error",
+				"noConstAssign": "error",
+				"noEmptyPattern": "error",
+				"noNewSymbol": "error",
+				"noRenderReturnValue": "error",
+				"noUndeclaredVariables": "error",
+				"noUnnecessaryContinue": "error",
+				"noUnreachable": "error",
+				"noUnusedVariables": "error",
+				"noVoidElementsWithChildren": "error",
+				"recommended": true,
+				"useValidForDirection": "error"
+			},
+			"nursery": {
+				"noAccessKey": "error",
+				"noBannedTypes": "error",
+				"noConditionalAssignment": "error",
+				"noConstEnum": "error",
+				"noConstructorReturn": "error",
+				"noDistractingElements": "error",
+				"noDuplicateObjectKeys": "error",
+				"noEmptyInterface": "error",
+				"noExtraNonNullAssertion": "error",
+				"noHeaderScope": "error",
+				"noInvalidConstructorSuper": "error",
+				"noNonNullAssertion": "error",
+				"noPrecisionLoss": "error",
+				"noRedundantUseStrict": "error",
+				"noRestrictedGlobals": "error",
+				"noSetterReturn": "error",
+				"noStringCaseMismatch": "error",
+				"noUnsafeFinally": "error",
+				"noVar": "error",
+				"noVoidTypeReturn": "error",
+				"recommended": true,
+				"useAriaPropTypes": "error",
+				"useAriaPropsForRole": "error",
+				"useCamelCase": "error",
+				"useConst": "error",
+				"useDefaultParameterLast": "error",
+				"useDefaultSwitchClauseLast": "error",
+				"useEnumInitializers": "error",
+				"useExhaustiveDependencies": "error",
+				"useExponentiationOperator": "error",
+				"useNumericLiterals": "error"
+			},
+			"performance": {
+				"noDelete": "error",
+				"recommended": true
+			},
+			"recommended": true,
+			"security": {
+				"noDangerouslySetInnerHtml": "error",
+				"noDangerouslySetInnerHtmlWithChildren": "error",
+				"recommended": true
+			},
+			"style": {
+				"noArguments": "error",
+				"noImplicitBoolean": "error",
+				"noNegationElse": "error",
+				"noShoutyConstants": "error",
+				"noUnusedTemplateLiteral": "error",
+				"recommended": true,
+				"useBlockStatements": "error",
+				"useFragmentSyntax": "error",
+				"useSelfClosingElements": "error",
+				"useShorthandArrayType": "error",
+				"useSingleCaseStatement": "error",
+				"useSingleVarDeclarator": "error",
+				"useTemplate": "error",
+				"useWhile": "error"
+			},
+			"suspicious": {
+				"noArrayIndexKey": "error",
+				"noAsyncPromiseExecutor": "error",
+				"noCatchAssign": "error",
+				"noCommentText": "error",
+				"noCompareNegZero": "error",
+				"noDebugger": "error",
+				"noDoubleEquals": "error",
+				"noDuplicateParameters": "error",
+				"noExplicitAny": "error",
+				"noFunctionAssign": "error",
+				"noImportAssign": "error",
+				"noLabelVar": "error",
+				"noShadowRestrictedNames": "error",
+				"noSparseArray": "error",
+				"noUnsafeNegation": "error",
+				"recommended": true,
+				"useValidTypeof": "error"
+			}
+		}
+	}
+}
