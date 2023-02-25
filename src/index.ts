@@ -51,10 +51,6 @@ export default (options: Options = {}): AstroIntegration => {
 					paths.add(dir);
 				}
 
-				if (!options["rome"]) {
-					return;
-				}
-
 				const rome = await Rome.create({
 					distribution: Distribution.NODE,
 				});
@@ -79,9 +75,9 @@ export default (options: Options = {}): AstroIntegration => {
 						).not(options["exclude"])
 					).pipeline(
 						deepmerge(defaults["pipeline"], {
-							wrote: async (current) =>
-								rome.formatContent(current.buffer.toString(), {
-									filePath: resolve(current.inputPath),
+							wrote: async (ongoing) =>
+								rome.formatContent(ongoing.buffer.toString(), {
+									filePath: resolve(ongoing.inputPath),
 								}).content,
 						} satisfies executions)
 					);

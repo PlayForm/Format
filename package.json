@@ -25,7 +25,7 @@
 		"performance"
 	],
 	"scripts": {
-		"build": "lightrix build src/index.ts src/lib/*.ts src/options/*.ts -c config/esbuild.ts"
+		"build": "lightrix build src/**/*.ts -c config/esbuild.ts"
 	},
 	"dependencies": {
 		"@rometools/backend-jsonrpc": "11.0.0",

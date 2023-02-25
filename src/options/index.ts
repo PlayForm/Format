@@ -14,14 +14,14 @@ export interface Options extends OptionsBase {
 
 export default deepmerge(defaults, {
 	pipeline: {
-		failed: async (current) =>
-			`Error: Cannot format file ${current.inputPath}!`,
-		accomplished: async (current) =>
-			`Formatted ${current.inputPath} in ${current.outputPath}.`,
-		fulfilled: async (pipe) =>
-			pipe.files > 0
-				? `Successfully formatted a total of ${pipe.files} JS and TS ${
-						pipe.files === 1 ? "file" : "files"
+		failed: async (ongoing) =>
+			`Error: Cannot format file ${ongoing.inputPath}!`,
+		accomplished: async (ongoing) =>
+			`Formatted ${ongoing.inputPath} in ${ongoing.outputPath}.`,
+		fulfilled: async (plan) =>
+			plan.files > 0
+				? `Successfully formatted a total of ${plan.files} JS and TS ${
+						plan.files === 1 ? "file" : "files"
 				  }.`
 				: false,
 	},
