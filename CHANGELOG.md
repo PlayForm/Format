@@ -1,3 +1,7 @@
+## 0.1.8
+
+-   Updates files-pipeline component
+
 ## 0.1.7
 
 -   Enhancement
