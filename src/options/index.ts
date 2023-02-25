@@ -20,7 +20,7 @@ export default deepmerge(defaults, {
 			`Formatted ${ongoing.inputPath} in ${ongoing.outputPath}.`,
 		fulfilled: async (plan) =>
 			plan.files > 0
-				? `Successfully formatted a total of ${plan.files} JS and TS ${
+				? `Successfully formatted a total of ${plan.files} JS and TS ${ 
 						plan.files === 1 ? "file" : "files"
 				  }.`
 				: false,
