@@ -1,7 +1,4 @@
-import type {
-	executions,
-	optionPath,
-} from "files-pipe/dist/options/index.js";
+import type { executions, optionPath } from "files-pipe/dist/options/index.js";
 
 import { Distribution, Rome } from "@rometools/js-api";
 
@@ -47,40 +44,49 @@ export default (options: Options = {}): AstroIntegration => {
 		name: "astro-rome",
 		hooks: {
 			"astro:build:done": async ({ dir }) => {
-				if (!paths.size) {
-					paths.add(dir);
-				}
+				try {
+					if (!paths.size) {
+						paths.add(dir);
+					}
 
-				const rome = await Rome.create({
-					distribution: Distribution.NODE,
-				});
+					const rome = await Rome.create({
+						distribution: Distribution.NODE,
+					});
 
-				if (
-					typeof options.rome === "undefined" ||
-					options.rome === null
-				) {
-					options.rome = JSON.parse(await getConfig("rome.json"));
-				}
+					if (
+						typeof options.rome === "undefined" ||
+						options.rome === null
+					) {
+						options.rome = JSON.parse(await getConfig("rome.json"));
+					}
 
-				if (options.rome && options.rome !== true) {
-					rome.applyConfiguration(options.rome);
-				}
+					if (options.rome && options.rome !== true) {
+						rome.applyConfiguration(options.rome);
+					}
 
-				for (const path of paths) {
-					await (
+					for (const path of paths) {
 						await (
 							await (
-								await new files(options["logger"]).in(path)
-							).by("**/*.{js,mjs,cjs,ts}")
-						).not(options["exclude"])
-					).pipe(
-						deepmerge(defaults["pipe"], {
-							wrote: async (ongoing) =>
-								rome.formatContent(ongoing.buffer.toString(), {
-									filePath: resolve(ongoing.inputPath),
-								}).content,
-						} satisfies executions)
-					);
+								await (
+									await new files(options["logger"]).in(path)
+								).by("**/*.{js,mjs,cjs,ts}")
+							).not(options["exclude"])
+						).pipe(
+							deepmerge(defaults["pipe"], {
+								wrote: async (ongoing) =>
+									rome.formatContent(
+										ongoing.buffer.toString(),
+										{
+											filePath: resolve(
+												ongoing.inputPath
+											),
+										}
+									).content,
+							} satisfies executions)
+						);
+					}
+				} catch (error) {
+					console.log(error);
 				}
 			},
 		},

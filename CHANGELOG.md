@@ -1,3 +1,7 @@
+## 0.1.10
+
+-   Bug fix
+
 ## 0.1.9
 
 -   Switches to the files-pipe component
