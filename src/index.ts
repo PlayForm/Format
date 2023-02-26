@@ -16,7 +16,6 @@ import getConfig from "./lib/get-config.js";
 
 import deepmerge from "files-pipe/dist/lib/deepmerge.js";
 
-
 export default (options: Options = {}): AstroIntegration => {
 	for (const option in options) {
 		if (
@@ -62,7 +61,7 @@ export default (options: Options = {}): AstroIntegration => {
 					}
 
 					if (options.rome && options.rome !== true) {
-						delete options.rome['$schema'];
+						delete options.rome["$schema"];
 						rome.applyConfiguration(options.rome);
 					}
 
