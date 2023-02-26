@@ -1,3 +1,7 @@
+## 0.1.9
+
+-   Switches to the files-pipe component
+
 ## 0.1.8
 
 -   Updates files-pipeline component
