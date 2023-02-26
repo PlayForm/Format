@@ -1,9 +1,9 @@
-import deepmerge from "files-pipeline/dist/lib/deepmerge.js";
-import defaults from "files-pipeline/dist/options/index.js";
+import deepmerge from "files-pipe/dist/lib/deepmerge.js";
+import defaults from "files-pipe/dist/options/index.js";
 
 import type { ROME } from "./rome.js";
 
-import type { Options as OptionsBase } from "files-pipeline/dist/options/index.js";
+import type { Options as OptionsBase } from "files-pipe/dist/options/index.js";
 
 export interface Options extends OptionsBase {
 	// rome-ignore lint/suspicious/noExplicitAny:
@@ -13,14 +13,14 @@ export interface Options extends OptionsBase {
 }
 
 export default deepmerge(defaults, {
-	pipeline: {
+	pipe: {
 		failed: async (ongoing) =>
 			`Error: Cannot format file ${ongoing.inputPath}!`,
 		accomplished: async (ongoing) =>
 			`Formatted ${ongoing.inputPath} in ${ongoing.outputPath}.`,
 		fulfilled: async (plan) =>
 			plan.files > 0
-				? `Successfully formatted a total of ${plan.files} JS and TS ${ 
+				? `Successfully formatted a total of ${plan.files} JS and TS ${
 						plan.files === 1 ? "file" : "files"
 				  }.`
 				: false,

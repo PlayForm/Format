@@ -1,7 +1,7 @@
 import type {
 	executions,
 	optionPath,
-} from "files-pipeline/dist/options/index.js";
+} from "files-pipe/dist/options/index.js";
 
 import { Distribution, Rome } from "@rometools/js-api";
 
@@ -13,11 +13,11 @@ import defaults from "./options/index.js";
 
 import { resolve } from "path";
 
-import { files } from "files-pipeline";
+import { files } from "files-pipe";
 
 import getConfig from "./lib/get-config.js";
 
-import deepmerge from "files-pipeline/dist/lib/deepmerge.js";
+import deepmerge from "files-pipe/dist/lib/deepmerge.js";
 
 export default (options: Options = {}): AstroIntegration => {
 	for (const option in options) {
@@ -73,8 +73,8 @@ export default (options: Options = {}): AstroIntegration => {
 								await new files(options["logger"]).in(path)
 							).by("**/*.{js,mjs,cjs,ts}")
 						).not(options["exclude"])
-					).pipeline(
-						deepmerge(defaults["pipeline"], {
+					).pipe(
+						deepmerge(defaults["pipe"], {
 							wrote: async (ongoing) =>
 								rome.formatContent(ongoing.buffer.toString(), {
 									filePath: resolve(ongoing.inputPath),
