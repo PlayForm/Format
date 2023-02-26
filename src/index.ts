@@ -5,7 +5,6 @@ import { Distribution, Rome } from "@rometools/js-api";
 import type { AstroIntegration } from "astro";
 
 import type { Options } from "./options/index.js";
-import type { ROME } from "./options/rome.js";
 
 import defaults from "./options/index.js";
 
@@ -59,7 +58,7 @@ export default (options: Options = {}): AstroIntegration => {
 						typeof options.rome === "undefined" ||
 						options.rome === null
 					) {
-						options.rome = JSON.parse(await getConfig("rome.json")) as ROME;
+						options.rome = JSON.parse(await getConfig("rome.json"));
 					}
 
 					if (options.rome && options.rome !== true) {
