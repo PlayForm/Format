@@ -5,6 +5,7 @@ import { Distribution, Rome } from "@rometools/js-api";
 import type { AstroIntegration } from "astro";
 
 import type { Options } from "./options/index.js";
+import type { ROME } from "./options/rome.js";
 
 import defaults from "./options/index.js";
 
@@ -15,6 +16,7 @@ import { files } from "files-pipe";
 import getConfig from "./lib/get-config.js";
 
 import deepmerge from "files-pipe/dist/lib/deepmerge.js";
+
 
 export default (options: Options = {}): AstroIntegration => {
 	for (const option in options) {
@@ -57,10 +59,11 @@ export default (options: Options = {}): AstroIntegration => {
 						typeof options.rome === "undefined" ||
 						options.rome === null
 					) {
-						options.rome = JSON.parse(await getConfig("rome.json"));
+						options.rome = JSON.parse(await getConfig("rome.json")) as ROME;
 					}
 
 					if (options.rome && options.rome !== true) {
+						delete options.rome['$schema'];
 						rome.applyConfiguration(options.rome);
 					}
 

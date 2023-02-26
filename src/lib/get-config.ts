@@ -18,7 +18,9 @@ export default async (file: string) => {
 	try {
 		await fs.promises.access(fileWorking, fs.constants.R_OK);
 		config = fs.readFileSync(fileWorking, "utf-8").toString();
-	} catch (_error) {}
+	} catch (_error) {
+		console.log(_error);
+	}
 
 	return config;
 };
