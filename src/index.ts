@@ -61,7 +61,7 @@ export default (options: Options = {}): AstroIntegration => {
 					}
 
 					if (options.rome && options.rome !== true) {
-						delete options.rome["$schema"];
+						options.rome["$schema"] = undefined;
 						rome.applyConfiguration(options.rome);
 					}
 
