@@ -1,4 +1,4 @@
-import type { executions, optionPath } from "files-pipe/dist/options/index.js";
+import type { executions, optionPath } from "files-pipe/options/index.js";
 
 import { Distribution, Rome } from "@rometools/js-api";
 
@@ -14,7 +14,7 @@ import { files } from "files-pipe";
 
 import getConfig from "./lib/get-config.js";
 
-import deepmerge from "files-pipe/dist/lib/deepmerge.js";
+import deepmerge from "files-pipe/lib/deepmerge.js";
 
 export default (options: Options = {}): AstroIntegration => {
 	for (const option in options) {
