@@ -26,8 +26,14 @@ follow the prompts:
 ```sh
 # Using NPM
 npx astro add astro-rome
+```
+
+```sh
 # Using Yarn
 yarn astro add astro-rome
+```
+
+```sh
 # Using PNPM
 pnpx astro add astro-rome
 ```
