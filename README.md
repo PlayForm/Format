@@ -23,17 +23,17 @@ command will:
 To install `astro-rome`, run the following from your project directory and
 follow the prompts:
 
-#### Using NPM
+ Using NPM:
 ```sh
 npx astro add astro-rome
 ```
 
-#### Using Yarn
+ Using Yarn:
 ```sh
 yarn astro add astro-rome
 ```
 
-#### Using PNPM
+ Using PNPM:
 ```sh
 pnpx astro add astro-rome
 ```
