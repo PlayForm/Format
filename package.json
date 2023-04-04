@@ -31,7 +31,7 @@
 		"@rometools/backend-jsonrpc": "12.0.0",
 		"@rometools/js-api": "0.3.0",
 		"@rometools/wasm-nodejs": "12.0.0",
-		"deepmerge-ts": "5.0.0",
+		"deepmerge-ts": "5.1.0",
 		"files-pipe": "0.0.1",
 		"rome": "12.0.0"
 	},
