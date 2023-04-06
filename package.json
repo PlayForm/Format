@@ -31,14 +31,14 @@
 		"@rometools/backend-jsonrpc": "12.0.0",
 		"@rometools/js-api": "0.3.0",
 		"@rometools/wasm-nodejs": "12.0.0",
-		"deepmerge-ts": "5.0.0",
+		"deepmerge-ts": "5.1.0",
 		"files-pipe": "0.0.1",
 		"rome": "12.0.0"
 	},
 	"devDependencies": {
-		"@lightrix/config": "0.0.7",
+		"@lightrix/config": "0.0.8",
 		"@lightrix/scripts": "0.1.6",
-		"astro": "2.1.8",
+		"astro": "2.2.0",
 		"esbuild-plugin-copy": "2.1.1"
 	},
 	"publishConfig": {
