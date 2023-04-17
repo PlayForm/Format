@@ -1,5 +1,5 @@
-import * as fs from "fs";
 import { copy } from "esbuild-plugin-copy";
+import { rm } from "fs/promises";
 const outDir = "dist";
 export default {
     format: "esm",
@@ -14,7 +14,7 @@ export default {
             setup(build) {
                 build.onStart(async () => {
                     try {
-                        await fs.promises.rm(outDir, {
+                        await rm(outDir, {
                             recursive: true,
                         });
                     }

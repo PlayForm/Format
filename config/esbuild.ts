@@ -1,7 +1,6 @@
 import type { BuildOptions, PluginBuild } from "esbuild";
-import * as fs from "fs";
-
 import { copy } from "esbuild-plugin-copy";
+import { rm } from "fs/promises";
 
 const outDir = "dist";
 
@@ -18,7 +17,7 @@ export default {
 			setup(build: PluginBuild) {
 				build.onStart(async () => {
 					try {
-						await fs.promises.rm(outDir, {
+						await rm(outDir, {
 							recursive: true,
 						});
 					} catch (_error) {}
