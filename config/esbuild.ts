@@ -25,7 +25,6 @@ export default {
 				});
 			},
 		},
-
 		copy({
 			resolveFrom: "out",
 			assets: [
