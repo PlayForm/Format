@@ -32,6 +32,7 @@ export default (options: Options = {}): AstroIntegration => {
 			}
 		}
 	}
+
 	return {
 		name: "astro-rome",
 		hooks: {
