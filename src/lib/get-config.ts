@@ -1,4 +1,5 @@
-import { access, constants, readFile } from "fs/promises";
+import { constants } from "fs";
+import { access, readFile } from "fs/promises";
 import { dirname, resolve } from "path";
 import { cwd } from "process";
 import { fileURLToPath } from "url";
