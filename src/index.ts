@@ -67,15 +67,21 @@ export default (options: Options = {}): AstroIntegration => {
 							).not(options["exclude"])
 						).pipe(
 							deepmerge(defaults["pipe"], {
-								wrote: async (ongoing) =>
-									rome.formatContent(
-										ongoing.buffer.toString(),
-										{
-											filePath: resolve(
-												ongoing.inputPath
-											),
-										}
-									).content,
+								wrote: async (ongoing) => {
+									try {
+										return rome.formatContent(
+											ongoing.buffer.toString(),
+											{
+												filePath: resolve(
+													ongoing.inputPath
+												),
+											}
+										).content;
+									} catch (error) {
+										console.log(error);
+										return ongoing.buffer;
+									}
+								},
 							} satisfies executions)
 						);
 					}
