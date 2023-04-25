@@ -83,7 +83,6 @@
 				"noUnusedTemplateLiteral": "error",
 				"recommended": true,
 				"useBlockStatements": "error",
-				"useConst": "error",
 				"useDefaultParameterLast": "error",
 				"useEnumInitializers": "error",
 				"useExponentiationOperator": "error",
