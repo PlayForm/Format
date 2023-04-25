@@ -79,7 +79,6 @@
 			"style": {
 				"noImplicitBoolean": "error",
 				"noNegationElse": "error",
-				"noNonNullAssertion": "error",
 				"noShoutyConstants": "error",
 				"noUnusedTemplateLiteral": "error",
 				"noVar": "error",
