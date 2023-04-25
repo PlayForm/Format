@@ -56,7 +56,6 @@
 				"noEmptyPattern": "error",
 				"noNewSymbol": "error",
 				"noRenderReturnValue": "error",
-				"noSetterReturn": "error",
 				"noStringCaseMismatch": "error",
 				"noUndeclaredVariables": "error",
 				"noUnnecessaryContinue": "error",
