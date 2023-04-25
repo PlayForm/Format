@@ -78,7 +78,6 @@ export default (options: Options = {}): AstroIntegration => {
 											}
 										).content;
 									} catch (error) {
-										console.log(error);
 										return ongoing.buffer;
 									}
 								},
