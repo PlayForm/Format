@@ -42,7 +42,6 @@
 				"useAltText": "error",
 				"useAnchorContent": "error",
 				"useButtonType": "error",
-				"useHtmlLang": "error",
 				"useKeyWithClickEvents": "error",
 				"useKeyWithMouseEvents": "error",
 				"useValidAnchor": "error"
