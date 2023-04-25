@@ -61,8 +61,7 @@
 				"noUnreachable": "error",
 				"noUnusedVariables": "error",
 				"noVoidElementsWithChildren": "error",
-				"recommended": true,
-				"useValidForDirection": "error"
+				"recommended": true
 			},
 			"nursery": {
 				"noAssignInExpressions": "error",
