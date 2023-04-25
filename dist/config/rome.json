@@ -21,7 +21,6 @@
 		"formatter": {
 			"quoteProperties": "asNeeded",
 			"quoteStyle": "double",
-			"semicolons": "always",
 			"trailingComma": "all"
 		},
 		"globals": []
