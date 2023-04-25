@@ -70,10 +70,6 @@
 				"useCamelCase": "error",
 				"useExhaustiveDependencies": "error"
 			},
-			"performance": {
-				"noDelete": "error",
-				"recommended": true
-			},
 			"recommended": true,
 			"security": {
 				"noDangerouslySetInnerHtml": "error",
