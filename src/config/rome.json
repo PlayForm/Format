@@ -84,7 +84,6 @@
 				"recommended": true,
 				"useBlockStatements": "error",
 				"useFragmentSyntax": "error",
-				"useNumericLiterals": "error",
 				"useSelfClosingElements": "error",
 				"useShorthandArrayType": "error",
 				"useSingleCaseStatement": "error",
