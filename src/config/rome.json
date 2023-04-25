@@ -69,7 +69,6 @@
 				"recommended": true,
 				"useCamelCase": "error",
 				"useExhaustiveDependencies": "error",
-				"useIsNan": "error",
 				"useMediaCaption": "error",
 				"useNamespaceKeyword": "error",
 				"useValidAriaProps": "error",
