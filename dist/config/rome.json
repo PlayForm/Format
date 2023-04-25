@@ -61,7 +61,6 @@
 				"noUnreachable": "error",
 				"noUnusedVariables": "error",
 				"noVoidElementsWithChildren": "error",
-				"noVoidTypeReturn": "error",
 				"recommended": true,
 				"useValidForDirection": "error"
 			},
