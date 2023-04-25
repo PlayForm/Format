@@ -1,13 +1,6 @@
 {
 	"$schema": "./../../node_modules/rome/configuration_schema.json",
 	"files": {
-		"ignore": [
-			"**/node_modules/**",
-			"**/dist/**",
-			"**/build/**",
-			"**/output/**",
-			"**/.astro/**"
-		],
 		"maxSize": 5000000
 	},
 	"formatter": {
@@ -28,7 +21,6 @@
 		"formatter": {
 			"quoteProperties": "asNeeded",
 			"quoteStyle": "double",
-			"semicolons": "always",
 			"trailingComma": "all"
 		},
 		"globals": []
@@ -44,10 +36,7 @@
 		],
 		"rules": {
 			"a11y": {
-				"noAccessKey": "error",
 				"noAutofocus": "error",
-				"noBlankTarget": "error",
-				"noDistractingElements": "error",
 				"noHeaderScope": "error",
 				"noPositiveTabindex": "error",
 				"recommended": true,
