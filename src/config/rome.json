@@ -69,7 +69,6 @@
 				"recommended": true,
 				"useCamelCase": "error",
 				"useExhaustiveDependencies": "error",
-				"useValidAriaProps": "error",
 				"useValidLang": "error",
 				"useYield": "error"
 			},
