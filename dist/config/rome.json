@@ -66,7 +66,6 @@
 			"nursery": {
 				"noBannedTypes": "error",
 				"noInvalidConstructorSuper": "error",
-				"noParameterProperties": "error",
 				"noPrototypeBuiltins": "error",
 				"noRedeclare": "error",
 				"noRedundantAlt": "error",
