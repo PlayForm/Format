@@ -88,31 +88,6 @@
 				"useShorthandArrayType": "error",
 				"useSingleVarDeclarator": "error",
 				"useTemplate": "error"
-			},
-			"suspicious": {
-				"noArrayIndexKey": "error",
-				"noAsyncPromiseExecutor": "error",
-				"noCatchAssign": "error",
-				"noCommentText": "error",
-				"noCompareNegZero": "error",
-				"noConstEnum": "error",
-				"noDebugger": "error",
-				"noDoubleEquals": "error",
-				"noDuplicateObjectKeys": "error",
-				"noDuplicateParameters": "error",
-				"noEmptyInterface": "error",
-				"noExplicitAny": "error",
-				"noExtraNonNullAssertion": "error",
-				"noFunctionAssign": "error",
-				"noImportAssign": "error",
-				"noLabelVar": "error",
-				"noRedundantUseStrict": "error",
-				"noShadowRestrictedNames": "error",
-				"noSparseArray": "error",
-				"noUnsafeNegation": "error",
-				"recommended": true,
-				"useDefaultSwitchClauseLast": "error",
-				"useValidTypeof": "error"
 			}
 		}
 	}
