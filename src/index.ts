@@ -1,4 +1,4 @@
-import { Distribution, Rome } from "@rometools/js-api";
+import { Configuration, Distribution, Rome } from "@rometools/js-api";
 import type { AstroIntegration } from "astro";
 import { files } from "files-pipe";
 import deepmerge from "files-pipe/dist/lib/deepmerge.js";
@@ -55,7 +55,7 @@ export default (options: Options = {}): AstroIntegration => {
 
 					if (options.rome && options.rome !== true) {
 						options.rome["$schema"] = undefined;
-						rome.applyConfiguration(options.rome);
+						rome.applyConfiguration(options.rome as Configuration);
 					}
 
 					for (const path of paths) {
