@@ -65,7 +65,6 @@
 			},
 			"nursery": {
 				"noBannedTypes": "error",
-				"noInnerDeclarations": "error",
 				"noInvalidConstructorSuper": "error",
 				"noNamespace": "error",
 				"noNoninteractiveElementToInteractiveRole": "error",
