@@ -48,7 +48,6 @@
 			},
 			"complexity": {
 				"noExtraBooleanCast": "error",
-				"noUselessFragments": "error",
 				"recommended": true,
 				"useFlatMap": "error",
 				"useOptionalChain": "error",
