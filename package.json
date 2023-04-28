@@ -1,47 +1,47 @@
 {
-    "bugs": {
-        "url": "https://github.com/astro-community/astro-rome/issues"
-    },
-    "dependencies": {
-        "@lightrix/config": "0.0.11",
-        "@lightrix/scripts": "1.0.3",
-        "@rometools/backend-jsonrpc": "12.0.0",
-        "@rometools/js-api": "0.3.0",
-        "@rometools/wasm-nodejs": "12.0.0",
-        "deepmerge-ts": "5.1.0",
-        "files-pipe": "0.0.4",
-        "rome": "12.0.0"
-    },
-    "description": "🏛️ AstroJS Rome tools. Format, lint and check your Astro website with Rome.",
-    "devDependencies": {
-        "astro": "2.3.2",
-        "esbuild-plugin-copy": "2.1.1"
-    },
-    "homepage": "https://github.com/astro-community/astro-rome#readme",
-    "keywords": [
-        "astro-integration",
-        "astro-component",
-        "astro",
-        "linter",
-        "rome",
-        "javascript",
-        "performance"
-    ],
-    "license": "MIT",
-    "main": "./dist/index.js",
-    "name": "astro-rome",
-    "private": false,
-    "publishConfig": {
-        "access": "public"
-    },
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/astro-community/astro-rome.git"
-    },
-    "scripts": {
-        "prepublishOnly": "lightrix build 'src/**/*.ts' -c config/esbuild.ts"
-    },
-    "type": "module",
-    "types": "./dist/index.d.ts",
-    "version": "0.1.15"
+	"name": "astro-rome",
+	"version": "0.1.15",
+	"type": "module",
+	"description": "🏛️ AstroJS Rome tools. Format, lint and check your Astro website with Rome.",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/astro-community/astro-rome.git"
+	},
+	"homepage": "https://github.com/astro-community/astro-rome#readme",
+	"bugs": {
+		"url": "https://github.com/astro-community/astro-rome/issues"
+	},
+	"license": "MIT",
+	"private": false,
+	"main": "./dist/index.js",
+	"types": "./dist/index.d.ts",
+	"keywords": [
+		"astro-integration",
+		"astro-component",
+		"astro",
+		"linter",
+		"rome",
+		"javascript",
+		"performance"
+	],
+	"scripts": {
+		"prepublishOnly": "lightrix build 'src/**/*.ts' -c config/esbuild.ts"
+	},
+	"dependencies": {
+		"@lightrix/config": "0.0.11",
+		"@lightrix/scripts": "1.0.3",
+		"@rometools/backend-jsonrpc": "12.0.0",
+		"@rometools/js-api": "0.3.0",
+		"@rometools/wasm-nodejs": "12.0.0",
+		"deepmerge-ts": "5.1.0",
+		"files-pipe": "0.0.4",
+		"rome": "12.0.0"
+	},
+	"devDependencies": {
+		"astro": "2.3.2",
+		"esbuild-plugin-copy": "2.1.1"
+	},
+	"publishConfig": {
+		"access": "public"
+	}
 }
