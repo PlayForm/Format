@@ -38,7 +38,7 @@
 		"rome": "12.0.0"
 	},
 	"devDependencies": {
-		"astro": "2.3.3",
+		"astro": "2.3.4",
 		"esbuild-plugin-copy": "2.1.1"
 	},
 	"publishConfig": {
