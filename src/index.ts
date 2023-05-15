@@ -18,16 +18,16 @@ export default (options: Options = {}): AstroIntegration => {
 		}
 	}
 
-	options = deepmerge(defaults, options);
+	const _options = deepmerge(defaults, options);
 
 	const paths = new Set<optionPath>();
 
-	if (typeof options["path"] !== "undefined") {
+	if (typeof _options["path"] !== "undefined") {
 		if (
-			options["path"] instanceof Array ||
-			options["path"] instanceof Set
+			_options["path"] instanceof Array ||
+			_options["path"] instanceof Set
 		) {
-			for (const path of options["path"]) {
+			for (const path of _options["path"]) {
 				paths.add(path);
 			}
 		}
@@ -47,24 +47,24 @@ export default (options: Options = {}): AstroIntegration => {
 					});
 
 					if (
-						typeof options.rome === "undefined" ||
-						options.rome === null
+						typeof _options.rome === "undefined" ||
+						_options.rome === null
 					) {
-						options.rome = JSON.parse(await getConfig("rome.json"));
+						_options.rome = JSON.parse(await getConfig("rome.json"));
 					}
 
-					if (options.rome && options.rome !== true) {
-						options.rome["$schema"] = undefined;
-						rome.applyConfiguration(options.rome as Configuration);
+					if (_options.rome && _options.rome !== true) {
+						_options.rome["$schema"] = undefined;
+						rome.applyConfiguration(_options.rome as Configuration);
 					}
 
 					for (const path of paths) {
 						await (
 							await (
 								await (
-									await new files(options["logger"]).in(path)
+									await new files(_options["logger"]).in(path)
 								).by("**/*.{js,mjs,cjs,ts}")
-							).not(options["exclude"])
+							).not(_options["exclude"])
 						).pipe(
 							deepmerge(defaults["pipe"], {
 								wrote: async (ongoing) => {
