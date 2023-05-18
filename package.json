@@ -32,7 +32,7 @@
 		"@lightrix/scripts": "1.0.3",
 		"@rometools/backend-jsonrpc": "12.1.0",
 		"@rometools/js-api": "0.3.0",
-		"@rometools/wasm-nodejs": "12.1.0",
+		"@rometools/wasm-nodejs": "12.1.1",
 		"deepmerge-ts": "5.1.0",
 		"files-pipe": "0.0.4",
 		"rome": "12.1.0"
