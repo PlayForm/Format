@@ -30,7 +30,7 @@
 	"dependencies": {
 		"@lightrix/config": "0.0.11",
 		"@lightrix/scripts": "1.0.3",
-		"@rometools/backend-jsonrpc": "12.1.0",
+		"@rometools/backend-jsonrpc": "12.1.1",
 		"@rometools/js-api": "0.3.0",
 		"@rometools/wasm-nodejs": "12.1.0",
 		"deepmerge-ts": "5.1.0",
