@@ -35,7 +35,7 @@
 		"@rometools/wasm-nodejs": "12.1.1",
 		"deepmerge-ts": "5.1.0",
 		"files-pipe": "0.0.4",
-		"rome": "12.1.1"
+		"rome": "12.1.2"
 	},
 	"devDependencies": {
 		"astro": "2.4.5",
