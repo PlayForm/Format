@@ -4,6 +4,7 @@ import defaults from "files-pipe/dist/options/index.js";
 import type { ROME } from "./rome.js";
 
 export interface Options extends OptionsBase {
+	// rome-ignore lint/suspicious/noExplicitAny:
 	[key: string]: any;
 
 	rome?: boolean | ROME;
