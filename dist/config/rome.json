@@ -52,7 +52,6 @@
 			"nursery": {
 				"noBannedTypes": "error",
 				"noInvalidConstructorSuper": "error",
-				"noRedeclare": "error",
 				"noRedundantAlt": "error",
 				"noRestrictedGlobals": "error",
 				"noSelfAssign": "error",
