@@ -50,7 +50,6 @@
                 "recommended": true
             },
             "nursery": {
-                "noAssignInExpressions": "error",
                 "noBannedTypes": "error",
                 "noClassAssign": "error",
                 "noCommaOperator": "error",
