@@ -51,7 +51,6 @@
             },
             "nursery": {
                 "noBannedTypes": "error",
-                "noDuplicateCase": "error",
                 "noDuplicateClassMembers": "error",
                 "noDuplicateJsxProps": "error",
                 "noExtraLabels": "error",
