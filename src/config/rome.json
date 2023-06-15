@@ -34,7 +34,6 @@
 			},
 			"complexity": {
 				"noExtraBooleanCast": "error",
-				"noMultipleSpacesInRegularExpressionLiterals": "error",
 				"noUselessFragments": "error",
 				"recommended": true,
 				"useFlatMap": "error",
