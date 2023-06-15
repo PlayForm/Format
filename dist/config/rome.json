@@ -35,7 +35,6 @@
 			"complexity": {
 				"noExtraBooleanCast": "error",
 				"recommended": true,
-				"useFlatMap": "error",
 				"useOptionalChain": "error",
 				"useSimplifiedLogicExpression": "error"
 			},
