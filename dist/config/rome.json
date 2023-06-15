@@ -67,7 +67,6 @@
                 "noNegationElse": "error",
                 "noShoutyConstants": "error",
                 "noUnusedTemplateLiteral": "error",
-                "noVar": "error",
                 "recommended": true,
                 "useBlockStatements": "error",
                 "useConst": "error",
