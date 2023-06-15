@@ -52,7 +52,6 @@
 			"nursery": {
 				"noBannedTypes": "error",
 				"noInvalidConstructorSuper": "error",
-				"noUnreachableSuper": "error",
 				"noUnsafeOptionalChaining": "error",
 				"noUnusedLabels": "error",
 				"noUselessCatch": "error",
