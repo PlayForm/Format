@@ -35,16 +35,12 @@
 			"complexity": {
 				"noExtraBooleanCast": "error",
 				"recommended": true,
-				"useOptionalChain": "error",
 				"useSimplifiedLogicExpression": "error"
 			},
 			"correctness": {
 				"noChildrenProp": "error",
-				"noConstAssign": "error",
-				"noConstructorReturn": "error",
 				"noEmptyPattern": "error",
 				"noNewSymbol": "error",
-				"noPrecisionLoss": "error",
 				"noRenderReturnValue": "error",
 				"noSetterReturn": "error",
 				"noStringCaseMismatch": "error",
