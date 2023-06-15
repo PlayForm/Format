@@ -52,7 +52,6 @@
 			"nursery": {
 				"noBannedTypes": "error",
 				"noInvalidConstructorSuper": "error",
-				"noNoninteractiveElementToInteractiveRole": "error",
 				"noParameterAssign": "error",
 				"noParameterProperties": "error",
 				"noPrototypeBuiltins": "error",
