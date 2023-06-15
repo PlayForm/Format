@@ -54,8 +54,7 @@
                 "noInvalidConstructorSuper": "error",
                 "recommended": true,
                 "useCamelCase": "error",
-                "useExhaustiveDependencies": "error",
-                "useYield": "error"
+                "useExhaustiveDependencies": "error"
             },
             "performance": {
                 "noDelete": "error",
