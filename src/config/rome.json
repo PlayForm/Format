@@ -6,13 +6,6 @@
 	"formatter": {
 		"enabled": true,
 		"formatWithErrors": false,
-		"ignore": [
-			"**/node_modules/**",
-			"**/dist/**",
-			"**/build/**",
-			"**/output/**",
-			"**/.astro/**"
-		],
 		"indentSize": 4,
 		"indentStyle": "tab",
 		"lineWidth": 80
@@ -28,13 +21,6 @@
 	},
 	"linter": {
 		"enabled": true,
-		"ignore": [
-			"**/node_modules/**",
-			"**/dist/**",
-			"**/build/**",
-			"**/output/**",
-			"**/.astro/**"
-		],
 		"rules": {
 			"a11y": {
 				"noAccessKey": "error",

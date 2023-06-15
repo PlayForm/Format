@@ -1,25 +1,11 @@
 {
 	"$schema": "https://raw.githubusercontent.com/rome/tools/main/npm/rome/configuration_schema.json",
 	"files": {
-		"ignore": [
-			"**/node_modules/**",
-			"**/dist/**",
-			"**/build/**",
-			"**/output/**",
-			"**/.astro/**"
-		],
 		"maxSize": 5000000
 	},
 	"formatter": {
 		"enabled": true,
 		"formatWithErrors": false,
-		"ignore": [
-			"**/node_modules/**",
-			"**/dist/**",
-			"**/build/**",
-			"**/output/**",
-			"**/.astro/**"
-		],
 		"indentSize": 4,
 		"indentStyle": "tab",
 		"lineWidth": 80
@@ -35,13 +21,6 @@
 	},
 	"linter": {
 		"enabled": true,
-		"ignore": [
-			"**/node_modules/**",
-			"**/dist/**",
-			"**/build/**",
-			"**/output/**",
-			"**/.astro/**"
-		],
 		"rules": {
 			"a11y": {
 				"noAccessKey": "error",
