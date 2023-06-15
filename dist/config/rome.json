@@ -52,7 +52,6 @@
 			"nursery": {
 				"noBannedTypes": "error",
 				"noInvalidConstructorSuper": "error",
-				"noParameterAssign": "error",
 				"noParameterProperties": "error",
 				"noPrototypeBuiltins": "error",
 				"noRedeclare": "error",
