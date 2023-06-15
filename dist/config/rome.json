@@ -73,8 +73,7 @@
                 "useSelfClosingElements": "error",
                 "useShorthandArrayType": "error",
                 "useSingleVarDeclarator": "error",
-                "useTemplate": "error",
-                "useWhile": "error"
+                "useTemplate": "error"
             },
             "suspicious": {
                 "noArrayIndexKey": "error",
