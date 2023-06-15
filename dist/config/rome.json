@@ -42,7 +42,6 @@
 				"noEmptyPattern": "error",
 				"noNewSymbol": "error",
 				"noRenderReturnValue": "error",
-				"noStringCaseMismatch": "error",
 				"noUndeclaredVariables": "error",
 				"noUnnecessaryContinue": "error",
 				"noUnreachable": "error",
