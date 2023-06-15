@@ -22,7 +22,6 @@
 		"enabled": true,
 		"rules": {
 			"a11y": {
-				"noAccessKey": "error",
 				"noAutofocus": "error",
 				"noBlankTarget": "error",
 				"noDistractingElements": "error",
