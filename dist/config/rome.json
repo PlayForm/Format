@@ -52,7 +52,6 @@
 			"nursery": {
 				"noBannedTypes": "error",
 				"noInvalidConstructorSuper": "error",
-				"noSvgWithoutTitle": "error",
 				"noSwitchDeclarations": "error",
 				"noUnreachableSuper": "error",
 				"noUnsafeOptionalChaining": "error",
