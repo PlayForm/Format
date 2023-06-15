@@ -72,7 +72,6 @@
                 "useFragmentSyntax": "error",
                 "useSelfClosingElements": "error",
                 "useShorthandArrayType": "error",
-                "useSingleCaseStatement": "error",
                 "useSingleVarDeclarator": "error",
                 "useTemplate": "error",
                 "useWhile": "error"
