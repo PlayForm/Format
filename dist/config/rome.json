@@ -1,5 +1,5 @@
 {
-	"$schema": "https://raw.githubusercontent.com/rome/tools/main/npm/rome/configuration_schema.json",
+	"$schema": "https://docs.rome.tools/schemas/12.1.0/schema.json",
 	"files": {
 		"maxSize": 5000000
 	},
@@ -42,25 +42,15 @@
 				"noEmptyPattern": "error",
 				"noNewSymbol": "error",
 				"noRenderReturnValue": "error",
-				"noSetterReturn": "error",
-				"noStringCaseMismatch": "error",
 				"noUndeclaredVariables": "error",
 				"noUnnecessaryContinue": "error",
 				"noUnreachable": "error",
-				"noUnsafeFinally": "error",
 				"noUnusedVariables": "error",
 				"noVoidElementsWithChildren": "error",
-				"noVoidTypeReturn": "error",
-				"recommended": true,
-				"useValidForDirection": "error"
+				"recommended": true
 			},
 			"nursery": {
-				"noAssignInExpressions": "error",
 				"noBannedTypes": "error",
-				"noClassAssign": "error",
-				"noCommaOperator": "error",
-				"noConfusingLabels": "error",
-				"noDuplicateCase": "error",
 				"noDuplicateClassMembers": "error",
 				"noDuplicateJsxProps": "error",
 				"noExtraLabels": "error",
@@ -89,8 +79,8 @@
 				"noUselessSwitchCase": "error",
 				"noWith": "error",
 				"recommended": true,
-				"useAriaPropTypes": "error",
 				"useAriaPropsForRole": "error",
+				"useAriaPropTypes": "error",
 				"useCamelCase": "error",
 				"useExhaustiveDependencies": "error",
 				"useHookAtTopLevel": "error",
