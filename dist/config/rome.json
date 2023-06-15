@@ -63,7 +63,6 @@
                 "recommended": true
             },
             "style": {
-                "noArguments": "error",
                 "noImplicitBoolean": "error",
                 "noNegationElse": "error",
                 "noNonNullAssertion": "error",
