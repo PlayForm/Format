@@ -23,7 +23,6 @@
 		"rules": {
 			"a11y": {
 				"noAutofocus": "error",
-				"noBlankTarget": "error",
 				"noDistractingElements": "error",
 				"noHeaderScope": "error",
 				"noPositiveTabindex": "error",
