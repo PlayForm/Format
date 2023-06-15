@@ -50,7 +50,9 @@ export default (options: Options = {}): AstroIntegration => {
 						typeof _options.rome === "undefined" ||
 						_options.rome === null
 					) {
-						_options.rome = JSON.parse(await getConfig("rome.json"));
+						_options.rome = JSON.parse(
+							await getConfig("rome.json")
+						);
 					}
 
 					if (_options.rome && _options.rome !== true) {
