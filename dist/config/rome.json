@@ -55,7 +55,6 @@
                 "recommended": true,
                 "useCamelCase": "error",
                 "useExhaustiveDependencies": "error",
-                "useHookAtTopLevel": "error",
                 "useIframeTitle": "error",
                 "useIsNan": "error",
                 "useMediaCaption": "error",
