@@ -41,7 +41,6 @@
 				"noChildrenProp": "error",
 				"noEmptyPattern": "error",
 				"noNewSymbol": "error",
-				"noPrecisionLoss": "error",
 				"noRenderReturnValue": "error",
 				"noSetterReturn": "error",
 				"noStringCaseMismatch": "error",
