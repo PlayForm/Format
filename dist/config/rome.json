@@ -69,7 +69,6 @@
                 "noUnusedTemplateLiteral": "error",
                 "recommended": true,
                 "useBlockStatements": "error",
-                "useEnumInitializers": "error",
                 "useExponentiationOperator": "error",
                 "useFragmentSyntax": "error",
                 "useNumericLiterals": "error",
