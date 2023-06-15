@@ -52,7 +52,6 @@
 			"nursery": {
 				"noBannedTypes": "error",
 				"noInvalidConstructorSuper": "error",
-				"noRestrictedGlobals": "error",
 				"noSelfAssign": "error",
 				"noSelfCompare": "error",
 				"noSvgWithoutTitle": "error",
