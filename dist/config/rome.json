@@ -52,7 +52,6 @@
 			"nursery": {
 				"noBannedTypes": "error",
 				"noInvalidConstructorSuper": "error",
-				"noWith": "error",
 				"recommended": true,
 				"useAriaPropsForRole": "error",
 				"useAriaPropTypes": "error",
