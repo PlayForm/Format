@@ -39,7 +39,6 @@
 			},
 			"correctness": {
 				"noChildrenProp": "error",
-				"noConstructorReturn": "error",
 				"noEmptyPattern": "error",
 				"noNewSymbol": "error",
 				"noPrecisionLoss": "error",
