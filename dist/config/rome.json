@@ -53,7 +53,6 @@
                 "noBannedTypes": "error",
                 "noInvalidConstructorSuper": "error",
                 "recommended": true,
-                "useAriaPropTypes": "error",
                 "useCamelCase": "error",
                 "useExhaustiveDependencies": "error",
                 "useHookAtTopLevel": "error",
