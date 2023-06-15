@@ -51,7 +51,6 @@
 			},
 			"nursery": {
 				"noBannedTypes": "error",
-				"noInferrableTypes": "error",
 				"noInnerDeclarations": "error",
 				"noInvalidConstructorSuper": "error",
 				"noNamespace": "error",
