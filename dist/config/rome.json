@@ -45,7 +45,6 @@
 				"noUndeclaredVariables": "error",
 				"noUnnecessaryContinue": "error",
 				"noUnreachable": "error",
-				"noUnsafeFinally": "error",
 				"noUnusedVariables": "error",
 				"noVoidElementsWithChildren": "error",
 				"noVoidTypeReturn": "error",
