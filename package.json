@@ -1,20 +1,8 @@
 {
 	"name": "astro-rome",
 	"version": "0.1.20",
-	"type": "module",
-	"description": "🏛️ AstroJS Rome tools. Format, lint and check your Astro website with Rome.",
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/astro-community/astro-rome.git"
-	},
-	"homepage": "https://github.com/astro-community/astro-rome#readme",
-	"bugs": {
-		"url": "https://github.com/astro-community/astro-rome/issues"
-	},
-	"license": "MIT",
 	"private": false,
-	"main": "./dist/index.js",
-	"types": "./dist/index.d.ts",
+	"description": "🏛️ AstroJS Rome tools. Format, lint and check your Astro website with Rome.",
 	"keywords": [
 		"astro-integration",
 		"astro-component",
@@ -24,6 +12,18 @@
 		"javascript",
 		"performance"
 	],
+	"homepage": "https://github.com/astro-community/astro-rome#readme",
+	"bugs": {
+		"url": "https://github.com/astro-community/astro-rome/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/astro-community/astro-rome.git"
+	},
+	"license": "MIT",
+	"type": "module",
+	"main": "./dist/index.js",
+	"types": "./dist/index.d.ts",
 	"scripts": {
 		"prepublishOnly": "lightrix build 'src/**/*.ts' -c config/esbuild.ts"
 	},

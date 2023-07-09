@@ -23,7 +23,10 @@ export default (options: Options = {}): AstroIntegration => {
 	const paths = new Set<optionPath>();
 
 	if (typeof _options["path"] !== "undefined") {
-		if (_options["path"] instanceof Array || _options["path"] instanceof Set) {
+		if (
+			_options["path"] instanceof Array ||
+			_options["path"] instanceof Set
+		) {
 			for (const path of _options["path"]) {
 				paths.add(path);
 			}
@@ -43,8 +46,13 @@ export default (options: Options = {}): AstroIntegration => {
 						distribution: Distribution.NODE,
 					});
 
-					if (typeof _options.rome === "undefined" || _options.rome === null) {
-						_options.rome = JSON.parse(await getConfig("rome.json"));
+					if (
+						typeof _options.rome === "undefined" ||
+						_options.rome === null
+					) {
+						_options.rome = JSON.parse(
+							await getConfig("rome.json")
+						);
 					}
 
 					if (_options.rome && _options.rome !== true) {
@@ -63,14 +71,19 @@ export default (options: Options = {}): AstroIntegration => {
 							deepmerge(defaults["pipe"], {
 								wrote: async (ongoing) => {
 									try {
-										return rome.formatContent(ongoing.buffer.toString(), {
-											filePath: resolve(ongoing.inputPath),
-										}).content;
+										return rome.formatContent(
+											ongoing.buffer.toString(),
+											{
+												filePath: resolve(
+													ongoing.inputPath
+												),
+											}
+										).content;
 									} catch (error) {
 										return ongoing.buffer;
 									}
 								},
-							} satisfies executions),
+							} satisfies executions)
 						);
 					}
 				} catch (error) {
