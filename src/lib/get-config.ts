@@ -1,8 +1,8 @@
+import { constants } from "fs";
 import { access, readFile } from "fs/promises";
 import { dirname, resolve } from "path";
-import { fileURLToPath } from "url";
-import { constants } from "fs";
 import { cwd } from "process";
+import { fileURLToPath } from "url";
 
 export default async (file: string) => {
 	try {
