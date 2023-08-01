@@ -1,5 +1,5 @@
-import type { Options as OptionsBase } from "files-pipe/dist/options/index.js";
-import type { ROME } from "./rome.js";
+import type { Options as OptionsBase } from "files-pipe/dist/options/Index.js";
+import type { ROME } from "./ROME.js";
 export interface Options extends OptionsBase {
     [key: string]: any;
     rome?: boolean | ROME;
