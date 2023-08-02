@@ -1,6 +1,7 @@
 import { copy } from "esbuild-plugin-copy";
-import { rm } from "fs/promises";
+import { rm as Remove } from "fs/promises";
 const outDir = "dist";
+
 export default {
     format: "esm",
     minify: true,
@@ -14,11 +15,11 @@ export default {
             setup(build) {
                 build.onStart(async () => {
                     try {
-                        await rm(outDir, {
+                        await Remove(outDir, {
                             recursive: true,
                         });
                     }
-                    catch (_error) { }
+                    catch (_Error) { }
                 });
             },
         },
