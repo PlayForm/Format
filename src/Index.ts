@@ -1,12 +1,12 @@
 import { Configuration, Distribution, Rome } from "@rometools/js-api";
 import type { AstroIntegration } from "astro";
 import { files } from "files-pipe";
-import deepmerge from "files-pipe/dist/lib/deepmerge.js";
+import Merge from "files-pipe/dist/lib/deepmerge.js";
 import type { executions, optionPath } from "files-pipe/dist/options/Index.js";
 import { resolve } from "path";
 import getConfig from "./lib/GetConfig.js";
 import type { Options } from "./options/Index.js";
-import defaults from "./options/Index.js";
+import Defaults from "./options/Index.js";
 
 export default (options: Options = {}): AstroIntegration => {
 	for (const option in options) {
@@ -14,11 +14,11 @@ export default (options: Options = {}): AstroIntegration => {
 			Object.prototype.hasOwnProperty.call(options, option) &&
 			options[option] === true
 		) {
-			options[option] = defaults[option];
+			options[option] = Defaults[option];
 		}
 	}
 
-	const _options = deepmerge(defaults, options);
+	const _options = Merge(Defaults, options);
 
 	const paths = new Set<optionPath>();
 
@@ -67,20 +67,20 @@ export default (options: Options = {}): AstroIntegration => {
 									await new files(_options["logger"]).in(path)
 								).by("**/*.{js,mjs,cjs,ts}")
 							).not(_options["exclude"])
-						).pipe(
-							deepmerge(defaults["pipe"], {
-								wrote: async (ongoing) => {
+						).Pipe(
+							Merge(Defaults["Pipe"], {
+								Wrote: async (On) => {
 									try {
 										return rome.formatContent(
-											ongoing.buffer.toString(),
+											On.buffer.toString(),
 											{
 												filePath: resolve(
-													ongoing.inputPath
+													On.inputPath
 												),
 											}
 										).content;
 									} catch (error) {
-										return ongoing.buffer;
+										return On.buffer;
 									}
 								},
 							} satisfies executions)

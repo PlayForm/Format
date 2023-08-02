@@ -1,4 +1,4 @@
-import { constants as Constant } from "fs";
+import { constants as constants } from "fs";
 import { access as Access, readFile as File } from "fs/promises";
 import { dirname as Dir, resolve as Resolve } from "path";
 
@@ -8,7 +8,7 @@ import { fileURLToPath as URL } from "url";
 export default async (file: string) => {
 	try {
 		const working = Resolve(`${Current()}/${file}`);
-		await Access(working, Constant.R_OK);
+		await Access(working, constants.R_OK);
 		return (await File(working, "utf-8")).toString();
 	} catch (_error) {
 		return (

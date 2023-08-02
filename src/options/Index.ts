@@ -11,7 +11,7 @@ export interface Options extends OptionsBase {
 }
 
 export default deepmerge(defaults, {
-	pipe: {
+	Pipe: {
 		failed: async (ongoing) =>
 			`Error: Cannot format file ${ongoing.inputPath}!`,
 		accomplished: async (ongoing) =>
