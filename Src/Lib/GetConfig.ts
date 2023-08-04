@@ -1,23 +1,19 @@
-import { constants as constants } from "fs";
+import { constants as Constant } from "fs";
 import { access as Access, readFile as File } from "fs/promises";
 import { dirname as Dir, resolve as Resolve } from "path";
 
 import { cwd as Current } from "process";
 import { fileURLToPath as Path } from "url";
 
-export default async (file: string) => {
+export default async (_File: string) => {
 	try {
-		const working = Resolve(`${Current()}/${file}`);
-		await Access(working, constants.R_OK);
-		return (await File(working, "utf-8")).toString();
-	} catch (_error) {
+		const Working = Resolve(`${Current()}/${_File}`);
+		await Access(Working, Constant.R_OK);
+		return (await File(Working, "utf-8")).toString();
+	} catch (_Error) {
 		return (
 			await File(
-				Resolve(
-					`${Dir(
-						Path(import.meta.url)
-					)}/../config/${file}`
-				),
+				Resolve(`${Dir(Path(import.meta.url))}/../config/${_File}`),
 				"utf-8"
 			)
 		).toString();

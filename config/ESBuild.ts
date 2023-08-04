@@ -20,7 +20,7 @@ export default {
 						await rm(outDir, {
 							recursive: true,
 						});
-					} catch (_error) {}
+					} catch (_Error) {}
 				});
 			},
 		},

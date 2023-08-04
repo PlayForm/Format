@@ -2,25 +2,25 @@ import { Configuration, Distribution, Rome } from "@rometools/js-api";
 import type { AstroIntegration } from "astro";
 import { Files } from "files-pipe";
 import Merge from "files-pipe/dist/Lib/Merge.js";
-import type { executions, optionPath } from "files-pipe/dist/options/Index.js";
-import { resolve } from "path";
-import getConfig from "./Lib/GetConfig.js";
+import type { Executions, Path } from "files-pipe/dist/options/Index.js";
+import { resolve as Resolve } from "path";
+import Config from "./Lib/GetConfig.js";
 import type { Options } from "./options/Index.js";
 import Defaults from "./options/Index.js";
 
-export default (options: Options = {}): AstroIntegration => {
-	for (const option in options) {
+export default (Options: Options = {}): AstroIntegration => {
+	for (const Option in Options) {
 		if (
-			Object.prototype.hasOwnProperty.call(options, option) &&
-			options[option] === true
+			Object.prototype.hasOwnProperty.call(Options, Option) &&
+			Options[Option] === true
 		) {
-			options[option] = Defaults[option];
+			Options[Option] = Defaults[Option];
 		}
 	}
 
-	const _options = Merge(Defaults, options);
+	const _options = Merge(Defaults, Options);
 
-	const paths = new Set<optionPath>();
+	const paths = new Set<Path>();
 
 	if (typeof _options["path"] !== "undefined") {
 		if (
@@ -51,7 +51,7 @@ export default (options: Options = {}): AstroIntegration => {
 						_options.rome === null
 					) {
 						_options.rome = JSON.parse(
-							await getConfig("rome.json")
+							await Config("rome.json")
 						);
 					}
 
@@ -74,14 +74,14 @@ export default (options: Options = {}): AstroIntegration => {
 										return rome.formatContent(
 											On.buffer.toString(),
 											{
-												filePath: resolve(On.Input),
+												filePath: Resolve(On.Input),
 											}
 										).content;
 									} catch (error) {
 										return On.buffer;
 									}
 								},
-							} satisfies executions)
+							} satisfies Executions)
 						);
 					}
 				} catch (error) {
