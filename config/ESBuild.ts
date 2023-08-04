@@ -28,7 +28,7 @@ export default {
 			resolveFrom: "out",
 			assets: [
 				{
-					from: "./src/config/rome.json",
+					from: "./Src/config/rome.json",
 					to: "./config/",
 				},
 			],

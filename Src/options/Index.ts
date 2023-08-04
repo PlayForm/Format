@@ -1,4 +1,4 @@
-import deepmerge from "files-pipe/dist/lib/Merge.js";
+import deepmerge from "files-pipe/dist/Lib/Merge.js";
 import type { Options as OptionsBase } from "files-pipe/dist/options/Index.js";
 import defaults from "files-pipe/dist/options/Index.js";
 import type { ROME } from "./ROME.js";

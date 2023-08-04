@@ -143,7 +143,7 @@ export default {
 		rome({
 			exclude: [
 				"firebase.ts",
-				(file: string) => file === "./src/lib/test.ts",
+				(file: string) => file === "./Src/Lib/test.ts",
 			],
 		}),
 	],
