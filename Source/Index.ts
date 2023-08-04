@@ -1,10 +1,10 @@
 import { Configuration, Distribution, Rome } from "@rometools/js-api";
 import type { AstroIntegration } from "astro";
 import { Files } from "files-pipe";
-import Merge from "files-pipe/dist/Lib/Merge.js";
-import type { Executions, Path } from "files-pipe/dist/options/Index.js";
+import Merge from "files-pipe/Target/Library/Merge.js";
+import type { Executions, Path } from "files-pipe/Target/Options/Index.js";
 import { resolve as Resolve } from "path";
-import Config from "./Lib/GetConfig.js";
+import Config from "./Library/GetConfig.js";
 import type { Options } from "./options/Index.js";
 import Defaults from "./options/Index.js";
 

@@ -63,7 +63,7 @@ export default { integrations: [rome()] };
 ## Getting started
 
 The utility will now lint and format with [Rome][rome] all of your JavaScript
-and TypeScript files, including CommonJS modules in the `dist` folder.
+and TypeScript files, including CommonJS modules in the Astro `outDir` folder.
 
 You can override any of the default options from the configurations of:
 
@@ -123,7 +123,7 @@ import ROME from "astro-rome";
 export default {
 	integrations: [
 		ROME({
-			path: ["./src", "./dist"],
+			path: ["./Target", "./Build", "./dist"],
 		}),
 	],
 };

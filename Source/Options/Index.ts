@@ -1,6 +1,6 @@
-import deepmerge from "files-pipe/dist/Lib/Merge.js";
-import type { Options as OptionsBase } from "files-pipe/dist/options/Index.js";
-import defaults from "files-pipe/dist/options/Index.js";
+import deepmerge from "files-pipe/Target/Library//Merge.js";
+import type { Options as OptionsBase } from "files-pipe/Target/Options/Index.js";
+import defaults from "files-pipe/Target/Options/Index.js";
 import type { ROME } from "./ROME.js";
 
 export interface Options extends OptionsBase {
