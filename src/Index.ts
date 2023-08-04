@@ -1,7 +1,7 @@
 import { Configuration, Distribution, Rome } from "@rometools/js-api";
 import type { AstroIntegration } from "astro";
 import { Files } from "files-pipe";
-import Merge from "files-pipe/dist/lib/deepmerge.js";
+import Merge from "files-pipe/dist/lib/Merge.js";
 import type { executions, optionPath } from "files-pipe/dist/options/Index.js";
 import { resolve } from "path";
 import getConfig from "./lib/GetConfig.js";
@@ -74,7 +74,7 @@ export default (options: Options = {}): AstroIntegration => {
 										return rome.formatContent(
 											On.buffer.toString(),
 											{
-												filePath: resolve(On.inputPath),
+												filePath: resolve(On.Input),
 											}
 										).content;
 									} catch (error) {

@@ -3,7 +3,7 @@ import { access as Access, readFile as File } from "fs/promises";
 import { dirname as Dir, resolve as Resolve } from "path";
 
 import { cwd as Current } from "process";
-import { fileURLToPath as URL } from "url";
+import { fileURLToPath as Path } from "url";
 
 export default async (file: string) => {
 	try {
@@ -15,7 +15,7 @@ export default async (file: string) => {
 			await File(
 				Resolve(
 					`${Dir(
-						URL(import.meta.url)
+						Path(import.meta.url)
 					)}/../config/${file}`
 				),
 				"utf-8"
