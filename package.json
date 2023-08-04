@@ -25,7 +25,7 @@
 	"main": "./dist/Index.js",
 	"types": "./dist/Index.d.ts",
 	"scripts": {
-		"prepublishOnly": "lightrix build 'src/**/*.ts' -c config/ESBuild.ts"
+		"prepublishOnly": "lightrix build 'Source/**/*.ts' -c config/ESBuild.ts"
 	},
 	"dependencies": {
 		"@rometools/backend-jsonrpc": "12.1.3",

@@ -55,7 +55,7 @@ Then, apply this integration to your `astro.config.*` file using the
 **`astro.config.ts`**
 
 ```ts
-import rome from "astro-rome";
+import ROME from "astro-rome";
 
 export default { integrations: [rome()] };
 ```
@@ -74,11 +74,11 @@ or disable them entirely:
 **`astro.config.ts`**
 
 ```ts
-import rome from "astro-rome";
+import ROME from "astro-rome";
 
 export default {
 	integrations: [
-		rome({
+		ROME({
 			rome: false,
 		}),
 	],
@@ -100,13 +100,13 @@ If your path is different than `dist` be sure to update it accordingly:
 **`astro.config.ts`**
 
 ```ts
-import rome from "astro-rome";
+import ROME from "astro-rome";
 
 export default {
-	outDir: "./build",
+	outDir: "./Target",
 	integrations: [
-		rome({
-			path: "./build",
+		ROME({
+			path: "./Target",
 		}),
 	],
 };
@@ -118,11 +118,11 @@ variable.
 **`astro.config.ts`**
 
 ```ts
-import rome from "astro-rome";
+import ROME from "astro-rome";
 
 export default {
 	integrations: [
-		rome({
+		ROME({
 			path: ["./src", "./dist"],
 		}),
 	],
@@ -136,11 +136,11 @@ file names.
 **`astro.config.ts`**
 
 ```ts
-import rome from "astro-rome";
+import ROME from "astro-rome";
 
 export default {
 	integrations: [
-		rome({
+		ROME({
 			exclude: [
 				"firebase.ts",
 				(file: string) => file === "./Src/Lib/test.ts",
@@ -155,11 +155,11 @@ Set `logger` to `0` if you do not want to see debug messages. Default is `2`.
 **`astro.config.ts`**
 
 ```ts
-import rome from "astro-rome";
+import ROME from "astro-rome";
 
 export default {
 	integrations: [
-		rome({
+		ROME({
 			logger: 0,
 		}),
 	],
