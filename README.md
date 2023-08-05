@@ -95,7 +95,7 @@ export default {
 > The configuration options from the `astro.config.ts` file will override the
 > `rome.json` config.
 
-If your path is different than `dist` be sure to update it accordingly:
+If your path is different than the Astro `outDir` be sure to update it accordingly:
 
 **`astro.config.ts`**
 
@@ -123,7 +123,7 @@ import ROME from "astro-rome";
 export default {
 	integrations: [
 		ROME({
-			path: ["./Target", "./Build", "./dist"],
+			path: ["./Target", "./Build"],
 		}),
 	],
 };
