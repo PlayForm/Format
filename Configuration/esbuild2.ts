@@ -1,6 +1,10 @@
-import type { BuildOptions as Option, PluginBuild as Build } from "esbuild";
+import type { PluginBuild as Build, BuildOptions as Option } from "esbuild";
 import { copy as Copy } from "esbuild-plugin-copy";
-import { rm as Remove } from "fs/promises";
+import {
+	access as Access,
+	constants as Constant,
+	rm as Remove,
+} from "fs/promises";
 
 const Out = "Target";
 
@@ -17,12 +21,16 @@ export default {
 			setup(Build: Build) {
 				Build.onStart(async () => {
 					try {
-						await Remove(Out, {
-							recursive: true,
-						});
-					} catch (_Error) {
-						console.log(_Error);
-					}
+						await Access(Out, Constant.R_OK);
+
+						try {
+							await Remove(Out, {
+								recursive: true,
+							});
+						} catch (_Error) {
+							console.log(_Error);
+						}
+					} catch (_Error) {}
 				});
 			},
 		},

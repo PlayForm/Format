@@ -24,7 +24,7 @@
 	"main": "./Target/Index.js",
 	"types": "./Target/Index.d.ts",
 	"scripts": {
-		"prepublishOnly": "TypeScriptESBuild 'Source/**/*.ts' -es Configuration/esbuild.ts"
+		"prepublishOnly": "TypeScriptESBuild 'Source/**/*.ts' -es Configuration/ESBuild.ts"
 	},
 	"dependencies": {
 		"@rometools/backend-jsonrpc": "12.1.3",
