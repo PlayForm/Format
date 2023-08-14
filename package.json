@@ -20,6 +20,7 @@
 		"type": "git",
 		"url": "git+https://github.com/astro-community/AstroRome.git"
 	},
+	"license": "MIT",
 	"type": "module",
 	"main": "./Target/Index.js",
 	"types": "./Target/Index.d.ts",
