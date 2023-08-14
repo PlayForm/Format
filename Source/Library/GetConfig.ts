@@ -13,7 +13,9 @@ export default async (_File: string) => {
 	} catch (_Error) {
 		return (
 			await File(
-				Resolve(`${Dir(Path(import.meta.url))}/../config/${_File}`),
+				Resolve(
+					`${Dir(Path(import.meta.url))}/../Configuration/${_File}`
+				),
 				"utf-8"
 			)
 		).toString();

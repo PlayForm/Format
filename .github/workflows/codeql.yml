@@ -1,7 +1,7 @@
-name: Node
+name: CodeQL
 
 concurrency:
-    group: Node-${{ github.workflow }}-${{ github.ref }}
+    group: CodeQL-${{ github.workflow }}-${{ github.ref }}
     cancel-in-progress: true
 
 permissions:
@@ -18,7 +18,7 @@ on:
     workflow_call:
 
 jobs:
-    Pre-Publish:
+    CodeQL:
         runs-on: ubuntu-latest
 
         env:
@@ -51,43 +51,14 @@ jobs:
             STNOUPGRADE: 1
             STRIPE_CLI_TELEMETRY_OPTOUT: 1
 
-        strategy:
-            matrix:
-                node-version: [16, 18, 19]
-
         steps:
             - uses: actions/checkout@v3.5.3
 
-            - uses: pnpm/action-setup@v2.4.0
+            - uses: github/codeql-action/init@v2.21.3
               with:
-                  version: 8.6.12
-                  run_install: |
-                      - recursive: true
-                        args: [
-                          --child-concurrency=9999,
-                          --link-workspace-packages=true,
-                          --lockfile-only,
-                          --network-concurrency=9999,
-                          --prefer-frozen-lockfile=false,
-                          --shamefully-hoist=false,
-                          --shared-workspace-lockfile=true,
-                          --strict-peer-dependencies=false,
-                          --unsafe-perm=true
-                        ]
+                  languages: javascript
 
-            - uses: actions/setup-node@v3.7.0
+            - name: Perform CodeQL Analysis
+              uses: github/codeql-action/analyze@v2.21.3
               with:
-                  node-version: ${{ matrix.node-version }}
-                  cache: "pnpm"
-                  cache-dependency-path: ./pnpm-lock.yaml
-
-            - run: pnpm install
-              working-directory: .
-
-            - run: pnpm run prepublishOnly
-              working-directory: .
-
-            - uses: actions/upload-artifact@v3.1.2
-              with:
-                  name: .-Node-${{ matrix.node-version }}-Target
-                  path: ./Target
+                  category: "/language:javascript"

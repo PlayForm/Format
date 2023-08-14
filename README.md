@@ -1,11 +1,16 @@
-<h2><picture><source media="(prefers-color-scheme: dark)" srcset=https://raw.githubusercontent.com/ImageRepository/logos/main/.github/Image/logomark-dark.svg><source media="(prefers-color-scheme: light)" srcset=https://raw.githubusercontent.com/ImageRepository/logos/main/.github/Image/logomark-light.svg><img src=https://raw.githubusercontent.com/ImageRepository/logos/main/.github/Image/logomark-light.svg alt=Astro width=28></picture><span>&nbsp;</span>Related</h2><table><tbody><tr><td colspan=1 valign=top><br><a href=https://github.com/astro-community/astro-compress/actions/workflows/node.yml target=_blank><picture><source media="(prefers-color-scheme: dark)" srcset="https://img.shields.io/github/actions/workflow/status/astro-community/astro-compress/node.yml?branch=main&amp;label=Build&amp;logo=node.js&amp;color=black&amp;logoColor=white&amp;labelColor=black&amp;logoWidth=15"><source media="(prefers-color-scheme: light)" srcset="https://img.shields.io/github/actions/workflow/status/astro-community/astro-compress/node.yml?branch=main&amp;label=Build&amp;logo=node.js&amp;color=white&amp;logoColor=black&amp;labelColor=white&amp;logoWidth=15"><img src="https://img.shields.io/github/actions/workflow/status/astro-community/astro-compress/node.yml?branch=main&amp;label=Build&amp;logo=node.js&amp;color=black&amp;logoColor=white&amp;labelColor=black&amp;logoWidth=15"></picture></a><br><a href=https://npmjs.org/astro-compress target=_blank><picture><source media="(prefers-color-scheme: dark)" srcset="https://img.shields.io/npm/v/astro-compress?label=Version&amp;logo=npm&amp;color=black&amp;logoColor=white&amp;labelColor=black&amp;logoWidth=15"><source media="(prefers-color-scheme: light)" srcset="https://img.shields.io/npm/v/astro-compress?label=Version&amp;logo=npm&amp;color=white&amp;logoColor=black&amp;labelColor=white&amp;logoWidth=15"><img src="https://img.shields.io/npm/v/astro-compress?label=Version&amp;logo=npm&amp;color=black&amp;logoColor=white&amp;labelColor=black&amp;logoWidth=15"></picture></a><br><a href=https://npmjs.org/astro-compress target=_blank><picture><source media="(prefers-color-scheme: dark)" srcset="https://img.shields.io/librariesio/release/npm/astro-compress?label=Dependencies&amp;logo=dependabot&amp;color=black&amp;logoColor=white&amp;labelColor=black&amp;logoWidth=15"><source media="(prefers-color-scheme: light)" srcset="https://img.shields.io/librariesio/release/npm/astro-compress?label=Dependencies&amp;logo=dependabot&amp;color=white&amp;logoColor=black&amp;labelColor=white&amp;logoWidth=15"><img src="https://img.shields.io/librariesio/release/npm/astro-compress?label=Dependencies&amp;logo=dependabot&amp;color=black&amp;logoColor=white&amp;labelColor=black&amp;logoWidth=15"></picture></a><br><a href=https://npmjs.org/astro-compress target=_blank><picture><source media="(prefers-color-scheme: dark)" srcset="https://img.shields.io/npm/dw/astro-compress?label=Downloads&amp;logo=npm&amp;color=black&amp;logoColor=white&amp;labelColor=black&amp;logoWidth=15"><source media="(prefers-color-scheme: light)" srcset="https://img.shields.io/npm/dw/astro-compress?label=Downloads&amp;logo=npm&amp;color=white&amp;logoColor=black&amp;labelColor=white&amp;logoWidth=15"><img src="https://img.shields.io/npm/dw/astro-compress?label=Downloads&amp;logo=npm&amp;color=black&amp;logoColor=white&amp;labelColor=black&amp;logoWidth=15"></picture></a><br><br></td><td colspan=1 valign=top><br><a href=https://github.com/astro-community/astro-compress target=_blank><picture><source media="(prefers-color-scheme: dark)" srcset="https://img.shields.io/github/stars/astro-community/astro-compress?label=stars&amp;logo=github&amp;color=black&amp;logoColor=white&amp;labelColor=black&amp;logoWidth=15"><source media="(prefers-color-scheme: light)" srcset="https://img.shields.io/github/stars/astro-community/astro-compress?label=stars&amp;logo=github&amp;color=white&amp;logoColor=black&amp;labelColor=white&amp;logoWidth=15"><img src="https://img.shields.io/github/stars/astro-community/astro-compress?label=stars&amp;logo=github&amp;color=black&amp;logoColor=white&amp;labelColor=black&amp;logoWidth=15"></picture></a><br><a href=https://github.com/astro-community/astro-compress target=_blank><b>astro-compress</b></a><br><b>🗜️ AstroJS compression utilities.<br>Compress HTML, CSS, JavaScript and more!<br></b></td><td colspan=1 valign=top><br><a href=https://github.com/astro-community/astro-critters/actions/workflows/node.yml target=_blank><picture><source media="(prefers-color-scheme: dark)" srcset="https://img.shields.io/github/actions/workflow/status/astro-community/astro-critters/node.yml?branch=main&amp;label=Build&amp;logo=node.js&amp;color=black&amp;logoColor=white&amp;labelColor=black&amp;logoWidth=15"><source media="(prefers-color-scheme: light)" srcset="https://img.shields.io/github/actions/workflow/status/astro-community/astro-critters/node.yml?branch=main&amp;label=Build&amp;logo=node.js&amp;color=white&amp;logoColor=black&amp;labelColor=white&amp;logoWidth=15"><img src="https://img.shields.io/github/actions/workflow/status/astro-community/astro-critters/node.yml?branch=main&amp;label=Build&amp;logo=node.js&amp;color=black&amp;logoColor=white&amp;labelColor=black&amp;logoWidth=15"></picture></a><br><a href=https://npmjs.org/astro-critters target=_blank><picture><source media="(prefers-color-scheme: dark)" srcset="https://img.shields.io/npm/v/astro-critters?label=Version&amp;logo=npm&amp;color=black&amp;logoColor=white&amp;labelColor=black&amp;logoWidth=15"><source media="(prefers-color-scheme: light)" srcset="https://img.shields.io/npm/v/astro-critters?label=Version&amp;logo=npm&amp;color=white&amp;logoColor=black&amp;labelColor=white&amp;logoWidth=15"><img src="https://img.shields.io/npm/v/astro-critters?label=Version&amp;logo=npm&amp;color=black&amp;logoColor=white&amp;labelColor=black&amp;logoWidth=15"></picture></a><br><a href=https://npmjs.org/astro-critters target=_blank><picture><source media="(prefers-color-scheme: dark)" srcset="https://img.shields.io/librariesio/release/npm/astro-critters?label=Dependencies&amp;logo=dependabot&amp;color=black&amp;logoColor=white&amp;labelColor=black&amp;logoWidth=15"><source media="(prefers-color-scheme: light)" srcset="https://img.shields.io/librariesio/release/npm/astro-critters?label=Dependencies&amp;logo=dependabot&amp;color=white&amp;logoColor=black&amp;labelColor=white&amp;logoWidth=15"><img src="https://img.shields.io/librariesio/release/npm/astro-critters?label=Dependencies&amp;logo=dependabot&amp;color=black&amp;logoColor=white&amp;labelColor=black&amp;logoWidth=15"></picture></a><br><a href=https://npmjs.org/astro-critters target=_blank><picture><source media="(prefers-color-scheme: dark)" srcset="https://img.shields.io/npm/dw/astro-critters?label=Downloads&amp;logo=npm&amp;color=black&amp;logoColor=white&amp;labelColor=black&amp;logoWidth=15"><source media="(prefers-color-scheme: light)" srcset="https://img.shields.io/npm/dw/astro-critters?label=Downloads&amp;logo=npm&amp;color=white&amp;logoColor=black&amp;labelColor=white&amp;logoWidth=15"><img src="https://img.shields.io/npm/dw/astro-critters?label=Downloads&amp;logo=npm&amp;color=black&amp;logoColor=white&amp;labelColor=black&amp;logoWidth=15"></picture></a><br><br></td><td colspan=1 valign=top><br><a href=https://github.com/astro-community/astro-critters target=_blank><picture><source media="(prefers-color-scheme: dark)" srcset="https://img.shields.io/github/stars/astro-community/astro-critters?label=stars&amp;logo=github&amp;color=black&amp;logoColor=white&amp;labelColor=black&amp;logoWidth=15"><source media="(prefers-color-scheme: light)" srcset="https://img.shields.io/github/stars/astro-community/astro-critters?label=stars&amp;logo=github&amp;color=white&amp;logoColor=black&amp;labelColor=white&amp;logoWidth=15"><img src="https://img.shields.io/github/stars/astro-community/astro-critters?label=stars&amp;logo=github&amp;color=black&amp;logoColor=white&amp;labelColor=black&amp;logoWidth=15"></picture></a><br><a href=https://github.com/astro-community/astro-critters target=_blank><b>astro-critters</b></a><br><b>🦔 AstroJS GoogleChromeLabs critters integration.<br>Inline your critical CSS with Astro.<br></b></td></tr></tbody></table>
+<h2><picture><source media="(prefers-color-scheme: dark)" srcset=https://raw.githubusercontent.com/astro-community/AstroRome/main/.github/Image/DarkAstro.svg><source media="(prefers-color-scheme: light)" srcset=https://raw.githubusercontent.com/astro-community/AstroRome/main/.github/Image/LightAstro.svg><img src=https://raw.githubusercontent.com/astro-community/AstroRome/main/.github/Image/LightAstro.svg alt=Astro width=28></picture><span>&nbsp;</span>Related</h2><table><tbody><tr><td colspan=1 valign=top><br><a href=https://github.com/astro-community/AstroCompress/actions/workflows/Node.yml target=_blank><picture><source media="(prefers-color-scheme: dark)" srcset="https://img.shields.io/github/actions/workflow/status/astro-community/AstroCompress/Node.yml?branch=main&amp;label=Build&amp;logo=node.js&amp;color=black&amp;logoColor=white&amp;labelColor=black&amp;logoWidth=15"><source media="(prefers-color-scheme: light)" srcset="https://img.shields.io/github/actions/workflow/status/astro-community/AstroCompress/Node.yml?branch=main&amp;label=Build&amp;logo=node.js&amp;color=white&amp;logoColor=black&amp;labelColor=white&amp;logoWidth=15"><img src="https://img.shields.io/github/actions/workflow/status/astro-community/AstroCompress/Node.yml?branch=main&amp;label=Build&amp;logo=node.js&amp;color=black&amp;logoColor=white&amp;labelColor=black&amp;logoWidth=15"></picture></a><br><a href=https://npmjs.org/astro-compress target=_blank><picture><source media="(prefers-color-scheme: dark)" srcset="https://img.shields.io/npm/v/astro-compress?label=Version&amp;logo=npm&amp;color=black&amp;logoColor=white&amp;labelColor=black&amp;logoWidth=15"><source media="(prefers-color-scheme: light)" srcset="https://img.shields.io/npm/v/astro-compress?label=Version&amp;logo=npm&amp;color=white&amp;logoColor=black&amp;labelColor=white&amp;logoWidth=15"><img src="https://img.shields.io/npm/v/astro-compress?label=Version&amp;logo=npm&amp;color=black&amp;logoColor=white&amp;labelColor=black&amp;logoWidth=15"></picture></a><br><a href=https://npmjs.org/astro-compress target=_blank><picture><source media="(prefers-color-scheme: dark)" srcset="https://img.shields.io/librariesio/release/npm/astro-compress?label=Dependencies&amp;logo=dependabot&amp;color=black&amp;logoColor=white&amp;labelColor=black&amp;logoWidth=15"><source media="(prefers-color-scheme: light)" srcset="https://img.shields.io/librariesio/release/npm/astro-compress?label=Dependencies&amp;logo=dependabot&amp;color=white&amp;logoColor=black&amp;labelColor=white&amp;logoWidth=15"><img src="https://img.shields.io/librariesio/release/npm/astro-compress?label=Dependencies&amp;logo=dependabot&amp;color=black&amp;logoColor=white&amp;labelColor=black&amp;logoWidth=15"></picture></a><br><a href=https://npmjs.org/astro-compress target=_blank><picture><source media="(prefers-color-scheme: dark)" srcset="https://img.shields.io/npm/dw/astro-compress?label=Downloads&amp;logo=npm&amp;color=black&amp;logoColor=white&amp;labelColor=black&amp;logoWidth=15"><source media="(prefers-color-scheme: light)" srcset="https://img.shields.io/npm/dw/astro-compress?label=Downloads&amp;logo=npm&amp;color=white&amp;logoColor=black&amp;labelColor=white&amp;logoWidth=15"><img src="https://img.shields.io/npm/dw/astro-compress?label=Downloads&amp;logo=npm&amp;color=black&amp;logoColor=white&amp;labelColor=black&amp;logoWidth=15"></picture></a><br><br></td><td colspan=1 valign=top><br><a href=https://github.com/astro-community/AstroCompress target=_blank><picture><source media="(prefers-color-scheme: dark)" srcset="https://img.shields.io/github/stars/astro-community/AstroCompress?label=stars&amp;logo=github&amp;color=black&amp;logoColor=white&amp;labelColor=black&amp;logoWidth=15"><source media="(prefers-color-scheme: light)" srcset="https://img.shields.io/github/stars/astro-community/AstroCompress?label=stars&amp;logo=github&amp;color=white&amp;logoColor=black&amp;labelColor=white&amp;logoWidth=15"><img src="https://img.shields.io/github/stars/astro-community/AstroCompress?label=stars&amp;logo=github&amp;color=black&amp;logoColor=white&amp;labelColor=black&amp;logoWidth=15"></picture></a><br><a href=https://github.com/astro-community/AstroCompress target=_blank><b>astro-compress</b></a><br><b>🗜️ AstroJS compression utilities.<br>Compress HTML, CSS, JavaScript and more!<br></b></td><td colspan=1 valign=top><br><a href=https://github.com/astro-community/AstroCritters/actions/workflows/Node.yml target=_blank><picture><source media="(prefers-color-scheme: dark)" srcset="https://img.shields.io/github/actions/workflow/status/astro-community/AstroCritters/Node.yml?branch=main&amp;label=Build&amp;logo=node.js&amp;color=black&amp;logoColor=white&amp;labelColor=black&amp;logoWidth=15"><source media="(prefers-color-scheme: light)" srcset="https://img.shields.io/github/actions/workflow/status/astro-community/AstroCritters/Node.yml?branch=main&amp;label=Build&amp;logo=node.js&amp;color=white&amp;logoColor=black&amp;labelColor=white&amp;logoWidth=15"><img src="https://img.shields.io/github/actions/workflow/status/astro-community/AstroCritters/Node.yml?branch=main&amp;label=Build&amp;logo=node.js&amp;color=black&amp;logoColor=white&amp;labelColor=black&amp;logoWidth=15"></picture></a><br><a href=https://npmjs.org/astro-critters target=_blank><picture><source media="(prefers-color-scheme: dark)" srcset="https://img.shields.io/npm/v/astro-critters?label=Version&amp;logo=npm&amp;color=black&amp;logoColor=white&amp;labelColor=black&amp;logoWidth=15"><source media="(prefers-color-scheme: light)" srcset="https://img.shields.io/npm/v/astro-critters?label=Version&amp;logo=npm&amp;color=white&amp;logoColor=black&amp;labelColor=white&amp;logoWidth=15"><img src="https://img.shields.io/npm/v/astro-critters?label=Version&amp;logo=npm&amp;color=black&amp;logoColor=white&amp;labelColor=black&amp;logoWidth=15"></picture></a><br><a href=https://npmjs.org/astro-critters target=_blank><picture><source media="(prefers-color-scheme: dark)" srcset="https://img.shields.io/librariesio/release/npm/astro-critters?label=Dependencies&amp;logo=dependabot&amp;color=black&amp;logoColor=white&amp;labelColor=black&amp;logoWidth=15"><source media="(prefers-color-scheme: light)" srcset="https://img.shields.io/librariesio/release/npm/astro-critters?label=Dependencies&amp;logo=dependabot&amp;color=white&amp;logoColor=black&amp;labelColor=white&amp;logoWidth=15"><img src="https://img.shields.io/librariesio/release/npm/astro-critters?label=Dependencies&amp;logo=dependabot&amp;color=black&amp;logoColor=white&amp;labelColor=black&amp;logoWidth=15"></picture></a><br><a href=https://npmjs.org/astro-critters target=_blank><picture><source media="(prefers-color-scheme: dark)" srcset="https://img.shields.io/npm/dw/astro-critters?label=Downloads&amp;logo=npm&amp;color=black&amp;logoColor=white&amp;labelColor=black&amp;logoWidth=15"><source media="(prefers-color-scheme: light)" srcset="https://img.shields.io/npm/dw/astro-critters?label=Downloads&amp;logo=npm&amp;color=white&amp;logoColor=black&amp;labelColor=white&amp;logoWidth=15"><img src="https://img.shields.io/npm/dw/astro-critters?label=Downloads&amp;logo=npm&amp;color=black&amp;logoColor=white&amp;labelColor=black&amp;logoWidth=15"></picture></a><br><br></td><td colspan=1 valign=top><br><a href=https://github.com/astro-community/AstroCritters target=_blank><picture><source media="(prefers-color-scheme: dark)" srcset="https://img.shields.io/github/stars/astro-community/AstroCritters?label=stars&amp;logo=github&amp;color=black&amp;logoColor=white&amp;labelColor=black&amp;logoWidth=15"><source media="(prefers-color-scheme: light)" srcset="https://img.shields.io/github/stars/astro-community/AstroCritters?label=stars&amp;logo=github&amp;color=white&amp;logoColor=black&amp;labelColor=white&amp;logoWidth=15"><img src="https://img.shields.io/github/stars/astro-community/AstroCritters?label=stars&amp;logo=github&amp;color=black&amp;logoColor=white&amp;labelColor=black&amp;logoWidth=15"></picture></a><br><a href=https://github.com/astro-community/AstroCritters target=_blank><b>astro-critters</b></a><br><b>🦔 AstroJS GoogleChromeLabs critters integration.<br>Inline your critical CSS with Astro.<br></b></td></tr></tbody></table>
 
-# [astro-rome] 🏛️
+# [AstroRome] 🏛️
 
 This **[Astro integration][astro-integration]** brings Rome tools your Astro
 project.
 
-[Rome][rome]
+[Rome][Rome]
+
+> **Note**
+>
+> AstroRome will not lint / format your requests, only your statically generated
+> build and pre-rendered routes.
 
 ## Installation
 
@@ -20,8 +25,8 @@ command will:
 1. (Optionally) Install all necessary dependencies and peer dependencies
 2. (Also optionally) Update your `astro.config.*` file to apply this integration
 
-To install `astro-rome`, run the following from your project directory and
-follow the prompts:
+To install AstroRome, run the following from your project directory and follow
+the prompts:
 
 Using NPM:
 
@@ -43,7 +48,7 @@ pnpx astro add astro-rome
 
 ### Install dependencies manually
 
-First, install the `astro-rome` integration like so:
+First, install the AstroRome integration like so:
 
 ```
 npm install -D -E astro-rome
@@ -55,31 +60,31 @@ Then, apply this integration to your `astro.config.*` file using the
 **`astro.config.ts`**
 
 ```ts
-import ROME from "astro-rome";
+import Rome from "astro-rome";
 
-export default { integrations: [rome()] };
+export default { integrations: [Rome()] };
 ```
 
 ## Getting started
 
-The utility will now lint and format with [Rome][rome] all of your JavaScript
+The utility will now lint and format with [Rome][Rome] all of your JavaScript
 and TypeScript files, including CommonJS modules in the Astro `outDir` folder.
 
 You can override any of the default options from the configurations of:
 
--   [rome](src/options/rome.ts)
+-   [rome](Source/Option/Rome.ts)
 
 or disable them entirely:
 
 **`astro.config.ts`**
 
 ```ts
-import ROME from "astro-rome";
+import Rome from "astro-rome";
 
 export default {
 	integrations: [
-		ROME({
-			rome: false,
+		Rome({
+			Rome: false,
 		}),
 	],
 };
@@ -95,83 +100,98 @@ export default {
 > The configuration options from the `astro.config.ts` file will override the
 > `rome.json` config.
 
-If your path is different than the Astro `outDir` be sure to update it accordingly:
+#### You can add multiple paths to validate / format by specifying an array as the `Path` variable.
 
 **`astro.config.ts`**
 
 ```ts
-import ROME from "astro-rome";
+import Rome from "astro-rome";
 
 export default {
-	outDir: "./Target",
 	integrations: [
-		ROME({
-			path: "./Target",
+		Rome({
+			Path: ["./Target", "./Build"],
 		}),
 	],
 };
 ```
 
-You can add multiple paths to validate by specifying an array as the `path`
-variable.
+#### You can also provide a map of paths for different input output directories.
 
 **`astro.config.ts`**
 
 ```ts
-import ROME from "astro-rome";
+import Rome from "astro-rome";
 
 export default {
 	integrations: [
-		ROME({
-			path: ["./Target", "./Build"],
+		Rome({
+			Path: new Map([["./Source", "./Target"]]),
 		}),
 	],
 };
 ```
 
-You can provide a filter to exclude files from formatting. A filter can be an
-array of regexes or a single match. You can use functions, as well to match on
-file names.
+#### Or an array of the two.
 
 **`astro.config.ts`**
 
 ```ts
-import ROME from "astro-rome";
+import Rome from "astro-rome";
 
 export default {
 	integrations: [
-		ROME({
-			exclude: [
-				"firebase.ts",
-				(file: string) => file === "./Src/Lib/test.ts",
+		Rome({
+			Path: [
+				// Format Target
+				"./Target",
+				// Format Target one more time into a different directory
+				new Map([["./Target", "./TargetInline"]]),
 			],
 		}),
 	],
 };
 ```
 
-Set `logger` to `0` if you do not want to see debug messages. Default is `2`.
+#### You can provide a filter to exclude files from formatting. A filter can be an array of regexes or a single match. You can use functions, as well to match on file names.
 
 **`astro.config.ts`**
 
 ```ts
-import ROME from "astro-rome";
+import Rome from "astro-rome";
 
 export default {
 	integrations: [
-		ROME({
-			logger: 0,
+		Rome({
+			Exclude: [
+				"Firebase.ts",
+				(File: string) => File === "./Source/Library/File.ts",
+			],
 		}),
 	],
 };
 ```
 
-[astro-rome]: https://npmjs.org/astro-rome
-[rome]: https://npmjs.org/rome
+#### Set `Logger` to `0` if you do not want to see debug messages. Default is `2`.
+
+**`astro.config.ts`**
+
+```ts
+import Rome from "astro-rome";
+
+export default {
+	integrations: [
+		Rome({
+			Logger: 0,
+		}),
+	],
+};
+```
+
+[AstroRome]: https://npmjs.org/astro-rome
+[Rome]: https://npmjs.org/rome
 [astro-integration]: https://docs.astro.build/en/guides/integrations-guide/
 
 ## Changelog
 
 See [CHANGELOG.md](CHANGELOG.md) for a history of changes to this integration.
-
-[![Lightrix logo](https://raw.githubusercontent.com/Lightrix/NPM/main/.github/Image/favicon.png "Built with Lightrix/NPM")](https://github.com/Lightrix/NPM)

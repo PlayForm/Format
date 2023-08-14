@@ -1,34 +1,42 @@
-import { Configuration, Distribution, Rome } from "@rometools/js-api";
 import type { AstroIntegration } from "astro";
+
 import { Files } from "files-pipe";
 import Merge from "files-pipe/Target/Library/Merge.js";
-import type { Executions, Path } from "files-pipe/Target/Options/Index.js";
-import { resolve as Resolve } from "path";
-import Config from "./Library/GetConfig.js";
-import type { Options } from "./options/Index.js";
-import Defaults from "./options/Index.js";
+import type {
+	Execution,
+	Path as _Path,
+} from "files-pipe/Target/Option/Index.js";
 
-export default (Options: Options = {}): AstroIntegration => {
+import type { Configuration } from "@rometools/js-api";
+import { Distribution, Rome as _Rome } from "@rometools/js-api";
+import { resolve as Resolve } from "path";
+
+import Config from "./Library/GetConfig.js";
+
+import type { Option } from "./Option/Index.js";
+import Default from "./Option/Index.js";
+
+export default (Options: Option = {}): AstroIntegration => {
 	for (const Option in Options) {
 		if (
 			Object.prototype.hasOwnProperty.call(Options, Option) &&
 			Options[Option] === true
 		) {
-			Options[Option] = Defaults[Option];
+			Options[Option] = Default[Option];
 		}
 	}
 
-	const _options = Merge(Defaults, Options);
+	const _Options = Merge(Default, Options);
 
-	const paths = new Set<Path>();
+	const Paths = new Set<_Path>();
 
-	if (typeof _options["path"] !== "undefined") {
+	if (typeof _Options["Path"] !== "undefined") {
 		if (
-			_options["path"] instanceof Array ||
-			_options["path"] instanceof Set
+			_Options["Path"] instanceof Array ||
+			_Options["Path"] instanceof Set
 		) {
-			for (const path of _options["path"]) {
-				paths.add(path);
+			for (const Path of _Options["Path"]) {
+				Paths.add(Path);
 			}
 		}
 	}
@@ -36,56 +44,54 @@ export default (Options: Options = {}): AstroIntegration => {
 	return {
 		name: "astro-rome",
 		hooks: {
-			"astro:build:done": async ({ dir }) => {
+			"astro:build:done": async ({ dir: Dir }) => {
 				try {
-					if (!paths.size) {
-						paths.add(dir);
+					if (!Paths.size) {
+						Paths.add(Dir);
 					}
 
-					const rome = await Rome.create({
+					const Rome = await _Rome.create({
 						distribution: Distribution.NODE,
 					});
 
 					if (
-						typeof _options.rome === "undefined" ||
-						_options.rome === null
+						typeof _Options.Rome === "undefined" ||
+						_Options.Rome === null
 					) {
-						_options.rome = JSON.parse(
-							await Config("rome.json")
-						);
+						_Options.Rome = JSON.parse(await Config("rome.json"));
 					}
 
-					if (_options.rome && _options.rome !== true) {
-						_options.rome["$schema"] = undefined;
-						rome.applyConfiguration(_options.rome as Configuration);
+					if (_Options.Rome && _Options.Rome !== true) {
+						_Options.Rome["$schema"] = undefined;
+						Rome.applyConfiguration(_Options.Rome as Configuration);
 					}
 
-					for (const path of paths) {
+					for (const Path of Paths) {
 						await (
 							await (
 								await (
-									await new Files(_options["logger"]).in(path)
+									await new Files(_Options["Logger"]).In(Path)
 								).By("**/*.{js,mjs,cjs,ts}")
-							).not(_options["exclude"])
+							).Not(_Options["Exclude"])
 						).Pipe(
-							Merge(Defaults["Pipe"], {
+							Merge(Default["Pipe"], {
 								Wrote: async (On) => {
 									try {
-										return rome.formatContent(
-											On.buffer.toString(),
+										return Rome.formatContent(
+											On.Buffer.toString(),
 											{
 												filePath: Resolve(On.Input),
 											}
 										).content;
-									} catch (error) {
-										return On.buffer;
+									} catch (_Error) {
+										return On.Buffer;
 									}
 								},
-							} satisfies Executions)
+							} satisfies Execution)
 						);
 					}
-				} catch (error) {
-					console.log(error);
+				} catch (_Error) {
+					console.log(_Error);
 				}
 			},
 		},

@@ -1,35 +1,37 @@
 import type { BuildOptions, PluginBuild } from "esbuild";
-import { copy } from "esbuild-plugin-copy";
-import { rm } from "fs/promises";
+import { copy as Copy } from "esbuild-plugin-copy";
+import { rm as Remove } from "fs/promises";
 
-const outDir = "Target";
+const Out = "Target";
 
 export default {
 	format: "esm",
 	minify: true,
-	outdir: outDir,
+	outdir: Out,
 	platform: "node",
 	target: "esnext",
 	write: true,
 	plugins: [
 		{
-			name: "clean-Target",
+			name: "Target",
 			setup(build: PluginBuild) {
 				build.onStart(async () => {
 					try {
-						await rm(outDir, {
+						await Remove(Out, {
 							recursive: true,
 						});
-					} catch (_Error) {}
+					} catch (_Error) {
+						console.log(_Error);
+					}
 				});
 			},
 		},
-		copy({
+		Copy({
 			resolveFrom: "out",
 			assets: [
 				{
-					from: "./Src/config/rome.json",
-					to: "./config/",
+					from: "./Source/Configuration/rome.json",
+					to: "./Configuration/",
 				},
 			],
 		}),
