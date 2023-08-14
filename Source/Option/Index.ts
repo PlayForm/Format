@@ -1,16 +1,16 @@
-import deepmerge from "files-pipe/Target/Library/Merge.js";
-import type { Options as _Options } from "files-pipe/Target/Option/Index.js";
+import Merge from "files-pipe/Target/Library/Merge.js";
+import type { Options as _Option } from "files-pipe/Target/Option/Index.js";
 import Default from "files-pipe/Target/Option/Index.js";
 import type { Rome } from "./Rome.js";
 
-export interface Option extends _Options {
+export interface Option extends _Option {
 	// rome-ignore lint/suspicious/noExplicitAny:
 	[key: string]: any;
 
 	Rome?: boolean | Rome;
 }
 
-export default deepmerge(Default, {
+export default Merge(Default, {
 	Pipe: {
 		Failed: async (On) => `Error: Cannot format file ${On.Input}!`,
 		Accomplished: async (On) => `Formatted ${On.Input} in ${On.Output}.`,

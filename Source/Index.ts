@@ -16,26 +16,26 @@ import Config from "./Library/GetConfig.js";
 import type { Option } from "./Option/Index.js";
 import Default from "./Option/Index.js";
 
-export default (Options: Option = {}): AstroIntegration => {
-	for (const Option in Options) {
+export default (_Option: Option = {}): AstroIntegration => {
+	for (const Option in _Option) {
 		if (
-			Object.prototype.hasOwnProperty.call(Options, Option) &&
-			Options[Option] === true
+			Object.prototype.hasOwnProperty.call(_Option, Option) &&
+			_Option[Option] === true
 		) {
-			Options[Option] = Default[Option];
+			_Option[Option] = Default[Option];
 		}
 	}
 
-	const _Options = Merge(Default, Options);
+	const __Option = Merge(Default, _Option);
 
 	const Paths = new Set<_Path>();
 
-	if (typeof _Options["Path"] !== "undefined") {
+	if (typeof __Option["Path"] !== "undefined") {
 		if (
-			_Options["Path"] instanceof Array ||
-			_Options["Path"] instanceof Set
+			__Option["Path"] instanceof Array ||
+			__Option["Path"] instanceof Set
 		) {
-			for (const Path of _Options["Path"]) {
+			for (const Path of __Option["Path"]) {
 				Paths.add(Path);
 			}
 		}
@@ -55,24 +55,24 @@ export default (Options: Option = {}): AstroIntegration => {
 					});
 
 					if (
-						typeof _Options.Rome === "undefined" ||
-						_Options.Rome === null
+						typeof __Option.Rome === "undefined" ||
+						__Option.Rome === null
 					) {
-						_Options.Rome = JSON.parse(await Config("rome.json"));
+						__Option.Rome = JSON.parse(await Config("rome.json"));
 					}
 
-					if (_Options.Rome && _Options.Rome !== true) {
-						_Options.Rome["$schema"] = undefined;
-						Rome.applyConfiguration(_Options.Rome as Configuration);
+					if (__Option.Rome && __Option.Rome !== true) {
+						__Option.Rome["$schema"] = undefined;
+						Rome.applyConfiguration(__Option.Rome as Configuration);
 					}
 
 					for (const Path of Paths) {
 						await (
 							await (
 								await (
-									await new Files(_Options["Logger"]).In(Path)
+									await new Files(__Option["Logger"]).In(Path)
 								).By("**/*.{js,mjs,cjs,ts}")
-							).Not(_Options["Exclude"])
+							).Not(__Option["Exclude"])
 						).Pipe(
 							Merge(Default["Pipe"], {
 								Wrote: async (On) => {
