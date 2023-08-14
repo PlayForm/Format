@@ -1,4 +1,4 @@
-import type { BuildOptions, PluginBuild } from "esbuild";
+import type { BuildOptions as Option, PluginBuild as Build } from "esbuild";
 import { copy as Copy } from "esbuild-plugin-copy";
 import { rm as Remove } from "fs/promises";
 
@@ -14,8 +14,8 @@ export default {
 	plugins: [
 		{
 			name: "Target",
-			setup(build: PluginBuild) {
-				build.onStart(async () => {
+			setup(Build: Build) {
+				Build.onStart(async () => {
 					try {
 						await Remove(Out, {
 							recursive: true,
@@ -36,4 +36,4 @@ export default {
 			],
 		}),
 	],
-} satisfies BuildOptions;
+} satisfies Option;

@@ -11,8 +11,8 @@ export default {
     plugins: [
         {
             name: "Target",
-            setup(build) {
-                build.onStart(async () => {
+            setup(Build) {
+                Build.onStart(async () => {
                     try {
                         await Remove(Out, {
                             recursive: true,
