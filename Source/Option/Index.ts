@@ -1,6 +1,5 @@
-import Merge from "files-pipe/Target/Library/Merge.js";
-import type { Options as _Option } from "files-pipe/Target/Option/Index.js";
-import Default from "files-pipe/Target/Option/Index.js";
+import type { Option as _Option } from "files-pipe";
+import { Default, Merge } from "files-pipe";
 import type { Rome } from "./Rome.js";
 
 export interface Option extends _Option {

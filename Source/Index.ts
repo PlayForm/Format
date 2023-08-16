@@ -1,11 +1,10 @@
 import type { AstroIntegration } from "astro";
 
-import { Files } from "files-pipe";
-import Merge from "files-pipe/Target/Library/Merge.js";
 import type {
 	Execution,
 	Path as _Path,
-} from "files-pipe/Target/Option/Index.js";
+} from "files-pipe";
+import { Files, Merge } from "files-pipe";
 
 import type { Configuration } from "@rometools/js-api";
 import { Distribution, Rome as _Rome } from "@rometools/js-api";
