@@ -9,8 +9,8 @@ project.
 
 > **Note**
 >
-> `AstroRome` will not lint / format your requests, only your statically generated
-> build and pre-rendered routes.
+> `AstroRome` will not lint / format your requests, only your statically
+> generated build and pre-rendered routes.
 
 ## Installation
 
