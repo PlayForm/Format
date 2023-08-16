@@ -9,7 +9,7 @@ project.
 
 > **Note**
 >
-> AstroRome will not lint / format your requests, only your statically generated
+> `AstroRome` will not lint / format your requests, only your statically generated
 > build and pre-rendered routes.
 
 ## Installation
@@ -25,7 +25,7 @@ command will:
 1. (Optionally) Install all necessary dependencies and peer dependencies
 2. (Also optionally) Update your `astro.config.*` file to apply this integration
 
-To install AstroRome, run the following from your project directory and follow
+To install `AstroRome`, run the following from your project directory and follow
 the prompts:
 
 Using NPM:
@@ -48,7 +48,7 @@ pnpx astro add astro-rome
 
 ### Install dependencies manually
 
-First, install the AstroRome integration like so:
+First, install the `AstroRome` integration like so:
 
 ```
 npm install -D -E astro-rome
