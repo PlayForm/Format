@@ -1,6 +1,7 @@
 {
 	"name": "astro-rome",
 	"version": "2.0.7",
+	"private": "false",
 	"description": "🏛️ AstroJS Rome tools. Format, lint and check your Astro website with Rome.",
 	"keywords": [
 		"astro-integration",
@@ -21,6 +22,11 @@
 		"url": "git+https://github.com/astro-community/AstroRome.git"
 	},
 	"license": "MIT",
+	"author": {
+		"name": "Nikola Hristov",
+		"email": "nikola@nikolahristov.tech",
+		"url": "https://nikolahristov.tech"
+	},
 	"type": "module",
 	"main": "./Target/Index.js",
 	"types": "./Target/Index.d.ts",
@@ -39,5 +45,8 @@
 		"astro": "2.10.9",
 		"esbuild-plugin-copy": "2.1.1",
 		"typescript-esbuild": "0.1.13"
+	},
+	"publishConfig": {
+		"access": "public"
 	}
 }
