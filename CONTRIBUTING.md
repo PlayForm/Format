@@ -132,6 +132,7 @@ For answers to common questions about this code of conduct, see the FAQ at
 
 Thank you for being part of our community and helping us create a safe and
 respectful environment for everyone!
+
 # Contributing Guidelines
 
 Welcome to our community! We are committed to creating a welcoming and inclusive
