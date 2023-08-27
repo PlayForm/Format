@@ -1,6 +1,6 @@
 import type { AstroIntegration } from "astro";
 
-import type { Execution, Path as _Path } from "files-pipe";
+import type { Action, Path as _Path } from "files-pipe";
 import { Files, Merge } from "files-pipe";
 
 import type { Configuration } from "@rometools/js-api";
@@ -83,7 +83,7 @@ export default (_Option: Option = {}): AstroIntegration => {
 										return On.Buffer;
 									}
 								},
-							} satisfies Execution)
+							} satisfies Action)
 						);
 					}
 				} catch (_Error) {
