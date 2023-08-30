@@ -42,7 +42,11 @@
 		"rome": "12.1.3"
 	},
 	"devDependencies": {
+<<<<<<< HEAD
 		"astro": "3.0.0",
+=======
+		"astro": "2.10.15",
+>>>>>>> 892966dff66491e487d7b075c1b3c94cec17bd87
 		"esbuild-plugin-copy": "2.1.1",
 		"typescript-esbuild": "0.1.15"
 	},
