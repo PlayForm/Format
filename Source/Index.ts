@@ -86,9 +86,7 @@ export default (_Option: Option = {}): AstroIntegration => {
 							} satisfies Action)
 						);
 					}
-				} catch (_Error) {
-					console.log(_Error);
-				}
+				} catch (_Error) {}
 			},
 		},
 	};
