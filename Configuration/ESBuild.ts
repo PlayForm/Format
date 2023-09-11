@@ -22,20 +22,10 @@ export default {
 			setup(Build: Build) {
 				Build.onStart(async () => {
 					try {
-						await Access(Out, Constant.R_OK);
-					} catch (_Error) {
-						await Make(Out, {
-							recursive: true,
-						});
-					}
-
-					try {
 						await Remove(Out, {
 							recursive: true,
 						});
-					} catch (_Error) {
-						console.log(_Error);
-					}
+					} catch (_Error) {}
 				});
 			},
 		},
