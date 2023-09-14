@@ -70,7 +70,7 @@ export default (_Option: Option = {}): AstroIntegration => {
 								).By("**/*.{js,mjs,cjs,ts}")
 							).Not(__Option["Exclude"])
 						).Pipe(
-							Merge(Default["Pipe"], {
+							Merge(Default["Action"], {
 								Wrote: async (On) => {
 									try {
 										return Rome.formatContent(

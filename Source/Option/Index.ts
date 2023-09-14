@@ -10,7 +10,7 @@ export interface Option extends _Option {
 }
 
 export default Merge(Default, {
-	Pipe: {
+	Action: {
 		Failed: async (On) => `Error: Cannot format file ${On.Input}!`,
 		Accomplished: async (On) => `Formatted ${On.Input} in ${On.Output}.`,
 		Fulfilled: async (Plan) =>
