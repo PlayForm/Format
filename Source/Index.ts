@@ -65,7 +65,10 @@ export default (_Option: Option = {}): AstroIntegration => {
 						await (
 							await (
 								await (
-									await new Files(__Option["Logger"]).In(Path)
+									await new Files(
+										__Option["Cache"],
+										__Option["Logger"]
+									).In(Path)
 								).By("**/*.{js,mjs,cjs,ts}")
 							).Not(__Option["Exclude"])
 						).Pipe(
