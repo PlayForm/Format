@@ -1,16 +1,15 @@
-import type { AstroIntegration } from "astro";
-
-import type { Action, Path as _Path } from "files-pipe";
-import { Files, Merge } from "files-pipe";
+import type { Option } from "./Option/Index.js";
 
 import type { Configuration } from "@rometools/js-api";
-import { Distribution, Rome as _Rome } from "@rometools/js-api";
-import { resolve as Resolve } from "path";
+import type { AstroIntegration } from "astro";
+import type { Action, Path as _Path } from "files-pipe";
 
 import Config from "./Library/GetConfig.js";
-
-import type { Option } from "./Option/Index.js";
 import Default from "./Option/Index.js";
+
+import { Distribution, Rome as _Rome } from "@rometools/js-api";
+import Files, { Merge } from "files-pipe";
+import { resolve as Resolve } from "path";
 
 export default (_Option: Option = {}): AstroIntegration => {
 	for (const Option in _Option) {
@@ -71,7 +70,7 @@ export default (_Option: Option = {}): AstroIntegration => {
 							).Not(__Option["Exclude"])
 						).Pipe(
 							Merge(Default["Action"], {
-								Wrote: async (On) => {
+								Wrote: async (Cache, On) => {
 									try {
 										return Rome.formatContent(
 											On.Buffer.toString(),
