@@ -1,7 +1,9 @@
-import { copy as Copy } from "esbuild-plugin-copy";
-import { rm as Remove } from "fs/promises";
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const esbuild_plugin_copy_1 = require("esbuild-plugin-copy");
+const promises_1 = require("fs/promises");
 const Out = "Target";
-export default {
+exports.default = {
     format: "esm",
     minify: true,
     outdir: Out,
@@ -14,7 +16,7 @@ export default {
             setup(Build) {
                 Build.onStart(async () => {
                     try {
-                        await Remove(Out, {
+                        await (0, promises_1.rm)(Out, {
                             recursive: true,
                         });
                     }
@@ -22,7 +24,7 @@ export default {
                 });
             },
         },
-        Copy({
+        (0, esbuild_plugin_copy_1.copy)({
             resolveFrom: "out",
             assets: [
                 {

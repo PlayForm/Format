@@ -1,6 +1,6 @@
 import type { Configuration } from "@rometools/wasm-nodejs";
-export interface Rome extends Omit<Configuration, "$schema"> {
+export interface Type extends Omit<Configuration, "$schema"> {
     [key: string]: any;
 }
-declare const _default: {};
+declare const _default: Type;
 export default _default;

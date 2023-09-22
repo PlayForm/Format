@@ -1,4 +1,4 @@
-import type { Option } from "./Option/Index.js";
+import type { Type } from "./Option/Index.js";
 
 import type { Configuration } from "@rometools/js-api";
 import type { AstroIntegration } from "astro";
@@ -11,7 +11,7 @@ import { Distribution, Rome as _Rome } from "@rometools/js-api";
 import Files, { Merge } from "files-pipe";
 import { resolve as Resolve } from "path";
 
-export default (_Option: Option = {}): AstroIntegration => {
+export default (_Option: Type = {}): AstroIntegration => {
 	for (const Option in _Option) {
 		if (
 			Object.prototype.hasOwnProperty.call(_Option, Option) &&
@@ -85,7 +85,7 @@ export default (_Option: Option = {}): AstroIntegration => {
 										return On.Buffer;
 									}
 								},
-							} satisfies Action)
+							} satisfies Action) as Action
 						);
 					}
 				} catch (_Error) {}

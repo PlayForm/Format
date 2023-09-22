@@ -1,4 +1,4 @@
-import type { PluginBuild as Build, BuildOptions as Option } from "esbuild";
+import type { PluginBuild as Build, BuildOptions as Type } from "esbuild";
 import { copy as Copy } from "esbuild-plugin-copy";
 import { rm as Remove } from "fs/promises";
 
@@ -34,4 +34,4 @@ export default {
 			],
 		}),
 	],
-} satisfies Option;
+} satisfies Type as Type;
