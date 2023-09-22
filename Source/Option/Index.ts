@@ -1,12 +1,14 @@
+import type { Type as Rome } from "./Rome.js";
+
 import type { Option as _Option } from "files-pipe";
+
 import { Default, Merge } from "files-pipe";
-import type { Type } from "./Rome.js";
 
 export interface Type extends _Option {
 	// rome-ignore lint/suspicious/noExplicitAny:
 	[key: string]: any;
 
-	Rome?: boolean | Type;
+	Rome?: boolean | Rome;
 }
 
 export default Merge(Default, {

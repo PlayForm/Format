@@ -1,14 +1,16 @@
 import type { Type } from "./Option/Index.js";
 
+import type { Action, Path as _Path } from "files-pipe";
+
 import type { Configuration } from "@rometools/js-api";
 import type { AstroIntegration } from "astro";
-import type { Action, Path as _Path } from "files-pipe";
 
 import Config from "./Library/GetConfig.js";
 import Default from "./Option/Index.js";
 
-import { Distribution, Rome as _Rome } from "@rometools/js-api";
 import Files, { Merge } from "files-pipe";
+
+import { Distribution, Rome as _Rome } from "@rometools/js-api";
 import { resolve as Resolve } from "path";
 
 export default (_Option: Type = {}): AstroIntegration => {
