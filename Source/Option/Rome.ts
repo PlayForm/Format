@@ -5,4 +5,4 @@ export interface Type extends Omit<Configuration, "$schema"> {
 	[key: string]: any;
 }
 
-export default {} satisfies Type as Type;
+export default {} satisfies Type;
