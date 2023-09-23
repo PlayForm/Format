@@ -4,7 +4,7 @@ import type { Option as _Option } from "files-pipe";
 
 import { Default, Merge } from "files-pipe";
 
-export interface Type extends _Option {
+export default interface Type extends _Option {
 	// rome-ignore lint/suspicious/noExplicitAny:
 	[key: string]: any;
 
