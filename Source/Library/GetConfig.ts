@@ -1,23 +1,24 @@
-import { constants as Constant } from "fs";
-import { access as Access, readFile as File } from "fs/promises";
-import { dirname as Dir, resolve as Resolve } from "path";
-
-import { cwd as Current } from "process";
-import { fileURLToPath as Path } from "url";
-
 export default async (_File: string) => {
 	try {
-		const Working = Resolve(`${Current()}/${_File}`);
-		await Access(Working, Constant.R_OK);
-		return (await File(Working, "utf-8")).toString();
+		const Working = resolve(`${(await import("process")).cwd()}/${_File}`);
+		await (
+			await import("fs/promises")
+		).access(Working, (await import("fs")).constants.R_OK);
+		return (await readFile(Working, "utf-8")).toString();
 	} catch (_Error) {
 		return (
-			await File(
-				Resolve(
-					`${Dir(Path(import.meta.url))}/../Configuration/${_File}`
+			await readFile(
+				resolve(
+					`${(await import("path")).dirname(
+						(await import("url")).fileURLToPath(import.meta.url)
+					)}/../Configuration/${_File}`
 				),
 				"utf-8"
 			)
 		).toString();
 	}
 };
+
+export const { readFile } = await import("fs/promises");
+
+export const { resolve } = await import("path");
