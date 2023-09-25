@@ -1,31 +1,31 @@
-import type { PluginBuild as Build, BuildOptions } from "esbuild";
-
-import { copy as Copy } from "esbuild-plugin-copy";
-import { rm as Remove } from "fs/promises";
-
-const Out = "Target";
+import type { BuildOptions } from "esbuild";
 
 export default {
+	color: true,
 	format: "esm",
+	metafile: true,
 	minify: true,
-	outdir: Out,
+	outdir: "Target",
 	platform: "node",
 	target: "esnext",
 	write: true,
+	logLevel: "debug",
 	plugins: [
 		{
 			name: "Target",
-			setup(Build: Build) {
-				Build.onStart(async () => {
-					try {
-						await Remove(Out, {
-							recursive: true,
-						});
-					} catch (_Error) {}
-				});
+			setup({ onStart, initialOptions: { outdir } }) {
+				onStart(async () =>
+					outdir
+						? await (
+								await import("fs/promises")
+						  ).rm(outdir, {
+								recursive: true,
+						  })
+						: {}
+				);
 			},
 		},
-		Copy({
+		(await import("esbuild-plugin-copy")).copy({
 			resolveFrom: "out",
 			assets: [
 				{
@@ -35,4 +35,11 @@ export default {
 			],
 		}),
 	],
-} satisfies Type;
+	define: {
+		"process.env.VERSION_PACKAGE": `'${(
+			await (
+				await import("typescript-esbuild/Target/Function/JSON.js")
+			).default("package.json")
+		)?.version}'`,
+	},
+} satisfies BuildOptions as BuildOptions;

@@ -1,28 +1,28 @@
-import { copy as Copy } from "esbuild-plugin-copy";
-import { rm as Remove } from "fs/promises";
-const Out = "Target";
 export default {
+    color: true,
     format: "esm",
+    metafile: true,
     minify: true,
-    outdir: Out,
+    outdir: "Target",
     platform: "node",
     target: "esnext",
     write: true,
+    logLevel: "debug",
     plugins: [
         {
             name: "Target",
-            setup(Build) {
-                Build.onStart(async () => {
-                    try {
-                        await Remove(Out, {
+            setup({ onStart, initialOptions: { outdir } }) {
+                try {
+                    onStart(async () => outdir
+                        ? await (await import("fs/promises")).rm(outdir, {
                             recursive: true,
-                        });
-                    }
-                    catch (_Error) { }
-                });
+                        })
+                        : {});
+                }
+                catch (_Error) { }
             },
         },
-        Copy({
+        (await import("esbuild-plugin-copy")).copy({
             resolveFrom: "out",
             assets: [
                 {
@@ -32,4 +32,7 @@ export default {
             ],
         }),
     ],
+    define: {
+        "process.env.VERSION_PACKAGE": `'${(await (await import("typescript-esbuild/Target/Function/JSON.js")).default("package.json"))?.version}'`,
+    },
 };
