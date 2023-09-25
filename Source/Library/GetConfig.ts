@@ -1,10 +1,11 @@
 export default async (_File: string) => {
 	try {
-		const Working = resolve(`${(await import("process")).cwd()}/${_File}`);
-		await (
-			await import("fs/promises")
-		).access(Working, (await import("fs")).constants.R_OK);
-		return (await readFile(Working, "utf-8")).toString();
+		return (
+			await readFile(
+				resolve(`${(await import("process")).cwd()}/${_File}`),
+				"utf-8"
+			)
+		).toString();
 	} catch (_Error) {
 		return (
 			await readFile(

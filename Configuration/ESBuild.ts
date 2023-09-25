@@ -14,17 +14,20 @@ export default {
 		{
 			name: "Target",
 			setup({ onStart, initialOptions: { outdir } }) {
-				onStart(async () =>
-					outdir
-						? await (
-								await import("fs/promises")
-						  ).rm(outdir, {
-								recursive: true,
-						  })
-						: {}
-				);
+				onStart(async () => {
+					try {
+						outdir
+							? await (
+									await import("fs/promises")
+							  ).rm(outdir, {
+									recursive: true,
+							  })
+							: {};
+					} catch (_Error) {}
+				});
 			},
 		},
+
 		(await import("esbuild-plugin-copy")).copy({
 			resolveFrom: "out",
 			assets: [
