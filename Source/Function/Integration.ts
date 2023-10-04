@@ -35,50 +35,44 @@ export default (_Option: Option = {}): AstroIntegration => {
 					Paths.add(Dir);
 				}
 
-				try {
-					const _Rome = await (
-						await import("@rometools/js-api")
-					).Rome.create({
-						distribution: (await import("@rometools/js-api"))
-							.Distribution.NODE,
-					});
+				const _Rome = await (
+					await import("@rometools/js-api")
+				).Rome.create({
+					distribution: (await import("@rometools/js-api"))
+						.Distribution.NODE,
+				});
 
-					const _Action = Merge(Action, {
-						Wrote: async (On) => {
-							try {
-								return _Rome.formatContent(
-									On.Buffer.toString(),
-									{
-										filePath: (
-											await import("path")
-										).resolve(On.Input),
-									}
-								).content;
-							} catch (_Error) {
-								return On.Buffer;
-							}
-						},
-					} satisfies Action);
+				const _Action = Merge(Action, {
+					Wrote: async (On) => {
+						try {
+							return _Rome.formatContent(On.Buffer.toString(), {
+								filePath: (await import("path")).resolve(
+									On.Input
+								),
+							}).content;
+						} catch (_Error) {
+							return On.Buffer;
+						}
+					},
+				} satisfies Action);
 
-					if (Rome && Rome !== true && _Rome) {
-						Rome["$schema"] = undefined;
-						_Rome.applyConfiguration(Rome);
-					}
+				if (Rome && Rome !== true && _Rome) {
+					Rome["$schema"] = undefined;
+					_Rome.applyConfiguration(Rome);
+				}
 
-					Paths.forEach(async (Path) => {
+				Paths.forEach(async (Path) => {
+					await (
 						await (
 							await (
-								await (
-									await new (
-										await import("files-pipe")
-									).default(Cache, Logger).In(Path)
-								).By("**/*.{js,mjs,cjs,ts}")
-							).Not(Exclude)
-						).Pipe(_Action);
-					});
-				} catch (_Error) {
-					console.log(_Error);
-				}
+								await new (await import("files-pipe")).default(
+									Cache,
+									Logger
+								).In(Path)
+							).By("**/*.{js,mjs,cjs,ts}")
+						).Not(Exclude)
+					).Pipe(_Action);
+				});
 			},
 		},
 	};
