@@ -28,8 +28,8 @@
 		"url": "https://nikolahristov.tech"
 	},
 	"type": "module",
-	"main": "./Target/Index.js",
-	"types": "./Target/Index.d.ts",
+	"main": "./Target/Function/Integration.js",
+	"types": "./Target/Function/Integration.d.ts",
 	"scripts": {
 		"prepublishOnly": "TypeScriptESBuild 'Source/**/*.ts' -es Configuration/ESBuild.ts"
 	},

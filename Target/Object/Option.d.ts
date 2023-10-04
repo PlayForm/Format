@@ -1,12 +1,8 @@
 /**
- * @module Integration
+ * @module Option
  *
  */
-declare const _default: (_Option?: Option) => AstroIntegration;
-export default _default;
-import type Option from "../Interface/Option.js";
-import type { AstroIntegration } from "astro";
-export declare const Default: Omit<{} & {
+declare const _default: Omit<{} & {
     Rome: any;
     Cache: {
         Search: string;
@@ -26,4 +22,4 @@ export declare const Default: Omit<{} & {
     }, "__proto__">;
     Logger: 2;
 }, "__proto__">;
-export declare const Merge: import("files-pipe/Target/Interface/Merge.js").default<import("files-pipe/Target/Function/Merge.js").PMF>;
+export default _default;

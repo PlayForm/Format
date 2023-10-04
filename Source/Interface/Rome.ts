@@ -1,8 +1,10 @@
-import type { Configuration } from "@rometools/wasm-nodejs";
-
+/**
+ * @module Rome
+ *
+ */
 export default interface Type extends Omit<Configuration, "$schema"> {
 	// rome-ignore lint/suspicious/noExplicitAny:
 	[key: string]: any;
 }
 
-export default {} satisfies Type;
+import type { Configuration } from "@rometools/wasm-nodejs";
