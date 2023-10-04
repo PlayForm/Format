@@ -12,7 +12,7 @@ export default async (_File: string) => {
 				resolve(
 					`${(await import("path")).dirname(
 						(await import("url")).fileURLToPath(import.meta.url)
-					)}/../Configuration/${_File}`
+					)}/../Notation/${_File}`
 				),
 				"utf-8"
 			)

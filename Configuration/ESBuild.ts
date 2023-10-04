@@ -32,8 +32,8 @@ export default {
 			resolveFrom: "out",
 			assets: [
 				{
-					from: "./Source/Configuration/rome.json",
-					to: "./Configuration/",
+					from: "./Source/Notation/rome.json",
+					to: "./Notation/",
 				},
 			],
 		}),
