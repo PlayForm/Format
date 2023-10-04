@@ -56,7 +56,7 @@ export default (_Option: Option = {}): AstroIntegration => {
 					},
 				} satisfies Action);
 
-				if (Rome && Rome !== true && _Rome) {
+				if (typeof Rome === "object" && _Rome) {
 					Rome["$schema"] = undefined;
 					_Rome.applyConfiguration(Rome);
 				}
