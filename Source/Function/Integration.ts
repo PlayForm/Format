@@ -88,5 +88,5 @@ import type { AstroIntegration } from "astro";
 export const { default: Default } = await import("../Object/Option.js");
 
 export const { default: Merge } = await import(
-	"files-pipe/Target/Function/Merge.js"
+	"typescript-esbuild/Target/Function/Merge.js"
 );

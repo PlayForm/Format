@@ -26,4 +26,4 @@ export declare const Default: Omit<{} & {
     }, "__proto__">;
     Logger: 2;
 }, "__proto__">;
-export declare const Merge: import("files-pipe/Target/Interface/Merge.js").default<import("files-pipe/Target/Function/Merge.js").PMF>;
+export declare const Merge: import("typescript-esbuild/Target/Interface/Merge.js").default<import("typescript-esbuild/Target/Interface/Merge.js").Generic>;
