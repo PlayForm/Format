@@ -12,7 +12,7 @@ export default (_Option: Option = {}): AstroIntegration => {
 		}
 	}
 
-	const { Path, Cache, Logger, Exclude, Action, Rome } = Merge(
+	const { Path, Cache, Logger, Exclude, Action, Biome } = Merge(
 		Default,
 		_Option
 	);
@@ -28,24 +28,26 @@ export default (_Option: Option = {}): AstroIntegration => {
 	}
 
 	return {
-		name: "astro-rome",
+		name: "astro-biome",
 		hooks: {
 			"astro:build:done": async ({ dir: Dir }) => {
 				if (!Paths.size) {
 					Paths.add(Dir);
 				}
 
-				const _Rome = await (
-					await import("@rometools/js-api")
-				).Rome.create({
-					distribution: (await import("@rometools/js-api"))
-						.Distribution.NODE,
+				const _Biome = await (
+					// @TODO: Import proper API
+					// await import()
+				).Biome.create({
+					distribution:
+					// @TODO: Import proper distribution
+					// (await import()).Distribution.NODE,
 				});
 
 				const _Action = Merge(Action, {
 					Wrote: async (On) => {
 						try {
-							return _Rome.formatContent(On.Buffer.toString(), {
+							return _Biome.formatContent(On.Buffer.toString(), {
 								filePath: (await import("path")).resolve(
 									On.Input
 								),
@@ -56,9 +58,9 @@ export default (_Option: Option = {}): AstroIntegration => {
 					},
 				} satisfies Action);
 
-				if (typeof Rome === "object" && _Rome) {
-					Rome["$schema"] = undefined;
-					_Rome.applyConfiguration(Rome);
+				if (typeof Biome === "object" && _Biome) {
+					Biome["$schema"] = undefined;
+					_Biome.applyConfiguration(Biome);
 				}
 
 				Paths.forEach(async (Path) => {

@@ -1,25 +1,25 @@
 {
-	"name": "astro-rome",
+	"name": "astro-biome",
 	"version": "2.0.9",
 	"private": false,
-	"description": "🏛️ AstroJS Rome tools. Format, lint and check your Astro website with Rome.",
+	"description": "🧬 AstroJS Biome tools. Format, lint and check your Astro website with Biome.",
 	"keywords": [
 		"astro-integration",
 		"astro-component",
 		"astro",
 		"linter",
-		"rome",
+		"biome",
 		"javascript",
 		"performance",
 		"withastro"
 	],
-	"homepage": "https://github.com/astro-community/AstroRome#readme",
+	"homepage": "https://github.com/astro-community/AstroBiome#readme",
 	"bugs": {
-		"url": "https://github.com/astro-community/AstroRome/issues"
+		"url": "https://github.com/astro-community/AstroBiome/issues"
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/astro-community/AstroRome.git"
+		"url": "git+https://github.com/astro-community/AstroBiome.git"
 	},
 	"license": "MIT",
 	"author": {
@@ -34,12 +34,8 @@
 		"prepublishOnly": "TypeScriptESBuild 'Source/**/*.ts' -es Configuration/ESBuild.ts"
 	},
 	"dependencies": {
-		"@rometools/backend-jsonrpc": "12.1.3",
-		"@rometools/js-api": "0.3.0",
-		"@rometools/wasm-nodejs": "12.1.3",
 		"deepmerge-ts": "5.1.0",
-		"files-pipe": "2.0.20",
-		"rome": "12.1.3"
+		"files-pipe": "2.0.20"
 	},
 	"devDependencies": {
 		"astro": "3.3.0",

@@ -3,12 +3,12 @@
  *
  */
 export default interface Type extends Option {
-	// rome-ignore lint/suspicious/noExplicitAny:
+	// biome-ignore lint/suspicious/noExplicitAny:
 	[key: string]: any;
 
-	Rome?: boolean | Rome;
+	Biome?: boolean | Biome;
 }
 
-import type Rome from "./Rome.js";
+import type Biome from "./Biome.js";
 
 import type Option from "files-pipe/Target/Interface/Option.js";
