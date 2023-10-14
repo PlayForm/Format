@@ -30,7 +30,7 @@ export default {
             resolveFrom: "out",
             assets: [
                 {
-                    from: "./Source/Notation/Biome.json",
+                    from: "./Source/Notation/biome.json",
                     to: "./Notation/",
                 },
             ],

@@ -90,13 +90,13 @@ export default {
 
 > **Note**
 >
-> If you provide a `Biome.json` config file the utility will pick it up
+> If you provide a `biome.json` config file the utility will pick it up
 > automatically.
 
 > **Warning**
 >
 > The configuration options from the `astro.config.ts` file will override the
-> `Biome.json` config.
+> `biome.json` config.
 
 #### You can add multiple paths to validate / format by specifying an array as the `Path` variable.
 
