@@ -38,6 +38,7 @@ export default (_Option: Option = {}): AstroIntegration => {
 				const _Biome = await (
 					// @TODO: Import proper API
 					// await import()
+					await import('@biomejs/biome').default
 				).Biome.create({
 					distribution:
 					// @TODO: Import proper distribution
