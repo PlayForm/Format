@@ -63,7 +63,7 @@ export default (_Option: Option = {}): AstroIntegration => {
 					Biome["$schema"] = undefined;
 					_Biome.applyConfiguration(Biome);
 				}
-
+				
 				for (const Path of Paths) {
 					await (
 						await (
