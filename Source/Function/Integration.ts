@@ -63,7 +63,7 @@ export default (_Option: Option = {}): AstroIntegration => {
 					_Biome.applyConfiguration(Biome);
 				}
 
-				Paths.forEach(async (Path) => {
+				for (const Path of Paths) {
 					await (
 						await (
 							await (
@@ -74,7 +74,7 @@ export default (_Option: Option = {}): AstroIntegration => {
 							).By("**/*.{js,mjs,cjs,ts}")
 						).Not(Exclude)
 					).Pipe(_Action);
-				});
+				}
 			},
 		},
 	};
