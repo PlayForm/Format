@@ -3,9 +3,8 @@
  *
  */
 export default interface Type extends Omit<Configuration, "$schema"> {
-	// biome-ignore lint/suspicious/noExplicitAny:
-	[key: string]: any;
+	[key: string]: Value<Type>;
 }
 
-// @TODO: Resolve proper type
-// import type { Configuration } from "";
+import type { Configuration } from "@biomejs/js-api";
+import type Value from "typescript-esbuild/Target/Interface/Value.js";
