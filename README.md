@@ -48,7 +48,7 @@ pnpx astro add astro-biome
 
 First, install the `AstroBiome` integration like so:
 
-```
+```sh
 npm install -D -E astro-biome
 ```
 
