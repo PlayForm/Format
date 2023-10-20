@@ -34,17 +34,17 @@
 		"prepublishOnly": "TypeScriptESBuild 'Source/**/*.ts' -es Configuration/ESBuild.ts"
 	},
 	"dependencies": {
-		"@biomejs/backend-jsonrpc": "1.3.0",
-		"@biomejs/biome": "1.3.0",
+		"@biomejs/backend-jsonrpc": "1.3.1",
+		"@biomejs/biome": "1.3.1",
 		"@biomejs/js-api": "0.3.0-nightly.cfef948",
-		"@biomejs/wasm-nodejs": "1.3.0",
+		"@biomejs/wasm-nodejs": "1.3.1",
 		"deepmerge-ts": "5.1.0",
 		"files-pipe": "2.0.20"
 	},
 	"devDependencies": {
 		"astro": "3.3.2",
 		"esbuild-plugin-copy": "2.1.1",
-		"typescript-esbuild": "0.2.19"
+		"typescript-esbuild": "0.2.20"
 	},
 	"publishConfig": {
 		"access": "public"
