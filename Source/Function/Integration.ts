@@ -35,47 +35,47 @@ export default ((...[_Option = {}]: Parameters<Type>) => {
 					Paths.add(Dir);
 				}
 
-				const _Biome = await (
-					// @TODO: Import proper API
-					// await import()
-					await import('@biomejs/biome').default
-				).Biome.create({
-					distribution:
-					// @TODO: Import proper distribution
-					// (await import()).Distribution.NODE,
-				});
+				// const _Biome = await (
+				// 	// @TODO: Import proper API
+				// 	// await import()
+				// 	await import('@biomejs/biome').default
+				// ).Biome.create({
+				// 	distribution:
+				// 	// @TODO: Import proper distribution
+				// 	// (await import()).Distribution.NODE,
+				// });
 
-				const _Action = Merge(Action, {
-					Wrote: async (On) => {
-						try {
-							return _Biome.formatContent(On.Buffer.toString(), {
-								filePath: (await import("path")).resolve(
-									On.Input
-								),
-							}).content;
-						} catch (_Error) {
-							return On.Buffer;
-						}
-					},
-				} satisfies Action);
+				// const _Action = Merge(Action, {
+				// 	Wrote: async (On) => {
+				// 		try {
+				// 			return _Biome.formatContent(On.Buffer.toString(), {
+				// 				filePath: (await import("path")).resolve(
+				// 					On.Input
+				// 				),
+				// 			}).content;
+				// 		} catch (_Error) {
+				// 			return On.Buffer;
+				// 		}
+				// 	},
+				// } satisfies Action);
 
-				if (typeof Biome === "object" && _Biome) {
-					Biome["$schema"] = undefined;
-					_Biome.applyConfiguration(Biome);
-				}
+				// if (typeof Biome === "object" && _Biome) {
+				// 	Biome["$schema"] = undefined;
+				// 	_Biome.applyConfiguration(Biome);
+				// }
 				
-				for (const Path of Paths) {
-					await (
-						await (
-							await (
-								await new (await import("files-pipe")).default(
-									Cache,
-									Logger
-								).In(Path)
-							).By("**/*.{js,mjs,cjs,ts}")
-						).Not(Exclude)
-					).Pipe(_Action);
-				}
+				// for (const Path of Paths) {
+				// 	await (
+				// 		await (
+				// 			await (
+				// 				await new (await import("files-pipe")).default(
+				// 					Cache,
+				// 					Logger
+				// 				).In(Path)
+				// 			).By("**/*.{js,mjs,cjs,ts}")
+				// 		).Not(Exclude)
+				// 	).Pipe(_Action);
+				// }
 			},
 		},
 	};
@@ -83,7 +83,7 @@ export default ((...[_Option = {}]: Parameters<Type>) => {
 
 import type Type from "../Interface/Integration.js";
 
-import type Action from "files-pipe/Target/Interface/Action.js";
+// import type Action from "files-pipe/Target/Interface/Action.js";
 import type Path from "files-pipe/Target/Type/Path.js";
 
 
