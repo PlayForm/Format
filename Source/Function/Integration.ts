@@ -2,7 +2,7 @@
  * @module Integration
  *
  */
-export default ((_Option: Option = {}) => {
+export default ((...[_Option = {}]: Parameters<Type>) => {
 	for (const Option in _Option) {
 		if (
 			Object.prototype.hasOwnProperty.call(_Option, Option) &&
@@ -20,7 +20,7 @@ export default ((_Option: Option = {}) => {
 	const Paths = new Set<Path>();
 
 	if (typeof Path !== "undefined") {
-		if (Path instanceof Array || Path instanceof Set) {
+		if (Array.isArray(Path) || Path instanceof Set) {
 			for (const _Path of Path) {
 				Paths.add(_Path);
 			}
@@ -82,10 +82,9 @@ export default ((_Option: Option = {}) => {
 }) satisfies Type as Type;
 
 import type Type from "../Interface/Integration.js";
-import type Option from "../Interface/Option.js";
 
 import type Action from "files-pipe/Target/Interface/Action.js";
-import type Path from "files-pipe/Target/Interface/Path.js";
+import type Path from "files-pipe/Target/Type/Path.js";
 
 
 export const { default: Default } = await import("../Variable/Option.js");
