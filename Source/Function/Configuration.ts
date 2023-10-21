@@ -1,3 +1,7 @@
+/**
+ * @module Configuration
+ *
+ */
 export default async (_File: string) => {
 	try {
 		return (
