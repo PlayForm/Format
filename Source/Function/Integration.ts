@@ -63,7 +63,7 @@ export default ((...[_Option = {}]: Parameters<Type>) => {
 				// 	Biome["$schema"] = undefined;
 				// 	_Biome.applyConfiguration(Biome);
 				// }
-				
+
 				// for (const Path of Paths) {
 				// 	await (
 				// 		await (
@@ -85,7 +85,6 @@ import type Type from "../Interface/Integration.js";
 
 // import type Action from "files-pipe/Target/Interface/Action.js";
 import type Path from "files-pipe/Target/Type/Path.js";
-
 
 export const { default: Default } = await import("../Variable/Option.js");
 
