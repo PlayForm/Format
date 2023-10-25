@@ -12,10 +12,7 @@ export default ((...[_Option = {}]: Parameters<Type>) => {
 		}
 	}
 
-	const { Path, Cache, Logger, Exclude, Action, Biome } = Merge(
-		Default,
-		_Option
-	);
+	const { Path } = Merge(Default, _Option);
 
 	const Paths = new Set<Path>();
 
