@@ -3,14 +3,14 @@
  *
  */
 export default ((...[_Option = {}]: Parameters<Type>) => {
-	for (const Option in _Option) {
-		if (
-			Object.prototype.hasOwnProperty.call(_Option, Option) &&
-			_Option[Option] === true
-		) {
-			_Option[Option] = Default[Option as keyof typeof Default];
-		}
-	}
+	Object.entries(_Option).forEach(([Key, Value]) =>
+		Object.defineProperty(_Option, Key, {
+			value:
+				Value === true
+					? Default[Key as keyof typeof Default]
+					: _Option[Key as keyof typeof _Option],
+		})
+	);
 
 	const { Path } = Merge(Default, _Option);
 
@@ -18,9 +18,7 @@ export default ((...[_Option = {}]: Parameters<Type>) => {
 
 	if (typeof Path !== "undefined") {
 		if (Array.isArray(Path) || Path instanceof Set) {
-			for (const _Path of Path) {
-				Paths.add(_Path);
-			}
+			Path.forEach((Path) => Paths.add(Path));
 		}
 	}
 
@@ -80,7 +78,6 @@ export default ((...[_Option = {}]: Parameters<Type>) => {
 
 import type Type from "../Interface/Integration.js";
 
-// import type Action from "files-pipe/Target/Interface/Action.js";
 import type Path from "files-pipe/Target/Type/Path.js";
 
 export const { default: Default } = await import("../Variable/Option.js");
