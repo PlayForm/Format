@@ -3,13 +3,7 @@
  *
  */
 declare const _default: Omit<{} & {
-    Cache: {
-        Search: string;
-        Folder: string;
-    };
-    Path: string;
-    Exclude: false;
-    Files: string;
+    Biome: Type;
     Action: Omit<{} & {
         Failed: (On: import("files-pipe/Target/Interface/File.js").default) => Promise<string>;
         Accomplished: (On: import("files-pipe/Target/Interface/File.js").default) => Promise<string>;
@@ -19,7 +13,13 @@ declare const _default: Omit<{} & {
         Passed: (On: import("files-pipe/Target/Interface/File.js").default) => Promise<true>;
         Changed: (Plan: import("files-pipe/Target/Interface/Plan.js").default) => Promise<import("files-pipe/Target/Interface/Plan.js").default>;
     }, "__proto__">;
+    Cache: {
+        Search: string;
+        Folder: string;
+    };
+    Path: string;
     Logger: 2;
-    Biome: any;
+    Files: string;
+    Exclude: false;
 }, "__proto__">;
 export default _default;

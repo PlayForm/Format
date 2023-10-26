@@ -3,8 +3,7 @@
  *
  */
 export default interface Type extends Option {
-    [key: string]: any;
     Biome?: boolean | Biome;
 }
-import type Biome from "./Biome.js";
+import type Biome from "../Type/Biome.js";
 import type Option from "files-pipe/Target/Interface/Option.js";
