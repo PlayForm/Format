@@ -1,6 +1,6 @@
 {
 	"name": "astro-biome",
-	"version": "2.1.0",
+	"version": "0.0.2",
 	"private": false,
 	"description": "🗻 AstroJS Biome tools. Format, lint and check your Astro website with Biome.",
 	"keywords": [
