@@ -21,7 +21,7 @@
 		"type": "git",
 		"url": "git+https://github.com/astro-community/AstroBiome.git"
 	},
-	"license": "MIT",
+	"license": "SEE LICENSE IN LICENSE",
 	"author": {
 		"name": "Nikola Hristov",
 		"email": "nikola@nikolahristov.tech",
