@@ -12,7 +12,7 @@ export default (
 		Accomplished: async (On) => `Formatted ${On.Input} in ${On.Output}.`,
 		Fulfilled: async (Plan) =>
 			Plan.Files > 0
-				? `Successfully formatted a total of ${Plan.Files} JS and TS ${
+				? `Successfully formatted a total of ${Plan.Files} JavaScript and TypeScript ${
 						Plan.Files === 1 ? "file" : "files"
 				  }.`
 				: false,
