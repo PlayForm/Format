@@ -11,13 +11,13 @@ export declare const Default: Omit<
 		Action: Omit<
 			{} & {
 				Failed: (
-					On: import("files-pipe/Target/Interface/File.js").default,
+					On: import("files-pipe/Target/Interface/File.js").default
 				) => Promise<string>;
 				Accomplished: (
-					On: import("files-pipe/Target/Interface/File.js").default,
+					On: import("files-pipe/Target/Interface/File.js").default
 				) => Promise<string>;
 				Fulfilled: (
-					Plan: import("files-pipe/Target/Interface/Plan.js").default,
+					Plan: import("files-pipe/Target/Interface/Plan.js").default
 				) => Promise<string | false>;
 				Read: ({
 					Input,
@@ -28,10 +28,10 @@ export declare const Default: Omit<
 					import("files-pipe/Target/Type/Buffer.js").Type
 				>;
 				Passed: (
-					On: import("files-pipe/Target/Interface/File.js").default,
+					On: import("files-pipe/Target/Interface/File.js").default
 				) => Promise<true>;
 				Changed: (
-					Plan: import("files-pipe/Target/Interface/Plan.js").default,
+					Plan: import("files-pipe/Target/Interface/Plan.js").default
 				) => Promise<
 					import("files-pipe/Target/Interface/Plan.js").default
 				>;

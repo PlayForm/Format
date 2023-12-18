@@ -2,14 +2,14 @@
  * @module Integration
  *
  */
-export default (((...[_Option = {}]: Parameters<Type>) => {
+export default ((...[_Option = {}]: Parameters<Type>) => {
 	Object.entries(_Option).forEach(([Key, Value]) =>
 		Object.defineProperty(_Option, Key, {
 			value:
 				Value === true
 					? Default[Key as keyof typeof Default]
 					: _Option[Key as keyof typeof _Option],
-		}),
+		})
 	);
 
 	const { Path } = Merge(Default, _Option);
@@ -74,7 +74,7 @@ export default (((...[_Option = {}]: Parameters<Type>) => {
 			},
 		},
 	};
-}) satisfies Type as Type);
+}) satisfies Type as Type;
 
 import type Type from "../Interface/Integration.js";
 

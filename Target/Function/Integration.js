@@ -1,6 +1,6 @@
 var i = (...[t = {}]) => {
 	Object.entries(t).forEach(([e, f]) =>
-		Object.defineProperty(t, e, { value: f === !0 ? o[e] : t[e] }),
+		Object.defineProperty(t, e, { value: f === !0 ? o[e] : t[e] })
 	);
 	const { Path: a } = s(o, t),
 		r = new Set();

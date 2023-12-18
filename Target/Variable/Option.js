@@ -9,11 +9,11 @@ var e = (await import("typescript-esbuild/Target/Function/Merge.js")).default(
 				t.Files > 0
 					? `Successfully formatted a total of ${
 							t.Files
-					  } JavaScript and TypeScript ${
+						} JavaScript and TypeScript ${
 							t.Files === 1 ? "file" : "files"
-					  }.`
+						}.`
 					: !1,
 		},
-	},
+	}
 );
 export { e as default };
