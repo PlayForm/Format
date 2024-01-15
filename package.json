@@ -35,7 +35,7 @@
 	},
 	"dependencies": {
 		"@biomejs/backend-jsonrpc": "1.5.2",
-		"@biomejs/biome": "1.5.1",
+		"@biomejs/biome": "1.5.2",
 		"@biomejs/js-api": "0.3.0-nightly.cfef948",
 		"@biomejs/wasm-nodejs": "1.5.2",
 		"deepmerge-ts": "5.1.0",
