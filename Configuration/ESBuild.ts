@@ -15,11 +15,12 @@ export default {
 				onStart(async () => {
 					try {
 						outdir
-							? await (
-									await import("fs/promises")
-								).rm(outdir, {
-									recursive: true,
-								})
+							? await (await import("node:fs/promises")).rm(
+									outdir,
+									{
+										recursive: true,
+									},
+							  )
 							: {};
 					} catch (_Error) {
 						console.log(_Error);

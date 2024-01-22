@@ -14,9 +14,9 @@ export default (
 			Plan.Files > 0
 				? `Successfully formatted a total of ${
 						Plan.Files
-					} JavaScript and TypeScript ${
+				  } JavaScript and TypeScript ${
 						Plan.Files === 1 ? "file" : "files"
-					}.`
+				  }.`
 				: false,
 	},
 } satisfies Type);
