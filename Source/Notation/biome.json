@@ -47,7 +47,8 @@
 				"noUselessLoneBlockStatements": "off",
 				"useImportRestrictions": "off",
 				"useShorthandFunctionType": "off",
-				"useFilenamingConvention": "off"
+				"useFilenamingConvention": "off",
+				"noNodejsModules": "off"
 			},
 			"performance": {
 				"all": true
