@@ -44,7 +44,6 @@
 			},
 			"nursery": {
 				"all": true,
-				"noDefaultExport": "off",
 				"noUselessLoneBlockStatements": "off",
 				"useImportRestrictions": "off"
 			},
@@ -57,6 +56,7 @@
 			"style": {
 				"all": true,
 				"noUselessElse": "off",
+				"noDefaultExport": "off",
 				"useNamingConvention": "off"
 			},
 			"suspicious": {
