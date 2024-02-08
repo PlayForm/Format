@@ -7,6 +7,12 @@ export default _default;
 import type Type from "../Interface/Integration.js";
 export declare const Default: Omit<{} & {
     Biome: any;
+    Cache: {
+        Search: string;
+        Folder: string;
+    };
+    Path: string;
+    Logger: 2;
     Action: Omit<{} & {
         Failed: (On: import("files-pipe/Target/Interface/File.js").default) => Promise<string>;
         Accomplished: (On: import("files-pipe/Target/Interface/File.js").default) => Promise<string>;
@@ -16,12 +22,6 @@ export declare const Default: Omit<{} & {
         Passed: (On: import("files-pipe/Target/Interface/File.js").default) => Promise<true>;
         Changed: (Plan: import("files-pipe/Target/Interface/Plan.js").default) => Promise<import("files-pipe/Target/Interface/Plan.js").default>;
     }, "__proto__">;
-    Cache: {
-        Search: string;
-        Folder: string;
-    };
-    Path: string;
-    Logger: 2;
     Files: string;
     Exclude: false;
 }, "__proto__">;

@@ -6,7 +6,6 @@ export default (
 	await import("typescript-esbuild/Target/Function/Merge.js")
 ).default((await import("files-pipe/Target/Variable/Option.js")).default, {
 	Biome: (await import("./Biome.js")).default,
-
 	Action: {
 		Failed: async (On) => `Error: Cannot format file ${On.Input}!`,
 		Accomplished: async (On) => `Formatted ${On.Input} in ${On.Output}.`,
@@ -21,4 +20,4 @@ export default (
 	},
 } satisfies Type);
 
-import type Type from "files-pipe/Target/Interface/Option";
+import type Type from "../Interface/Option.js";
