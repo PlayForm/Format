@@ -13,13 +13,13 @@
 		"performance",
 		"withastro"
 	],
-	"homepage": "https://github.com/astro-community/AstroBiome#readme",
+	"homepage": "https://github.com/NikolaRHristov/AstroBiome#readme",
 	"bugs": {
-		"url": "https://github.com/astro-community/AstroBiome/issues"
+		"url": "https://github.com/NikolaRHristov/AstroBiome/issues"
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/astro-community/AstroBiome.git"
+		"url": "git+https://github.com/NikolaRHristov/AstroBiome.git"
 	},
 	"license": "SEE LICENSE IN LICENSE",
 	"author": {
