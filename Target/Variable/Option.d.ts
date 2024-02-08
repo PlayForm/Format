@@ -3,7 +3,7 @@
  *
  */
 declare const _default: Omit<{} & {
-    Biome: Type;
+    Biome: any;
     Action: Omit<{} & {
         Failed: (On: import("files-pipe/Target/Interface/File.js").default) => Promise<string>;
         Accomplished: (On: import("files-pipe/Target/Interface/File.js").default) => Promise<string>;

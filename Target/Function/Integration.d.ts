@@ -6,7 +6,7 @@ declare const _default: Type;
 export default _default;
 import type Type from "../Interface/Integration.js";
 export declare const Default: Omit<{} & {
-    Biome: Type;
+    Biome: any;
     Action: Omit<{} & {
         Failed: (On: import("files-pipe/Target/Interface/File.js").default) => Promise<string>;
         Accomplished: (On: import("files-pipe/Target/Interface/File.js").default) => Promise<string>;
