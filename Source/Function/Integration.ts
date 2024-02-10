@@ -35,7 +35,7 @@ export default ((...[_Option = {}]: Parameters<Type>) => {
 
 				const _Biome = await (
 					await import("@biomejs/js-api")
-				).Rome.create({
+				).Biome.create({
 					distribution: (await import("@biomejs/js-api")).Distribution
 						.NODE,
 				});
