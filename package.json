@@ -1,6 +1,6 @@
 {
 	"name": "astro-biome",
-	"version": "0.0.4",
+	"version": "0.0.5",
 	"private": false,
 	"description": "🗻 AstroJS Biome tools. Format, lint and check your Astro website with Biome.",
 	"keywords": [
@@ -35,7 +35,7 @@
 	},
 	"dependencies": {
 		"@biomejs/backend-jsonrpc": "1.5.3",
-		"@biomejs/js-api": "0.3.0-nightly.384b31d",
+		"@biomejs/js-api": "nightly",
 		"@biomejs/wasm-nodejs": "1.5.3",
 		"deepmerge-ts": "5.1.0",
 		"files-pipe": "2.1.7"
