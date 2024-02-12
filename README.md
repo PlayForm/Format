@@ -100,7 +100,10 @@ export default {
 > The configuration options from the `astro.config.ts` file will override the
 > `biome.json` config.
 
-#### You can add multiple paths to validate / format by specifying an array as the `Path` variable.
+### Adding Multiple Paths
+
+You can add multiple paths to validate / format by specifying an array as the
+`Path` variable.
 
 **`astro.config.ts`**
 
@@ -116,7 +119,9 @@ export default {
 };
 ```
 
-#### You can also provide a map of paths for different input output directories.
+### Input-Output Mapping
+
+You can also provide a map of paths for different input output directories:
 
 **`astro.config.ts`**
 
@@ -132,7 +137,7 @@ export default {
 };
 ```
 
-#### Or an array of the two.
+Or an array of the two:
 
 **`astro.config.ts`**
 
@@ -153,7 +158,11 @@ export default {
 };
 ```
 
-#### You can provide a filter to exclude files from formatting. A filter can be an array of regexes or a single match. You can use functions, as well to match on file names.
+### File Filtering
+
+You can provide a filter to exclude files from formatting. A filter can be an
+array of regexes or a single match. You can use functions, as well to match on
+file names:
 
 **`astro.config.ts`**
 
@@ -172,7 +181,9 @@ export default {
 };
 ```
 
-#### Set `Logger` to `0` if you do not want to see debug messages. Default is `2`.
+### Controlling Logging
+
+Set `Logger` to `0` if you do not want to see debug messages. Default is `2`:
 
 **`astro.config.ts`**
 
