@@ -41,7 +41,7 @@
 		"files-pipe": "2.1.9"
 	},
 	"devDependencies": {
-		"astro": "4.4.6",
+		"astro": "4.4.8",
 		"esbuild-plugin-copy": "2.1.1",
 		"typescript-esbuild": "0.3.10"
 	},
