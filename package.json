@@ -38,7 +38,7 @@
 		"@biomejs/js-api": "nightly",
 		"@biomejs/wasm-nodejs": "1.5.3",
 		"deepmerge-ts": "5.1.0",
-		"files-pipe": "2.1.9"
+		"files-pipe": "2.1.10"
 	},
 	"devDependencies": {
 		"astro": "4.4.13",
