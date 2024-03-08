@@ -38,12 +38,12 @@
 		"@biomejs/js-api": "nightly",
 		"@biomejs/wasm-nodejs": "1.5.3",
 		"deepmerge-ts": "5.1.0",
-		"files-pipe": "2.1.9"
+		"files-pipe": "2.1.10"
 	},
 	"devDependencies": {
-		"astro": "4.4.13",
+		"astro": "4.4.14",
 		"esbuild-plugin-copy": "2.1.1",
-		"typescript-esbuild": "0.3.10"
+		"typescript-esbuild": "0.3.11"
 	},
 	"publishConfig": {
 		"access": "public"
