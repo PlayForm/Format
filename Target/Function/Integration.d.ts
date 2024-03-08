@@ -17,10 +17,10 @@ export declare const Default: Omit<{} & {
         Failed: (On: import("files-pipe/Target/Interface/File.js").default) => Promise<string>;
         Accomplished: (On: import("files-pipe/Target/Interface/File.js").default) => Promise<string>;
         Fulfilled: (Plan: import("files-pipe/Target/Interface/Plan.js").default) => Promise<string | false>;
-        Read: ({ Input }: any) => Promise<string>;
-        Wrote: ({ Buffer }: any) => Promise<any>;
-        Passed: (On: any) => Promise<true>;
-        Changed: (Plan: any) => Promise<any>;
+        Read: ({ Input }: import("files-pipe/Target/Interface/File.js").default) => Promise<string>;
+        Wrote: ({ Buffer }: import("files-pipe/Target/Interface/File.js").default) => Promise<import("files-pipe/Target/Type/Buffer.js").Type>;
+        Passed: (On: import("files-pipe/Target/Interface/File.js").default) => Promise<true>;
+        Changed: (Plan: import("files-pipe/Target/Interface/Plan.js").default) => Promise<import("files-pipe/Target/Interface/Plan.js").default>;
     }, "__proto__">;
     Files: string;
     Exclude: false;
