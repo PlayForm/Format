@@ -34,7 +34,7 @@
 		"prepublishOnly": "TypeScriptESBuild 'Source/**/*.ts' -es Configuration/ESBuild.ts"
 	},
 	"dependencies": {
-		"@biomejs/backend-jsonrpc": "1.6.0",
+		"@biomejs/backend-jsonrpc": "1.6.1",
 		"@biomejs/js-api": "nightly",
 		"@biomejs/wasm-nodejs": "1.6.0",
 		"deepmerge-ts": "5.1.0",
