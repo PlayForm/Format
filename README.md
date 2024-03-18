@@ -100,7 +100,7 @@ export default {
 > The configuration options from the `astro.config.ts` file will override the
 > `biome.json` config.
 
-### Adding Multiple Paths
+### Add Multiple Paths
 
 You can add multiple paths to validate / format by specifying an array as the
 `Path` variable.
