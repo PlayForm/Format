@@ -2,7 +2,7 @@
 	"name": "astro-biome",
 	"version": "0.0.8",
 	"private": false,
-	"description": "🗻 AstroJS Biome tools.",
+	"description": "🗻 Biome Format.",
 	"keywords": [
 		"astro-integration",
 		"astro-component",
