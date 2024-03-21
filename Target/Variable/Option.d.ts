@@ -3,6 +3,7 @@
  *
  */
 declare const _default: Omit<{} & {
+    File: string;
     Biome: any;
     Cache: {
         Search: string;
@@ -13,13 +14,12 @@ declare const _default: Omit<{} & {
     Action: Omit<{} & {
         Failed: (On: import("files-pipe/Target/Interface/File.js").default) => Promise<string>;
         Accomplished: (On: import("files-pipe/Target/Interface/File.js").default) => Promise<string>;
-        Fulfilled: (Plan: import("files-pipe/Target/Interface/Plan.js").default) => Promise<string | false>;
+        Fulfilled: ({ File }: import("files-pipe/Target/Interface/Plan.js").default) => Promise<string | false>;
         Read: ({ Input }: any) => Promise<string>;
         Wrote: ({ Buffer }: any) => Promise<any>;
         Passed: (On: any) => Promise<true>;
         Changed: (Plan: any) => Promise<any>;
     }, "__proto__">;
-    Files: string;
     Exclude: false;
 }, "__proto__">;
 export default _default;

@@ -9,12 +9,10 @@ export default (
 	Action: {
 		Failed: async (On) => `Error: Cannot format file ${On.Input}!`,
 		Accomplished: async (On) => `Formatted ${On.Input} in ${On.Output}.`,
-		Fulfilled: async (Plan) =>
-			Plan.Files > 0
-				? `Successfully formatted a total of ${
-						Plan.Files
-				  } JavaScript and TypeScript ${
-						Plan.Files === 1 ? "file" : "files"
+		Fulfilled: async ({ File }) =>
+			File > 0
+				? `Successfully formatted a total of ${File} JavaScript and TypeScript ${
+						File === 1 ? "file" : "files"
 				  }.`
 				: false,
 	},
