@@ -2,7 +2,7 @@
 	"name": "astro-biome",
 	"version": "0.0.9",
 	"private": false,
-	"description": "🗻 Biome Format.",
+	"description": "🗻 Biome Format Astro.",
 	"keywords": [
 		"astro-integration",
 		"astro-component",
