@@ -1,6 +1,6 @@
 {
 	"name": "astro-biome",
-	"version": "0.0.8",
+	"version": "0.0.9",
 	"private": false,
 	"description": "🗻 Biome Format.",
 	"keywords": [
@@ -39,12 +39,12 @@
 		"@biomejs/js-api": "nightly",
 		"@biomejs/wasm-nodejs": "1.6.1",
 		"deepmerge-ts": "5.1.0",
-		"files-pipe": "2.1.14"
+		"files-pipe": "2.1.15"
 	},
 	"devDependencies": {
 		"astro": "4.5.8",
 		"esbuild-plugin-copy": "2.1.1",
-		"typescript-document": "0.0.4",
+		"typescript-document": "0.0.5",
 		"typescript-esbuild": "0.4.5"
 	},
 	"publishConfig": {
