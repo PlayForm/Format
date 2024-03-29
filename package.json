@@ -1,5 +1,5 @@
 {
-	"name": "astro-biome",
+	"name": "biome-astro",
 	"version": "0.0.10",
 	"private": false,
 	"description": "🗻 Biome Format.",
@@ -13,13 +13,13 @@
 		"performance",
 		"withastro"
 	],
-	"homepage": "https://github.com/Playform/AstroBiome#readme",
+	"homepage": "https://github.com/Playform/BiomeAstro#readme",
 	"bugs": {
-		"url": "https://github.com/Playform/AstroBiome/issues"
+		"url": "https://github.com/Playform/BiomeAstro/issues"
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/Playform/AstroBiome.git"
+		"url": "git+https://github.com/Playform/BiomeAstro.git"
 	},
 	"license": "SEE LICENSE IN LICENSE",
 	"author": {

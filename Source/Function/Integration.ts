@@ -26,7 +26,7 @@ export default ((...[_Option = {}]: Parameters<Type>) => {
 	}
 
 	return {
-		name: "astro-biome",
+		name: "biome-astro",
 		hooks: {
 			"astro:build:done": async ({ dir: Dir }) => {
 				if (!Paths.size) {
