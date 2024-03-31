@@ -31,19 +31,19 @@ follow the prompts:
 Using NPM:
 
 ```sh
-npx astro add biome-astro
+npx astro add @playform/biome-astro
 ```
 
 Using Yarn:
 
 ```sh
-yarn astro add biome-astro
+yarn astro add @playform/biome-astro
 ```
 
 Using PNPM:
 
 ```sh
-pnpx astro add biome-astro
+pnpx astro add @playform/biome-astro
 ```
 
 ### Install dependencies manually
@@ -51,7 +51,7 @@ pnpx astro add biome-astro
 First, install the `BiomeAstro` integration like so:
 
 ```sh
-npm install -D -E biome-astro
+npm install -D -E @playform/biome-astro
 ```
 
 Then, apply this integration to your `astro.config.*` file using the
@@ -60,7 +60,7 @@ Then, apply this integration to your `astro.config.*` file using the
 **`astro.config.ts`**
 
 ```ts
-import Biome from "biome-astro";
+import Biome from "@playform/biome-astro";
 
 export default { integrations: [Biome()] };
 ```
@@ -79,7 +79,7 @@ or disable them entirely:
 **`astro.config.ts`**
 
 ```ts
-import Biome from "biome-astro";
+import Biome from "@playform/biome-astro";
 
 export default {
 	integrations: [
@@ -108,7 +108,7 @@ You can add multiple paths to validate / format by specifying an array as the
 **`astro.config.ts`**
 
 ```ts
-import Biome from "biome-astro";
+import Biome from "@playform/biome-astro";
 
 export default {
 	integrations: [
@@ -126,7 +126,7 @@ You can also provide a map of paths for different input output directories:
 **`astro.config.ts`**
 
 ```ts
-import Biome from "biome-astro";
+import Biome from "@playform/biome-astro";
 
 export default {
 	integrations: [
@@ -142,7 +142,7 @@ Or an array of the two:
 **`astro.config.ts`**
 
 ```ts
-import Biome from "biome-astro";
+import Biome from "@playform/biome-astro";
 
 export default {
 	integrations: [
@@ -167,7 +167,7 @@ file names:
 **`astro.config.ts`**
 
 ```ts
-import Biome from "biome-astro";
+import Biome from "@playform/biome-astro";
 
 export default {
 	integrations: [
@@ -188,7 +188,7 @@ Set `Logger` to `0` if you do not want to see debug messages. Default is `2`:
 **`astro.config.ts`**
 
 ```ts
-import Biome from "biome-astro";
+import Biome from "@playform/biome-astro";
 
 export default {
 	integrations: [
@@ -199,7 +199,7 @@ export default {
 };
 ```
 
-[BiomeAstro]: https://npmjs.org/biome-astro
+[BiomeAstro]: https://npmjs.org/@playform/biome-astro
 [Biome]: https://npmjs.org/@biomejs/biome
 [astro-integration]: https://docs.astro.build/en/guides/integrations-guide/
 

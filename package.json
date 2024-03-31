@@ -1,6 +1,6 @@
 {
-	"name": "biome-astro",
-	"version": "0.0.10",
+	"name": "@playform/biome-astro",
+	"version": "0.0.1",
 	"private": false,
 	"description": "🗻 Biome Format.",
 	"keywords": [
@@ -44,8 +44,8 @@
 	"devDependencies": {
 		"astro": "4.5.12",
 		"esbuild-plugin-copy": "2.1.1",
-		"typescript-document": "0.0.7",
-		"typescript-esbuild": "0.4.9"
+		"typescript-document": "0.0.8",
+		"typescript-esbuild": "0.4.10"
 	},
 	"publishConfig": {
 		"access": "public"
