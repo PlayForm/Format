@@ -4,7 +4,7 @@
  */
 export default (
 	await import("typescript-esbuild/Target/Function/Merge.js")
-).default((await import("files-pipe/Target/Variable/Option.js")).default, {
+).default((await import("@playform/file-pipe/Target/Variable/Option.js")).default, {
 	Biome: (await import("./Biome.js")).default,
 	Action: {
 		Failed: async (On) => `Error: Cannot format file ${On.Input}!`,
