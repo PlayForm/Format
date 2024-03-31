@@ -1,17 +1,14 @@
 {
 	"name": "@playform/biome-astro",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"private": false,
 	"description": "🗻 Biome Format.",
 	"keywords": [
-		"astro-integration",
-		"astro-component",
 		"astro",
 		"linter",
 		"biome",
 		"javascript",
-		"performance",
-		"withastro"
+		"performance"
 	],
 	"homepage": "https://github.com/Playform/BiomeAstro#readme",
 	"bugs": {
