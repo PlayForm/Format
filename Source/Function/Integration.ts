@@ -28,9 +28,9 @@ export default ((...[_Option = {}]: Parameters<Type>) => {
 	return {
 		name: "@playform/biome-astro",
 		hooks: {
-			"astro:build:done": async ({ dir: Dir }) => {
+			"astro:build:done": async ({ dir: Directory }) => {
 				if (!Paths.size) {
-					Paths.add(Dir);
+					Paths.add(Directory);
 				}
 
 				const _Biome = await (
