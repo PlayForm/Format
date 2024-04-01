@@ -2,7 +2,7 @@
 
 # 🗻 [BiomeAstro]
 
-This **[Astro integration][astro-integration]** brings Biome tools your Astro
+This **[Astro integration][astro-integration]** brings Biome tools to your Astro
 project.
 
 [Biome][Biome]

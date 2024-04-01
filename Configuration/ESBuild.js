@@ -37,6 +37,6 @@ export default {
         }),
     ],
     define: {
-        "process.env.VERSION_PACKAGE": `'${(await (await import("typescript-esbuild/Target/Function/JSON.js")).default("package.json"))?.version}'`,
+        "process.env.VERSION_PACKAGE": `'${(await (await import("@playform/build/Target/Function/JSON.js")).default("package.json"))?.version}'`,
     },
 };
