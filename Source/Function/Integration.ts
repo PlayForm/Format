@@ -69,7 +69,7 @@ export default ((...[_Option = {}]: Parameters<Type>) => {
 						await (
 							await (
 								await new (
-									await import("@playform/file-pipe")
+									await import("@playform/pipe")
 								).default(Cache, Logger).In(Path)
 							).By("**/*.{js,mjs,cjs,ts,json}")
 						).Not(Exclude)
@@ -82,8 +82,8 @@ export default ((...[_Option = {}]: Parameters<Type>) => {
 
 import type Type from "../Interface/Integration.js";
 
-import type Action from "@playform/file-pipe/Target/Interface/Action.js";
-import type Path from "@playform/file-pipe/Target/Type/Path.js";
+import type Action from "@playform/pipe/Target/Interface/Action.js";
+import type Path from "@playform/pipe/Target/Type/Path.js";
 
 export const { default: Default } = await import("../Variable/Option.js");
 

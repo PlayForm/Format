@@ -8,4 +8,4 @@ export default interface Type extends Option {
 
 import type Biome from "../Type/Biome.js";
 
-import type Option from "@playform/file-pipe/Target/Interface/Option.js";
+import type Option from "@playform/pipe/Target/Interface/Option.js";
