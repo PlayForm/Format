@@ -39,7 +39,7 @@
 		"@playform/file-pipe": "0.0.2"
 	},
 	"devDependencies": {
-		"astro": "4.5.12",
+		"astro": "4.5.13",
 		"esbuild-plugin-copy": "2.1.1",
 		"@playform/build": "0.0.1"
 	},
