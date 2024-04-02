@@ -1,4 +1,4 @@
-<table><tr><td colspan=4><h3 align=center><picture><source media="(prefers-color-scheme: dark)" srcset=https://raw.githubusercontent.com/Playform/BiomeAstro/main/.github/Image/DarkAstro.svg><source media="(prefers-color-scheme: light)" srcset=https://raw.githubusercontent.com/Playform/BiomeAstro/main/.github/Image/LightAstro.svg><img alt=Astro src=https://raw.githubusercontent.com/Playform/BiomeAstro/main/.github/Image/LightAstro.svg width=28></picture><br>Related:<br></h3></td></tr><tr><td colspan=1 valign=top><br><a href=https://github.com/Playform/CompressAstro target=_blank><picture><source media="(prefers-color-scheme: dark)" srcset="https://img.shields.io/github/stars/Playform/CompressAstro?label=stars&logo=github&color=black&labelColor=black&logoColor=white&logoWidth=0&logoColor=black"><source media="(prefers-color-scheme: light)" srcset="https://img.shields.io/github/stars/Playform/CompressAstro?label=stars&logo=github&color=white&labelColor=white&logoColor=black&logoWidth=0&logoColor=black"><img alt=Stars src="https://img.shields.io/github/stars/Playform/CompressAstro?label=stars&logo=github&color=black&labelColor=black&logoColor=white&logoWidth=0&logoColor=black"></picture></a><br><a href=https://github.com/Playform/CompressAstro target=_blank><b>Compress</b></a><br><b>🗜️  Compress.<br/></b><br></td><td colspan=1 valign=top><br><a href=https://github.com/Playform/CompressAstro/actions/workflows/Node.yml target=_blank><picture><source media="(prefers-color-scheme: dark)" srcset="https://img.shields.io/github/actions/workflow/status/Playform/CompressAstro/Node.yml?branch=main&label=Build&logo=node.js&color=black&labelColor=black&logoColor=white&logoWidth=0"><source media="(prefers-color-scheme: light)" srcset="https://img.shields.io/github/actions/workflow/status/Playform/CompressAstro/Node.yml?branch=main&label=Build&logo=node.js&color=white&labelColor=white&logoColor=black&logoWidth=0"><img alt=Build src="https://img.shields.io/github/actions/workflow/status/Playform/CompressAstro/Node.yml?branch=main&label=Build&logo=node.js&color=black&labelColor=black&logoColor=white&logoWidth=0" title=Build></picture></a><br><a href="https://npmjs.org/@playform/compress-astro?activeTab=dependencies" target=_blank><picture><source media="(prefers-color-scheme: dark)" srcset="https://img.shields.io/librariesio/release/npm/@playform/compress-astro?logo=dependabot&label=&color=black&labelColor=black&logoColor=white&logoWidth=0"><source media="(prefers-color-scheme: light)" srcset="https://img.shields.io/librariesio/release/npm/@playform/compress-astro?logo=dependabot&label=&color=white&labelColor=white&logoColor=black&logoWidth=0"><img alt=Dependencies src="https://img.shields.io/librariesio/release/npm/@playform/compress-astro?logo=dependabot&label=&color=black&labelColor=black&logoColor=white&logoWidth=0" title=Dependencies></picture></a><br><a href=https://npmjs.org/@playform/compress-astro target=_blank><picture><source media="(prefers-color-scheme: dark)" srcset="https://img.shields.io/npm/v/@playform/compress-astro?label=Version&logo=npm&color=black&labelColor=black&logoColor=white&logoWidth=0"><source media="(prefers-color-scheme: light)" srcset="https://img.shields.io/npm/v/@playform/compress-astro?label=Version&logo=npm&color=white&labelColor=white&logoColor=black&logoWidth=0"><img alt=Version src="https://img.shields.io/npm/v/@playform/compress-astro?label=Version&logo=npm&color=black&labelColor=black&logoColor=white&logoWidth=0" title=Version></picture></a><br><a href=https://npmjs.org/@playform/compress-astro target=_blank><picture><source media="(prefers-color-scheme: dark)" srcset="https://img.shields.io/npm/dt/@playform/compress-astro?label=Leaks&logo=npm&color=black&labelColor=black&logoColor=white&logoWidth=0"><source media="(prefers-color-scheme: light)" srcset="https://img.shields.io/npm/dt/@playform/compress-astro?label=Leaks&logo=npm&color=white&labelColor=white&logoColor=black&logoWidth=0"><img alt=Downloads src="https://img.shields.io/npm/dt/@playform/compress-astro?label=Leaks&logo=npm&color=black&labelColor=black&logoColor=white&logoWidth=0" title=Downloads></picture></a><br><br></td><td colspan=1 valign=top><br><a href=https://github.com/Playform/CrittersAstro target=_blank><picture><source media="(prefers-color-scheme: dark)" srcset="https://img.shields.io/github/stars/Playform/CrittersAstro?label=stars&logo=github&color=black&labelColor=black&logoColor=white&logoWidth=0&logoColor=black"><source media="(prefers-color-scheme: light)" srcset="https://img.shields.io/github/stars/Playform/CrittersAstro?label=stars&logo=github&color=white&labelColor=white&logoColor=black&logoWidth=0&logoColor=black"><img alt=Stars src="https://img.shields.io/github/stars/Playform/CrittersAstro?label=stars&logo=github&color=black&labelColor=black&logoColor=white&logoWidth=0&logoColor=black"></picture></a><br><a href=https://github.com/Playform/CrittersAstro target=_blank><b>Critters</b></a><br><b>🦔  Inline CSS.<br/></b><br></td><td colspan=1 valign=top><br><a href=https://github.com/Playform/CrittersAstro/actions/workflows/Node.yml target=_blank><picture><source media="(prefers-color-scheme: dark)" srcset="https://img.shields.io/github/actions/workflow/status/Playform/CrittersAstro/Node.yml?branch=main&label=Build&logo=node.js&color=black&labelColor=black&logoColor=white&logoWidth=0"><source media="(prefers-color-scheme: light)" srcset="https://img.shields.io/github/actions/workflow/status/Playform/CrittersAstro/Node.yml?branch=main&label=Build&logo=node.js&color=white&labelColor=white&logoColor=black&logoWidth=0"><img alt=Build src="https://img.shields.io/github/actions/workflow/status/Playform/CrittersAstro/Node.yml?branch=main&label=Build&logo=node.js&color=black&labelColor=black&logoColor=white&logoWidth=0" title=Build></picture></a><br><a href="https://npmjs.org/@playform/critters-astro?activeTab=dependencies" target=_blank><picture><source media="(prefers-color-scheme: dark)" srcset="https://img.shields.io/librariesio/release/npm/@playform/critters-astro?logo=dependabot&label=&color=black&labelColor=black&logoColor=white&logoWidth=0"><source media="(prefers-color-scheme: light)" srcset="https://img.shields.io/librariesio/release/npm/@playform/critters-astro?logo=dependabot&label=&color=white&labelColor=white&logoColor=black&logoWidth=0"><img alt=Dependencies src="https://img.shields.io/librariesio/release/npm/@playform/critters-astro?logo=dependabot&label=&color=black&labelColor=black&logoColor=white&logoWidth=0" title=Dependencies></picture></a><br><a href=https://npmjs.org/@playform/critters-astro target=_blank><picture><source media="(prefers-color-scheme: dark)" srcset="https://img.shields.io/npm/v/@playform/critters-astro?label=Version&logo=npm&color=black&labelColor=black&logoColor=white&logoWidth=0"><source media="(prefers-color-scheme: light)" srcset="https://img.shields.io/npm/v/@playform/critters-astro?label=Version&logo=npm&color=white&labelColor=white&logoColor=black&logoWidth=0"><img alt=Version src="https://img.shields.io/npm/v/@playform/critters-astro?label=Version&logo=npm&color=black&labelColor=black&logoColor=white&logoWidth=0" title=Version></picture></a><br><a href=https://npmjs.org/@playform/critters-astro target=_blank><picture><source media="(prefers-color-scheme: dark)" srcset="https://img.shields.io/npm/dt/@playform/critters-astro?label=Leaks&logo=npm&color=black&labelColor=black&logoColor=white&logoWidth=0"><source media="(prefers-color-scheme: light)" srcset="https://img.shields.io/npm/dt/@playform/critters-astro?label=Leaks&logo=npm&color=white&labelColor=white&logoColor=black&logoWidth=0"><img alt=Downloads src="https://img.shields.io/npm/dt/@playform/critters-astro?label=Leaks&logo=npm&color=black&labelColor=black&logoColor=white&logoWidth=0" title=Downloads></picture></a><br><br></td></tr></table>
+<table><tr><td colspan=4><h3 align=center><picture><source media="(prefers-color-scheme: dark)" srcset=https://raw.githubusercontent.com/Playform/Format/main/.github/Image/DarkAstro.svg><source media="(prefers-color-scheme: light)" srcset=https://raw.githubusercontent.com/Playform/Format/main/.github/Image/LightAstro.svg><img alt=Astro src=https://raw.githubusercontent.com/Playform/Format/main/.github/Image/LightAstro.svg width=28></picture><br>Related:<br></h3></td></tr><tr><td colspan=1 valign=top><br><a href=https://github.com/Playform/CompressAstro target=_blank><picture><source media="(prefers-color-scheme: dark)" srcset="https://img.shields.io/github/stars/Playform/CompressAstro?label=stars&logo=github&color=black&labelColor=black&logoColor=white&logoWidth=0&logoColor=black"><source media="(prefers-color-scheme: light)" srcset="https://img.shields.io/github/stars/Playform/CompressAstro?label=stars&logo=github&color=white&labelColor=white&logoColor=black&logoWidth=0&logoColor=black"><img alt=Stars src="https://img.shields.io/github/stars/Playform/CompressAstro?label=stars&logo=github&color=black&labelColor=black&logoColor=white&logoWidth=0&logoColor=black"></picture></a><br><a href=https://github.com/Playform/CompressAstro target=_blank><b>Compress</b></a><br><b>🗜️  Compress.<br/></b><br></td><td colspan=1 valign=top><br><a href=https://github.com/Playform/CompressAstro/actions/workflows/Node.yml target=_blank><picture><source media="(prefers-color-scheme: dark)" srcset="https://img.shields.io/github/actions/workflow/status/Playform/CompressAstro/Node.yml?branch=main&label=Build&logo=node.js&color=black&labelColor=black&logoColor=white&logoWidth=0"><source media="(prefers-color-scheme: light)" srcset="https://img.shields.io/github/actions/workflow/status/Playform/CompressAstro/Node.yml?branch=main&label=Build&logo=node.js&color=white&labelColor=white&logoColor=black&logoWidth=0"><img alt=Build src="https://img.shields.io/github/actions/workflow/status/Playform/CompressAstro/Node.yml?branch=main&label=Build&logo=node.js&color=black&labelColor=black&logoColor=white&logoWidth=0" title=Build></picture></a><br><a href="https://npmjs.org/@playform/compress?activeTab=dependencies" target=_blank><picture><source media="(prefers-color-scheme: dark)" srcset="https://img.shields.io/librariesio/release/npm/@playform/compress?logo=dependabot&label=&color=black&labelColor=black&logoColor=white&logoWidth=0"><source media="(prefers-color-scheme: light)" srcset="https://img.shields.io/librariesio/release/npm/@playform/compress?logo=dependabot&label=&color=white&labelColor=white&logoColor=black&logoWidth=0"><img alt=Dependencies src="https://img.shields.io/librariesio/release/npm/@playform/compress?logo=dependabot&label=&color=black&labelColor=black&logoColor=white&logoWidth=0" title=Dependencies></picture></a><br><a href=https://npmjs.org/@playform/compress target=_blank><picture><source media="(prefers-color-scheme: dark)" srcset="https://img.shields.io/npm/v/@playform/compress?label=Version&logo=npm&color=black&labelColor=black&logoColor=white&logoWidth=0"><source media="(prefers-color-scheme: light)" srcset="https://img.shields.io/npm/v/@playform/compress?label=Version&logo=npm&color=white&labelColor=white&logoColor=black&logoWidth=0"><img alt=Version src="https://img.shields.io/npm/v/@playform/compress?label=Version&logo=npm&color=black&labelColor=black&logoColor=white&logoWidth=0" title=Version></picture></a><br><a href=https://npmjs.org/@playform/compress target=_blank><picture><source media="(prefers-color-scheme: dark)" srcset="https://img.shields.io/npm/dt/@playform/compress?label=Leaks&logo=npm&color=black&labelColor=black&logoColor=white&logoWidth=0"><source media="(prefers-color-scheme: light)" srcset="https://img.shields.io/npm/dt/@playform/compress?label=Leaks&logo=npm&color=white&labelColor=white&logoColor=black&logoWidth=0"><img alt=Downloads src="https://img.shields.io/npm/dt/@playform/compress?label=Leaks&logo=npm&color=black&labelColor=black&logoColor=white&logoWidth=0" title=Downloads></picture></a><br><br></td><td colspan=1 valign=top><br><a href=https://github.com/Playform/Inline target=_blank><picture><source media="(prefers-color-scheme: dark)" srcset="https://img.shields.io/github/stars/Playform/Inline?label=stars&logo=github&color=black&labelColor=black&logoColor=white&logoWidth=0&logoColor=black"><source media="(prefers-color-scheme: light)" srcset="https://img.shields.io/github/stars/Playform/Inline?label=stars&logo=github&color=white&labelColor=white&logoColor=black&logoWidth=0&logoColor=black"><img alt=Stars src="https://img.shields.io/github/stars/Playform/Inline?label=stars&logo=github&color=black&labelColor=black&logoColor=white&logoWidth=0&logoColor=black"></picture></a><br><a href=https://github.com/Playform/Inline target=_blank><b>Critters</b></a><br><b>🦔  Inline.<br/></b><br></td><td colspan=1 valign=top><br><a href=https://github.com/Playform/Inline/actions/workflows/Node.yml target=_blank><picture><source media="(prefers-color-scheme: dark)" srcset="https://img.shields.io/github/actions/workflow/status/Playform/Inline/Node.yml?branch=main&label=Build&logo=node.js&color=black&labelColor=black&logoColor=white&logoWidth=0"><source media="(prefers-color-scheme: light)" srcset="https://img.shields.io/github/actions/workflow/status/Playform/Inline/Node.yml?branch=main&label=Build&logo=node.js&color=white&labelColor=white&logoColor=black&logoWidth=0"><img alt=Build src="https://img.shields.io/github/actions/workflow/status/Playform/Inline/Node.yml?branch=main&label=Build&logo=node.js&color=black&labelColor=black&logoColor=white&logoWidth=0" title=Build></picture></a><br><a href="https://npmjs.org/@playform/inline?activeTab=dependencies" target=_blank><picture><source media="(prefers-color-scheme: dark)" srcset="https://img.shields.io/librariesio/release/npm/@playform/inline?logo=dependabot&label=&color=black&labelColor=black&logoColor=white&logoWidth=0"><source media="(prefers-color-scheme: light)" srcset="https://img.shields.io/librariesio/release/npm/@playform/inline?logo=dependabot&label=&color=white&labelColor=white&logoColor=black&logoWidth=0"><img alt=Dependencies src="https://img.shields.io/librariesio/release/npm/@playform/inline?logo=dependabot&label=&color=black&labelColor=black&logoColor=white&logoWidth=0" title=Dependencies></picture></a><br><a href=https://npmjs.org/@playform/inline target=_blank><picture><source media="(prefers-color-scheme: dark)" srcset="https://img.shields.io/npm/v/@playform/inline?label=Version&logo=npm&color=black&labelColor=black&logoColor=white&logoWidth=0"><source media="(prefers-color-scheme: light)" srcset="https://img.shields.io/npm/v/@playform/inline?label=Version&logo=npm&color=white&labelColor=white&logoColor=black&logoWidth=0"><img alt=Version src="https://img.shields.io/npm/v/@playform/inline?label=Version&logo=npm&color=black&labelColor=black&logoColor=white&logoWidth=0" title=Version></picture></a><br><a href=https://npmjs.org/@playform/inline target=_blank><picture><source media="(prefers-color-scheme: dark)" srcset="https://img.shields.io/npm/dt/@playform/inline?label=Leaks&logo=npm&color=black&labelColor=black&logoColor=white&logoWidth=0"><source media="(prefers-color-scheme: light)" srcset="https://img.shields.io/npm/dt/@playform/inline?label=Leaks&logo=npm&color=white&labelColor=white&logoColor=black&logoWidth=0"><img alt=Downloads src="https://img.shields.io/npm/dt/@playform/inline?label=Leaks&logo=npm&color=black&labelColor=black&logoColor=white&logoWidth=0" title=Downloads></picture></a><br><br></td></tr></table>
 
 # 🗻 [BiomeAstro]
 
@@ -31,19 +31,19 @@ follow the prompts:
 Using NPM:
 
 ```sh
-npx astro add @playform/biome-astro
+npx astro add @playform/format
 ```
 
 Using Yarn:
 
 ```sh
-yarn astro add @playform/biome-astro
+yarn astro add @playform/format
 ```
 
 Using PNPM:
 
 ```sh
-pnpx astro add @playform/biome-astro
+pnpx astro add @playform/format
 ```
 
 ### Install dependencies manually
@@ -51,7 +51,7 @@ pnpx astro add @playform/biome-astro
 First, install the `BiomeAstro` integration like so:
 
 ```sh
-npm install -D -E @playform/biome-astro
+npm install -D -E @playform/format
 ```
 
 Then, apply this integration to your `astro.config.*` file using the
@@ -60,7 +60,7 @@ Then, apply this integration to your `astro.config.*` file using the
 **`astro.config.ts`**
 
 ```ts
-import Biome from "@playform/biome-astro";
+import Biome from "@playform/format";
 
 export default { integrations: [Biome()] };
 ```
@@ -79,7 +79,7 @@ or disable them entirely:
 **`astro.config.ts`**
 
 ```ts
-import Biome from "@playform/biome-astro";
+import Biome from "@playform/format";
 
 export default {
 	integrations: [
@@ -108,7 +108,7 @@ You can add multiple paths to validate / format by specifying an array as the
 **`astro.config.ts`**
 
 ```ts
-import Biome from "@playform/biome-astro";
+import Biome from "@playform/format";
 
 export default {
 	integrations: [
@@ -126,7 +126,7 @@ You can also provide a map of paths for different input output directories:
 **`astro.config.ts`**
 
 ```ts
-import Biome from "@playform/biome-astro";
+import Biome from "@playform/format";
 
 export default {
 	integrations: [
@@ -142,7 +142,7 @@ Or an array of the two:
 **`astro.config.ts`**
 
 ```ts
-import Biome from "@playform/biome-astro";
+import Biome from "@playform/format";
 
 export default {
 	integrations: [
@@ -167,7 +167,7 @@ file names:
 **`astro.config.ts`**
 
 ```ts
-import Biome from "@playform/biome-astro";
+import Biome from "@playform/format";
 
 export default {
 	integrations: [
@@ -188,7 +188,7 @@ Set `Logger` to `0` if you do not want to see debug messages. Default is `2`:
 **`astro.config.ts`**
 
 ```ts
-import Biome from "@playform/biome-astro";
+import Biome from "@playform/format";
 
 export default {
 	integrations: [
@@ -199,7 +199,7 @@ export default {
 };
 ```
 
-[BiomeAstro]: https://npmjs.org/@playform/biome-astro
+[BiomeAstro]: https://npmjs.org/@playform/format
 [Biome]: https://npmjs.org/@biomejs/biome
 [astro-integration]: https://docs.astro.build/en/guides/integrations-guide/
 
