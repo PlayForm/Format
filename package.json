@@ -29,7 +29,7 @@
 	"types": "./Target/Function/Integration.d.ts",
 	"scripts": {
 		"Document": "Document 'Source/**/*.ts'",
-		"prepublishOnly": "Build 'Source/**/*.ts' --ESBuild Configuration/ESBuild.ts"
+		"Build": "Build 'Source/**/*.ts' --ESBuild Configuration/ESBuild.ts"
 	},
 	"dependencies": {
 		"@biomejs/backend-jsonrpc": "1.6.3",
