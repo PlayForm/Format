@@ -30,9 +30,9 @@ export default {
 			},
 		},
 
-		(await import("@playform/copy")).copy({
-			resolveFrom: "out",
-			assets: [
+		(await import("@playform/copy")).default({
+			Resolve: "out",
+			Asset: [
 				{
 					from: "./Source/Notation/biome.json",
 					to: "./Notation/",
