@@ -32,7 +32,7 @@
 		"Build": "Build 'Source/**/*.ts' --ESBuild Configuration/ESBuild.ts"
 	},
 	"dependencies": {
-		"@biomejs/backend-jsonrpc": "1.6.3",
+		"@biomejs/backend-jsonrpc": "1.6.4",
 		"@biomejs/js-api": "nightly",
 		"@biomejs/wasm-nodejs": "1.6.4",
 		"@playform/pipe": "0.0.2",
