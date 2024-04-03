@@ -35,13 +35,13 @@
 		"@biomejs/backend-jsonrpc": "1.6.3",
 		"@biomejs/js-api": "nightly",
 		"@biomejs/wasm-nodejs": "1.6.3",
-		"deepmerge-ts": "5.1.0",
-		"@playform/pipe": "0.0.2"
+		"@playform/pipe": "0.0.2",
+		"deepmerge-ts": "5.1.0"
 	},
 	"devDependencies": {
-		"astro": "4.5.13",
+		"@playform/build": "0.0.2",
 		"@playform/copy": "2.1.1",
-		"@playform/build": "0.0.2"
+		"astro": "4.5.13"
 	},
 	"optionalDependencies": {
 		"@playform/document": "0.0.2"
