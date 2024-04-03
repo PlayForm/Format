@@ -1,3 +1,7 @@
+/**
+ * @module ESBuild
+ *
+ */
 export default {
 	color: true,
 	format: "esm",

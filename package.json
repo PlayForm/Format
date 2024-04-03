@@ -28,8 +28,8 @@
 	"main": "./Target/Function/Integration.js",
 	"types": "./Target/Function/Integration.d.ts",
 	"scripts": {
-		"Document": "TypeScriptDocument 'Source/**/*.ts'",
-		"prepublishOnly": "TypeScriptESBuild 'Source/**/*.ts' -ES Configuration/ESBuild.ts"
+		"Document": "Document 'Source/**/*.ts'",
+		"prepublishOnly": "Build 'Source/**/*.ts' --ESBuild Configuration/ESBuild.ts"
 	},
 	"dependencies": {
 		"@biomejs/backend-jsonrpc": "1.6.3",
@@ -41,7 +41,7 @@
 	"devDependencies": {
 		"astro": "4.5.13",
 		"esbuild-plugin-copy": "2.1.1",
-		"@playform/build": "0.0.1"
+		"@playform/build": "0.0.2"
 	},
 	"optionalDependencies": {
 		"@playform/document": "0.0.2"
