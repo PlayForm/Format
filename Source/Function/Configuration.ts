@@ -18,7 +18,7 @@ export default (async (...[File]: Parameters<Type>) => {
 						await import("path")
 					).dirname(
 						(await import("url")).fileURLToPath(import.meta.url),
-					)}/../Notation/${File}`,
+					)}/../../${File}`,
 				),
 				"utf-8",
 			)
