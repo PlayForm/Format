@@ -30,7 +30,7 @@ export default {
 			},
 		},
 
-		(await import("esbuild-plugin-copy")).copy({
+		(await import("@playform/copy")).copy({
 			resolveFrom: "out",
 			assets: [
 				{
