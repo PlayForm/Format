@@ -12,9 +12,9 @@ declare const _default: Omit<{} & {
     Path: string;
     Logger: 2;
     Action: Omit<{} & {
-        Failed: (On: import("@playform/file-pipe/Target/Interface/File.js").default) => Promise<string>;
-        Accomplished: (On: import("@playform/file-pipe/Target/Interface/File.js").default) => Promise<string>;
-        Fulfilled: ({ File }: import("@playform/file-pipe/Target/Interface/Plan.js").default) => Promise<string | false>;
+        Failed: (On: import("@playform/pipe/Target/Interface/File.js").default) => Promise<string>;
+        Accomplished: (On: import("@playform/pipe/Target/Interface/File.js").default) => Promise<string>;
+        Fulfilled: ({ File }: import("@playform/pipe/Target/Interface/Plan.js").default) => Promise<string | false>;
         Read: ({ Input }: any) => Promise<string>;
         Wrote: ({ Buffer }: any) => Promise<any>;
         Passed: (On: any) => Promise<true>;

@@ -2,6 +2,6 @@
  * @module Configuration
  *
  */
-export default interface Type {
+export default interface Interface {
     (File: string): Promise<string>;
 }
