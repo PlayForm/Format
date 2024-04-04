@@ -32,15 +32,15 @@
 		"Build": "Build 'Source/**/*.ts' --ESBuild Configuration/ESBuild.ts"
 	},
 	"dependencies": {
-		"@biomejs/backend-jsonrpc": "1.6.3",
+		"@biomejs/backend-jsonrpc": "1.6.4",
 		"@biomejs/js-api": "nightly",
-		"@biomejs/wasm-nodejs": "1.6.3",
+		"@biomejs/wasm-nodejs": "1.6.4",
 		"@playform/pipe": "0.0.2",
 		"deepmerge-ts": "5.1.0"
 	},
 	"devDependencies": {
 		"@playform/build": "0.0.2",
-		"astro": "4.5.13"
+		"astro": "4.5.15"
 	},
 	"optionalDependencies": {
 		"@playform/document": "0.0.3"
