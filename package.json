@@ -35,7 +35,7 @@
 		"@biomejs/backend-jsonrpc": "1.6.4",
 		"@biomejs/js-api": "nightly",
 		"@biomejs/wasm-nodejs": "1.6.4",
-		"@playform/pipe": "0.0.2",
+		"@playform/pipe": "0.0.1",
 		"deepmerge-ts": "5.1.0"
 	},
 	"devDependencies": {
