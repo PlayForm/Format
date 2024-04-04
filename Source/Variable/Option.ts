@@ -13,7 +13,7 @@ export default (
 			File > 0
 				? `Successfully formatted a total of ${File} JavaScript and TypeScript ${
 						File === 1 ? "file" : "files"
-				  }.`
+					}.`
 				: false,
 	},
 } satisfies Type);
