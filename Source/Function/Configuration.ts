@@ -24,7 +24,7 @@ export default (async (...[File]: Parameters<Type>) => {
 	}
 }) satisfies Type as Type;
 
-import type Type from "../Interface/Configuration.js";
+import type Type from "@Interface/Configuration.js";
 
 export const { readFile } = await import("fs/promises");
 
