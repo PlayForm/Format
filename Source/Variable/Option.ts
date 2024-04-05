@@ -5,7 +5,7 @@
 export default (
 	await import("@playform/build/Target/Function/Merge.js")
 ).default((await import("@playform/pipe/Target/Variable/Option.js")).default, {
-	Biome: (await import("./Biome.js")).default,
+	Biome: (await import("@Variable/Biome.js")).default,
 	Action: {
 		Failed: async (On) => `Error: Cannot format file ${On.Input}!`,
 		Accomplished: async (On) => `Formatted ${On.Input} in ${On.Output}.`,
