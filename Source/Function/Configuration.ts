@@ -2,7 +2,7 @@
  * @module Configuration
  *
  */
-export default (async (...[File]: Parameters<Type>) => {
+export default (async (...[File]: Parameters<Interface>) => {
 	try {
 		return (
 			await readFile(
@@ -22,9 +22,9 @@ export default (async (...[File]: Parameters<Type>) => {
 			)
 		).toString();
 	}
-}) satisfies Type as Type;
+}) satisfies Interface as Interface;
 
-import type Type from "@Interface/Configuration.js";
+import type Interface from "@Interface/Configuration.js";
 
 export const { readFile } = await import("fs/promises");
 

@@ -2,8 +2,8 @@
  * @module Integration
  *
  */
-declare const _default: Type;
+declare const _default: Interface;
 export default _default;
-import type Type from "@Interface/Integration.js";
+import type Interface from "@Interface/Integration.js";
 export declare const Default: any;
 export declare const Merge: Interface<Generic>;
