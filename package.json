@@ -45,7 +45,7 @@
 		"deepmerge-ts": "5.1.0"
 	},
 	"devDependencies": {
-		"@playform/build": "0.0.5",
+		"@playform/build": "0.0.6",
 		"@playform/document": "0.0.6",
 		"astro": "4.5.16"
 	},
