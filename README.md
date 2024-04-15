@@ -199,9 +199,9 @@ export default {
 };
 ```
 
-[Format.]: https://npmjs.org/@playform/format
-[Biome]: https://npmjs.org/@biomejs/biome
-[astro-integration]: https://docs.astro.build/en/guides/integrations-guide/
+[Format.]: HTTPS://npmjs.org/@playform/format
+[Biome]: HTTPS://npmjs.org/@biomejs/biome
+[astro-integration]: HTTPS://docs.astro.build/en/guides/integrations-guide/
 
 ## Changelog
 
