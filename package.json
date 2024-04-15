@@ -2,7 +2,7 @@
 	"name": "@playform/format",
 	"version": "0.0.2",
 	"private": false,
-	"description": "🗻 Format",
+	"description": "🗻 Format.",
 	"keywords": [
 		"astro",
 		"astro-component",
