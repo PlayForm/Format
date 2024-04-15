@@ -199,7 +199,7 @@ export default {
 };
 ```
 
-[Format]: https://npmjs.org/@playform/format
+[Format.]: https://npmjs.org/@playform/format
 [Biome]: https://npmjs.org/@biomejs/biome
 [astro-integration]: https://docs.astro.build/en/guides/integrations-guide/
 
