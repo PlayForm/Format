@@ -2,7 +2,7 @@
 	"name": "@playform/format",
 	"version": "0.0.2",
 	"private": false,
-	"description": "🗻 Format.",
+	"description": "🗻 Format —",
 	"keywords": [
 		"astro",
 		"astro-component",
@@ -38,9 +38,9 @@
 		"prepublishOnly": "Build 'Source/**/*.ts'"
 	},
 	"dependencies": {
-		"@biomejs/backend-jsonrpc": "1.7.0",
+		"@biomejs/backend-jsonrpc": "1.7.1",
 		"@biomejs/js-api": "nightly",
-		"@biomejs/wasm-nodejs": "1.7.0",
+		"@biomejs/wasm-nodejs": "1.7.1",
 		"@playform/pipe": "0.0.2",
 		"deepmerge-ts": "5.1.0"
 	},
