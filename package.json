@@ -40,7 +40,7 @@
 	"dependencies": {
 		"@biomejs/backend-jsonrpc": "1.7.1",
 		"@biomejs/js-api": "nightly",
-		"@biomejs/wasm-nodejs": "1.7.1",
+		"@biomejs/wasm-nodejs": "1.7.2",
 		"@playform/pipe": "0.0.2",
 		"deepmerge-ts": "5.1.0"
 	},
