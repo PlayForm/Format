@@ -29,7 +29,7 @@ export default ((...[_Option = {}]: Parameters<Interface>) => {
 		name: "@playform/format",
 		hooks: {
 			"astro:build:done": async ({ dir: Directory }) => {
-				if (!Paths.size) {
+				if (Paths.size === 0) {
 					Paths.add(Directory);
 				}
 
