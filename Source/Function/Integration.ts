@@ -54,15 +54,15 @@ export default ((...[_Option = {}]: Parameters<Interface>) => {
 					},
 				} satisfies Action);
 
-				try {
-					if (typeof Biome === "object" && _Biome) {
-						// @ts-ignore
-						Biome["$schema"] = undefined;
-						_Biome.applyConfiguration(Biome);
-					}
-				} catch (_Error) {
-					console.log(_Error);
-				}
+				// try {
+				// 	if (typeof Biome === "object" && _Biome) {
+				// 		// @ts-ignore
+				// 		Biome["$schema"] = undefined;
+				// 		_Biome.applyConfiguration(Biome);
+				// 	}
+				// } catch (_Error) {
+				// 	console.log(_Error);
+				// }
 
 				for (const Path of Paths) {
 					await (
