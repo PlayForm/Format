@@ -27,7 +27,7 @@
 	},
 	"license": "SEE LICENSE IN LICENSE",
 	"author": {
-		"name": "⛲ Source ⁄ 🚪 Open —",
+		"name": "🖋️ Source — 👐🏻 Open —",
 		"email": "Source/Open@PlayForm.Cloud",
 		"url": "HTTPS://PlayForm.Cloud"
 	},
@@ -46,7 +46,7 @@
 		"deepmerge-ts": "5.1.0"
 	},
 	"devDependencies": {
-		"@playform/build": "0.0.7",
+		"@playform/build": "0.0.8",
 		"@playform/document": "0.0.6",
 		"astro": "4.7.1"
 	},
