@@ -78,7 +78,7 @@ export default ((...[_Option = {}]: Parameters<Interface>) => {
 			},
 		},
 	};
-}) satisfies Interface as Interface;
+}) satisfies Interface;
 
 import type Interface from "../Interface/Integration.js";
 
