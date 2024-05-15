@@ -4,10 +4,15 @@
  */
 declare const _default: Omit<{} & {
     File: string;
+<<<<<<< HEAD
+=======
+    Biome: any;
+>>>>>>> 8690bcb200a459d4ebc616a154b77a64ea809ba2
     Cache: {
         Search: string;
         Folder: string;
     };
+<<<<<<< HEAD
     Logger: number;
     Action: Omit<{} & {
         Accomplished: (On: any) => Promise<string>;
@@ -27,5 +32,19 @@ declare const _default: Omit<{} & {
     Biome: any;
     Path: string;
     Exclude: boolean;
+=======
+    Path: string;
+    Logger: 2;
+    Action: Omit<{} & {
+        Failed: (On: import("@playform/pipe/Target/Interface/File.js").default) => Promise<string>;
+        Accomplished: (On: import("@playform/pipe/Target/Interface/File.js").default) => Promise<string>;
+        Fulfilled: ({ File }: import("@playform/pipe/Target/Interface/Plan.js").default) => Promise<string | false>;
+        Read: ({ Input }: import("@playform/pipe/Target/Interface/File.js").default) => Promise<string>;
+        Wrote: ({ Buffer }: import("@playform/pipe/Target/Interface/File.js").default) => Promise<import("@playform/pipe/Target/Type/Buffer.js").Type>;
+        Passed: (On: import("@playform/pipe/Target/Interface/File.js").default) => Promise<true>;
+        Changed: (Plan: import("@playform/pipe/Target/Interface/Plan.js").default) => Promise<import("@playform/pipe/Target/Interface/Plan.js").default>;
+    }, "__proto__">;
+    Exclude: false;
+>>>>>>> 8690bcb200a459d4ebc616a154b77a64ea809ba2
 }, "__proto__">;
 export default _default;
