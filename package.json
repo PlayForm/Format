@@ -42,15 +42,15 @@
 		"@biomejs/backend-jsonrpc": "1.7.3",
 		"@biomejs/js-api": "nightly",
 		"@biomejs/wasm-nodejs": "1.7.3",
-		"@playform/pipe": "0.0.3",
+		"@playform/pipe": "0.0.5",
 		"deepmerge-ts": "7.0.1"
 	},
 	"devDependencies": {
-		"@playform/build": "0.0.8",
-		"@playform/document": "0.0.6"
+		"@playform/build": "0.0.9",
+		"@playform/document": "0.0.7"
 	},
 	"peerDependencies": {
-		"astro": "4.8.7"
+		"astro": "4.9.1"
 	},
 	"peerDependenciesMeta": {
 		"astro": {
