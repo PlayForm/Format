@@ -7,18 +7,20 @@ export default (async (...[File]: Parameters<Interface>) => {
 		return (
 			await readFile(
 				resolve(`${(await import("process")).cwd()}/${File}`),
-				"utf-8"
+				"utf-8",
 			)
 		).toString();
 	} catch (_Error) {
 		return (
 			await readFile(
 				resolve(
-					`${(await import("path")).dirname(
-						(await import("url")).fileURLToPath(import.meta.url)
-					)}/../../${File}`
+					`${(
+						await import("path")
+					).dirname(
+						(await import("url")).fileURLToPath(import.meta.url),
+					)}/../../${File}`,
 				),
-				"utf-8"
+				"utf-8",
 			)
 		).toString();
 	}
