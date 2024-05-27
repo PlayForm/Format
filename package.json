@@ -46,7 +46,7 @@
 		"deepmerge-ts": "7.0.1"
 	},
 	"devDependencies": {
-		"@playform/build": "0.0.9",
+		"@playform/build": "0.0.10",
 		"@playform/document": "0.0.10"
 	},
 	"peerDependencies": {
