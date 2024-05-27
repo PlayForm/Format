@@ -47,7 +47,7 @@
 	},
 	"devDependencies": {
 		"@playform/build": "0.0.9",
-		"@playform/document": "0.0.7"
+		"@playform/document": "0.0.10"
 	},
 	"peerDependencies": {
 		"astro": "4.9.1"
