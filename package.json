@@ -43,19 +43,11 @@
 		"@biomejs/js-api": "nightly",
 		"@biomejs/wasm-nodejs": "1.7.3",
 		"@playform/pipe": "0.0.5",
-		"deepmerge-ts": "7.0.1"
-	},
-	"devDependencies": {
-		"@playform/build": "0.0.9",
-		"@playform/document": "0.0.7"
-	},
-	"peerDependencies": {
+		"deepmerge-ts": "7.0.1",
 		"astro": "4.9.1"
 	},
-	"peerDependenciesMeta": {
-		"astro": {
-			"optional": true
-		}
+	"devDependencies": {
+		"@playform/build": "0.0.9"
 	},
 	"publishConfig": {
 		"access": "public"
