@@ -43,10 +43,10 @@
 		"@biomejs/wasm-nodejs": "1.7.3",
 		"@playform/pipe": "0.0.5",
 		"deepmerge-ts": "7.0.1",
-		"astro": "4.9.1"
+		"astro": "4.9.2"
 	},
 	"devDependencies": {
-		"@playform/build": "0.0.9"
+		"@playform/build": "0.0.10"
 	},
 	"publishConfig": {
 		"access": "public"
