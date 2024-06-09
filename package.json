@@ -1,6 +1,6 @@
 {
 	"name": "@playform/format",
-	"version": "0.0.4",
+	"version": "0.0.5",
 	"private": false,
 	"description": "🗻 Format —",
 	"keywords": [
@@ -42,7 +42,7 @@
 		"@biomejs/js-api": "nightly",
 		"@biomejs/wasm-nodejs": "1.8.0",
 		"@playform/pipe": "0.0.5",
-		"astro": "4.10.0",
+		"astro": "*",
 		"deepmerge-ts": "7.0.3"
 	},
 	"devDependencies": {
