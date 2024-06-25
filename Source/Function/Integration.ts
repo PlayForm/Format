@@ -40,7 +40,7 @@ export default ((...[_Option = {}]: Parameters<Interface>) => {
 						.NODE,
 				});
 
-				if (Biome) {
+				if (Biome && typeof Biome === "object") {
 					_Biome.applyConfiguration(Biome);
 				}
 
@@ -91,6 +91,4 @@ import type Path from "@playform/pipe/Target/Type/Path.js";
 
 export const { default: Default } = await import("@Variable/Option.js");
 
-export const { default: Merge } = await import(
-	"@Function/Merge.js"
-);
+export const { default: Merge } = await import("@Function/Merge.js");
