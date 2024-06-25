@@ -40,6 +40,10 @@ export default ((...[_Option = {}]: Parameters<Interface>) => {
 						.NODE,
 				});
 
+				if (Biome) {
+					_Biome.applyConfiguration(Biome);
+				}
+
 				const _Action = Merge(Action, {
 					Wrote: async (On) => {
 						try {
