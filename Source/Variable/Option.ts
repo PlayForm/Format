@@ -3,7 +3,7 @@
  *
  */
 export default (
-	await import("@playform/build/Target/Function/Merge.js")
+	await import("@Function/Merge.js")
 ).default((await import("@playform/pipe/Target/Variable/Option.js")).default, {
 	Biome: (await import("@Variable/Biome.js")).default,
 	Action: {

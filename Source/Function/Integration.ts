@@ -88,5 +88,5 @@ import type Path from "@playform/pipe/Target/Type/Path.js";
 export const { default: Default } = await import("@Variable/Option.js");
 
 export const { default: Merge } = await import(
-	"@playform/build/Target/Function/Merge.js"
+	"@Function/Merge.js"
 );
