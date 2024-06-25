@@ -48,7 +48,7 @@ export default ((...[_Option = {}]: Parameters<Interface>) => {
 					Wrote: async (On) => {
 						try {
 							return _Biome.formatContent(On.Buffer.toString(), {
-								filePath: (await import("path")).resolve(
+								filePath: (await import("node:path")).resolve(
 									On.Input,
 								),
 							}).content;

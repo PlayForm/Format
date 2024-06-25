@@ -5,7 +5,8 @@
 			"**/Target/**/*",
 			"**/Documentation/**/*",
 			"**/dist/**/*",
-			"**/*.astro"
+			"**/*.astro",
+			"package.json"
 		],
 		"maxSize": 10000000
 	},
@@ -62,7 +63,8 @@
 			},
 			"correctness": {
 				"all": true,
-				"noUnusedVariables": "off"
+				"noUnusedVariables": "off",
+				"noNodejsModules": "off"
 			},
 			"nursery": {
 				"all": true,

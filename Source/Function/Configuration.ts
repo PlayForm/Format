@@ -6,7 +6,7 @@ export default (async (...[File]: Parameters<Interface>) => {
 	try {
 		return (
 			await readFile(
-				resolve(`${(await import("process")).cwd()}/${File}`),
+				resolve(`${(await import("node:process")).cwd()}/${File}`),
 				"utf-8",
 			)
 		).toString();
@@ -15,9 +15,11 @@ export default (async (...[File]: Parameters<Interface>) => {
 			await readFile(
 				resolve(
 					`${(
-						await import("path")
+						await import("node:path")
 					).dirname(
-						(await import("url")).fileURLToPath(import.meta.url),
+						(
+							await import("node:url")
+						).fileURLToPath(import.meta.url),
 					)}/../../${File}`,
 				),
 				"utf-8",
@@ -28,6 +30,6 @@ export default (async (...[File]: Parameters<Interface>) => {
 
 import type Interface from "../Interface/Configuration.js";
 
-export const { readFile } = await import("fs/promises");
+export const { readFile } = await import("node:fs/promises");
 
-export const { resolve } = await import("path");
+export const { resolve } = await import("node:path");
