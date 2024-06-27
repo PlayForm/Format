@@ -38,9 +38,9 @@
 		"prepublishOnly": "Build 'Source/**/*.ts'"
 	},
 	"dependencies": {
-		"@biomejs/backend-jsonrpc": "1.8.2",
+		"@biomejs/backend-jsonrpc": "1.8.3",
 		"@biomejs/js-api": "nightly",
-		"@biomejs/wasm-nodejs": "1.8.2",
+		"@biomejs/wasm-nodejs": "1.8.3",
 		"@playform/pipe": "0.0.6",
 		"astro": "*",
 		"deepmerge-ts": "7.0.3"
