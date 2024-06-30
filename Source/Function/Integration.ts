@@ -40,8 +40,6 @@ export default ((...[_Option = {}]: Parameters<Interface>) => {
 						.NODE,
 				});
 
-				console.log(Biome);
-
 				try {
 					if (Biome && typeof Biome === "object") {
 						_Biome.applyConfiguration(Biome);
@@ -51,18 +49,33 @@ export default ((...[_Option = {}]: Parameters<Interface>) => {
 				}
 
 				const _Action = Merge(Action, {
-					Wrote: async (On) => {
+					Wrote: async ({ Buffer, Input }) => {
 						try {
-							return _Biome.formatContent(On.Buffer.toString(), {
+							return _Biome.formatContent(Buffer.toString(), {
 								filePath: (await import("node:path")).resolve(
-									On.Input,
+									Input,
 								),
 							}).content;
 						} catch (_Error) {
-							console.log(_Error);
+							// console.log(_Error);
 
-							return On.Buffer;
+							return Buffer;
 						}
+					},
+					Passed: async ({ Buffer, Input }) => {
+						try {
+							console.log(
+								_Biome.lintContent(Buffer.toString(), {
+									filePath: (
+										await import("node:path")
+									).resolve(Input),
+								}).diagnostics,
+							);
+						} catch (_Error) {
+							console.log(_Error);
+						}
+
+						return true;
 					},
 				} satisfies Action);
 

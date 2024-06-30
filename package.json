@@ -39,7 +39,7 @@
 	},
 	"dependencies": {
 		"@biomejs/backend-jsonrpc": "1.8.3",
-		"@biomejs/js-api": "nightly",
+		"@biomejs/js-api": "0.6.2",
 		"@biomejs/wasm-nodejs": "1.8.3",
 		"@playform/pipe": "0.0.6",
 		"astro": "*",
