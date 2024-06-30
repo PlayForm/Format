@@ -40,8 +40,14 @@ export default ((...[_Option = {}]: Parameters<Interface>) => {
 						.NODE,
 				});
 
-				if (Biome && typeof Biome === "object") {
-					_Biome.applyConfiguration(Biome);
+				console.log(Biome);
+
+				try {
+					if (Biome && typeof Biome === "object") {
+						_Biome.applyConfiguration(Biome);
+					}
+				} catch (_Error) {
+					console.log(_Error);
 				}
 
 				const _Action = Merge(Action, {
@@ -53,20 +59,12 @@ export default ((...[_Option = {}]: Parameters<Interface>) => {
 								),
 							}).content;
 						} catch (_Error) {
+							console.log(_Error);
+
 							return On.Buffer;
 						}
 					},
 				} satisfies Action);
-
-				// try {
-				// 	if (typeof Biome === "object" && _Biome) {
-				// 		// @ts-ignore
-				// 		Biome["$schema"] = undefined;
-				// 		_Biome.applyConfiguration(Biome);
-				// 	}
-				// } catch (_Error) {
-				// 	console.log(_Error);
-				// }
 
 				for (const Path of Paths) {
 					await (
