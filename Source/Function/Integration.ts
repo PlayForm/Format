@@ -49,34 +49,40 @@ export default ((...[_Option = {}]: Parameters<Interface>) => {
 				}
 
 				const _Action = Merge(Action, {
-					Wrote: async ({ Buffer, Input }) => {
+					Wrote: async ({ Buffer, Output }) => {
 						try {
 							return _Biome.formatContent(Buffer.toString(), {
 								filePath: (await import("node:path")).resolve(
-									Input,
+									Output,
 								),
 							}).content;
 						} catch (_Error) {
-							// console.log(_Error);
+							console.log(_Error);
 
 							return Buffer;
 						}
 					},
-					Passed: async ({ Buffer, Input }) => {
-						try {
-							console.log(
-								_Biome.lintContent(Buffer.toString(), {
-									filePath: (
-										await import("node:path")
-									).resolve(Input),
-								}).diagnostics,
-							);
-						} catch (_Error) {
-							console.log(_Error);
-						}
+					// @TODO: FINISH THIS
+					// Passed: async ({ Buffer, Output }) => {
+					// 	try {
+					// 		_Biome
+					// 			.lintContent(Buffer.toString(), {
+					// 				filePath: (
+					// 					await import("node:path")
+					// 				).resolve(Output),
+					// 			})
+					// 			.diagnostics.forEach(
+					// 				({ location: { path } }) => {
+					// 					console.log(Output);
 
-						return true;
-					},
+					// 				},
+					// 			);
+					// 	} catch (_Error) {
+					// 		console.log(_Error);
+					// 	}
+
+					// 	return true;
+					// },
 				} satisfies Action);
 
 				for (const Path of Paths) {
