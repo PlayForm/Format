@@ -52,7 +52,7 @@ export default ((...[_Option = {}]: Parameters<Interface>) => {
 					Wrote: async ({ Buffer, Output }) => {
 						try {
 							return _Biome.formatContent(Buffer.toString(), {
-								filePath: (await import("node:path")).resolve(
+								filePath: (await import("path")).resolve(
 									Output,
 								),
 							}).content;
@@ -68,7 +68,7 @@ export default ((...[_Option = {}]: Parameters<Interface>) => {
 					// 		_Biome
 					// 			.lintContent(Buffer.toString(), {
 					// 				filePath: (
-					// 					await import("node:path")
+					// 					await import("path")
 					// 				).resolve(Output),
 					// 			})
 					// 			.diagnostics.forEach(

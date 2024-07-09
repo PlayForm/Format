@@ -85,7 +85,8 @@
 				"noUselessElse": "off",
 				"useNamingConvention": "off",
 				"useShorthandFunctionType": "off",
-				"useFilenamingConvention": "off"
+				"useFilenamingConvention": "off",
+				"useNodejsImportProtocol": "off"
 			},
 			"suspicious": {
 				"all": true,
