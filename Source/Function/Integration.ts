@@ -62,7 +62,7 @@ export default ((...[_Option = {}]: Parameters<Interface>) => {
 							return Buffer;
 						}
 					},
-					// @TODO: FINISH THIS
+					// TODO: FINISH THIS
 					// Passed: async ({ Buffer, Output }) => {
 					// 	try {
 					// 		_Biome
