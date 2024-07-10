@@ -35,6 +35,7 @@
 	"main": "./Target/Function/Integration.js",
 	"types": "./Target/Function/Integration.d.ts",
 	"scripts": {
+		"Run": "Build 'Source/**/*.ts' -W",
 		"prepublishOnly": "Build 'Source/**/*.ts'"
 	},
 	"dependencies": {
@@ -46,7 +47,7 @@
 		"deepmerge-ts": "7.0.3"
 	},
 	"devDependencies": {
-		"@playform/build": "0.0.11"
+		"@playform/build": "0.1.0"
 	},
 	"publishConfig": {
 		"access": "public"
