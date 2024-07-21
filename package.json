@@ -44,7 +44,7 @@
 		"@biomejs/wasm-nodejs": "1.8.4-nightly.a579bf7",
 		"@playform/pipe": "0.0.6",
 		"astro": "*",
-		"deepmerge-ts": "7.0.3"
+		"deepmerge-ts": "7.1.0"
 	},
 	"devDependencies": {
 		"@playform/build": "0.1.1"
