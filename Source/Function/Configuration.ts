@@ -14,12 +14,8 @@ export default (async (...[File]: Parameters<Interface>) => {
 		return (
 			await readFile(
 				resolve(
-					`${(
-						await import("path")
-					).dirname(
-						(
-							await import("url")
-						).fileURLToPath(import.meta.url),
+					`${(await import("path")).dirname(
+						(await import("url")).fileURLToPath(import.meta.url),
 					)}/../../${File}`,
 				),
 				"utf-8",
