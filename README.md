@@ -12,7 +12,7 @@ project.
 > `Format` will not lint / format your requests, only your statically generated
 > build and pre-rendered routes.
 
-## Installation
+## 🚀 Installation
 
 There are two ways to add integrations to your project. Let's try the most
 convenient option first!
