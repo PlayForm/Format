@@ -87,7 +87,14 @@
 				"noUselessElse": "off",
 				"useNamingConvention": "off",
 				"useShorthandFunctionType": "off",
-				"useFilenamingConvention": "off",
+				"useFilenamingConvention": {
+					"level": "error",
+					"options": {
+						"strictCase": true,
+						"requireAscii": true,
+						"filenameCases": ["PascalCase"]
+					}
+				},
 				"useImportType": "off"
 			},
 			"suspicious": {
