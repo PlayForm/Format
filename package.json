@@ -41,7 +41,7 @@
 	"dependencies": {
 		"@biomejs/backend-jsonrpc": "1.9.2",
 		"@biomejs/js-api": "0.6.2",
-		"@biomejs/wasm-nodejs": "1.9.2",
+		"@biomejs/wasm-nodejs": "1.9.3",
 		"@playform/pipe": "0.1.1",
 		"astro": "4.15.10",
 		"deepmerge-ts": "7.1.0"
