@@ -1,3 +1,5 @@
+import type Interface from "../Interface/Configuration.js";
+
 /**
  * @module Configuration
  *
@@ -14,9 +16,7 @@ export default (async (...[File]: Parameters<Interface>) => {
 		return (
 			await readFile(
 				resolve(
-					`${(
-						await import("path")
-					).dirname(
+					`${(await import("path")).dirname(
 						(await import("url")).fileURLToPath(import.meta.url),
 					)}/../../${File}`,
 				),
@@ -25,8 +25,6 @@ export default (async (...[File]: Parameters<Interface>) => {
 		).toString();
 	}
 }) satisfies Interface as Interface;
-
-import type Interface from "../Interface/Configuration.js";
 
 export const { readFile } = await import("fs/promises");
 
