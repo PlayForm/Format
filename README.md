@@ -72,7 +72,7 @@ and TypeScript files, including CommonJS modules in the Astro `outDir` folder.
 
 You can override any of the default options from the configurations of:
 
--   [biome](Source/Option/Biome.ts)
+-   [`biome`](Source/Option/Biome.ts)
 
 or disable them entirely:
 
@@ -205,4 +205,4 @@ export default {
 
 ## Changelog
 
-See [CHANGELOG.md](CHANGELOG.md) for a history of changes to this integration.
+See [`CHANGELOG.md`](CHANGELOG.md) for a history of changes to this integration.
