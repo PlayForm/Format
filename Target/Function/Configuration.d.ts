@@ -1,4 +1,5 @@
 import type Interface from "../Interface/Configuration.js";
+
 /**
  * @module Configuration
  *

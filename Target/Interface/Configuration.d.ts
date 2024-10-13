@@ -3,5 +3,5 @@
  *
  */
 export default interface Interface {
-    (File: string): Promise<string>;
+	(File: string): Promise<string>;
 }
