@@ -4,7 +4,7 @@ import type Interface from "../Interface/Configuration.js";
  * @module Configuration
  *
  */
-export default (async (...[File]: Parameters<Interface>) => {
+export default (async (...[File]) => {
 	try {
 		return (
 			await readFile(
