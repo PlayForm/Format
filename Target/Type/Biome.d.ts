@@ -1,5 +1,4 @@
 import type { Configuration } from "@biomejs/js-api";
-
 /**
  * @module Biome
  *
