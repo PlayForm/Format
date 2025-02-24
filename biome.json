@@ -6,8 +6,10 @@
 			"**/Documentation/**/*",
 			"**/Target/**/*",
 			"**/dist/**/*",
+			"**/Test/**/*",
 			"package.json"
 		],
+		"ignoreUnknown": true,
 		"maxSize": 10000000
 	},
 	"formatter": {
