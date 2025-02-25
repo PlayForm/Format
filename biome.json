@@ -1,14 +1,6 @@
 {
 	"$schema": "https://raw.githubusercontent.com/biomejs/biome/main/packages/%40biomejs/biome/configuration_schema.json",
 	"files": {
-		"ignore": [
-			"**/*.astro",
-			"**/Documentation/**/*",
-			"**/Target/**/*",
-			"**/dist/**/*",
-			"**/Test/**/*",
-			"package.json"
-		],
 		"ignoreUnknown": true,
 		"maxSize": 10000000
 	},
@@ -56,37 +48,23 @@
 	"linter": {
 		"enabled": true,
 		"rules": {
-			"a11y": {
-				"all": true
-			},
-			"all": true,
 			"complexity": {
-				"all": true,
 				"noExcessiveCognitiveComplexity": "off",
 				"noForEach": "off",
 				"noUselessLoneBlockStatements": "off",
 				"useLiteralKeys": "off"
 			},
 			"correctness": {
-				"all": true,
 				"noNodejsModules": "off",
 				"noUndeclaredDependencies": "off",
 				"noUnusedVariables": "off",
 				"useJsxKeyInIterable": "off"
 			},
 			"nursery": {
-				"all": true,
-				"useImportRestrictions": "off",
 				"useSortedClasses": "off"
 			},
-			"performance": {
-				"all": true
-			},
-			"security": {
-				"all": true
-			},
+
 			"style": {
-				"all": true,
 				"noDefaultExport": "off",
 				"noUselessElse": "off",
 				"useFilenamingConvention": {
@@ -102,13 +80,9 @@
 				"useShorthandFunctionType": "off"
 			},
 			"suspicious": {
-				"all": true,
-				"noConsoleLog": "off"
+				"noConsole": "off"
 			}
 		}
-	},
-	"organizeImports": {
-		"enabled": false
 	},
 	"vcs": {
 		"clientKind": "git",

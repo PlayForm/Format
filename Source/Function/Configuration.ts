@@ -16,7 +16,7 @@ export default (async (...[File]) => {
 		return (
 			await readFile(
 				resolve(
-					`${(await import("path")).dirname(
+					`${(await import("node:path")).dirname(
 						(await import("url")).fileURLToPath(import.meta.url),
 					)}/../../${File}`,
 				),
@@ -26,6 +26,6 @@ export default (async (...[File]) => {
 	}
 }) satisfies Interface as Interface;
 
-export const { readFile } = await import("fs/promises");
+export const { readFile } = await import("node:fs/promises");
 
-export const { resolve } = await import("path");
+export const { resolve } = await import("node:path");
