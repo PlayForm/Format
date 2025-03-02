@@ -2,8 +2,8 @@
 
 # [Format] 🗻
 
-This **[`Astro integration`][astro-integration]** brings Biome tools to your Astro
-project.
+This **[`Astro integration`][astro-integration]** brings Biome tools to your
+Astro project.
 
 [`Biome`][Biome]
 
@@ -67,12 +67,13 @@ export default { integrations: [Biome()] };
 
 ## Getting started
 
-The utility will now lint and format with [`Biome`][Biome] all of your JavaScript
-and TypeScript files, including CommonJS modules in the Astro `outDir` folder.
+The utility will now lint and format with [`Biome`][Biome] all of your
+JavaScript and TypeScript files, including CommonJS modules in the Astro
+`outDir` folder.
 
 You can override any of the default options from the configurations of:
 
--   [`biome`](Source/Option/Biome.ts)
+- [`biome`](Source/Option/Biome.ts)
 
 or disable them entirely:
 
