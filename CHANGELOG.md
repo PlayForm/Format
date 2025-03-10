@@ -23,7 +23,7 @@
 - Updated to Biome 1.8.3.
 - Improved logging for debugging.
 
-### Fixed
+### Fix
 
 - Resolved an issue where the integration would not correctly apply the Biome
   configuration.

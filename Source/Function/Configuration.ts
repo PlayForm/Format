@@ -17,7 +17,7 @@ export default (async (...[File]) => {
 			await readFile(
 				resolve(
 					`${(await import("node:path")).dirname(
-						(await import("url")).fileURLToPath(import.meta.url),
+						(await import("node:url")).fileURLToPath(import.meta.url),
 					)}/../../${File}`,
 				),
 				"utf-8",
