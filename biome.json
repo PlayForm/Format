@@ -75,7 +75,7 @@
 						"strictCase": true
 					}
 				},
-				"useImportType": "off",
+				"useImportType": "error",
 				"useNamingConvention": "off",
 				"useShorthandFunctionType": "off"
 			},
