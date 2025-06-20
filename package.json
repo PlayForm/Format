@@ -39,7 +39,7 @@
 		"prepublishOnly": "Build 'Source/**/*.ts'"
 	},
 	"dependencies": {
-		"@biomejs/backend-jsonrpc": "1.9.4",
+		"@biomejs/backend-jsonrpc": "2.0.2",
 		"@biomejs/js-api": "1.0.0",
 		"@biomejs/wasm-nodejs": "1.9.4",
 		"@playform/pipe": "0.1.3",
