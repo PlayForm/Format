@@ -5,5 +5,5 @@ import type Interface from "../Interface/Configuration.js";
  */
 declare const _default: Interface;
 export default _default;
-export declare const readFile: typeof import("fs/promises").readFile;
-export declare const resolve: (...paths: string[]) => string;
+export declare const readFile: typeof import("node:fs/promises").readFile;
+export declare const resolve: typeof import("node:path").resolve;
