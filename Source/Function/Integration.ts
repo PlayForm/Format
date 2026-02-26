@@ -51,19 +51,22 @@ export default ((...[_Option = {}]) => {
 
 				try {
 					if (Biome && typeof Biome === "object") {
-						_Biome.applyConfiguration(Biome);
+						await _Biome.applyConfiguration({ ...Biome });
 					}
 				} catch (_Error) {
 					console.log(_Error);
 				}
 
 				const _Action = Merge(Action, {
+					...(typeof Biome === "object" ? { Options: Biome } : {}),
+
 					Wrote: async ({ Buffer, Output }) => {
 						try {
-							return _Biome.formatContent(Buffer.toString(), {
+							return _Biome.formatContent({
 								filePath: (await import("node:path")).resolve(
 									Output,
 								),
+								fileContents: Buffer.toString(),
 							}).content;
 						} catch (_Error) {
 							console.log(_Error);
