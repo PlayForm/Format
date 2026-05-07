@@ -39,15 +39,15 @@
 		"prepublishOnly": "Build 'Source/**/*.ts'"
 	},
 	"dependencies": {
-		"@biomejs/backend-jsonrpc": "2.4.4",
+		"@biomejs/backend-jsonrpc": "2.4.10",
 		"@biomejs/js-api": "4.0.0",
-		"@biomejs/wasm-nodejs": "2.4.4",
+		"@biomejs/wasm-nodejs": "2.4.10",
 		"@playform/pipe": "0.1.4",
 		"astro": "*",
 		"deepmerge-ts": "7.1.5"
 	},
 	"devDependencies": {
-		"@playform/build": "0.3.0"
+		"@playform/build": "0.3.1"
 	},
 	"publishConfig": {
 		"access": "public",
