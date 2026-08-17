@@ -42,7 +42,7 @@
 		"@biomejs/backend-jsonrpc": "2.5.6",
 		"@biomejs/js-api": "6.0.0",
 		"@biomejs/wasm-nodejs": "2.5.6",
-		"@playform/pipe": "0.1.5",
+		"@playform/pipe": "0.1.6",
 		"astro": "*",
 		"deepmerge-ts": "8.0.0"
 	},
